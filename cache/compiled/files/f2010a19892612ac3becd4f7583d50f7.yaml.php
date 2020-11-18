@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/config/system.yaml',
-    'modified' => 1605692328,
+    'modified' => 1605692535,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',
@@ -28,6 +28,7 @@ return [
             ],
             'default_lang' => NULL,
             'include_default_lang' => true,
+            'include_default_lang_file_extension' => true,
             'pages_fallback_only' => false,
             'translations' => true,
             'translations_fallback' => true,
@@ -40,6 +41,7 @@ return [
             'hide_in_urls' => false
         ],
         'pages' => [
+            'type' => 'regular',
             'theme' => 'quark',
             'order' => [
                 'by' => 'default',
@@ -173,6 +175,8 @@ return [
         ],
         'debugger' => [
             'enabled' => false,
+            'provider' => 'clockwork',
+            'censored' => false,
             'shutdown' => [
                 'close_connection' => true
             ],
@@ -184,7 +188,10 @@ return [
             'cache_perms' => '0755',
             'debug' => false,
             'auto_fix_orientation' => false,
-            'seofriendly' => false
+            'seofriendly' => false,
+            'defaults' => [
+                'loading' => 'auto'
+            ]
         ],
         'media' => [
             'enable_media_timestamp' => false,
@@ -209,7 +216,7 @@ return [
             'path' => NULL
         ],
         'gpm' => [
-            'releases' => 'testing',
+            'releases' => 'stable',
             'proxy_url' => NULL,
             'method' => 'auto',
             'verify_peer' => true,
@@ -219,9 +226,26 @@ return [
             'type' => 'data',
             'storage' => 'file'
         ],
+        'flex' => [
+            'cache' => [
+                'index' => [
+                    'enabled' => true,
+                    'lifetime' => 60
+                ],
+                'object' => [
+                    'enabled' => true,
+                    'lifetime' => 600
+                ],
+                'render' => [
+                    'enabled' => true,
+                    'lifetime' => 600
+                ]
+            ]
+        ],
         'strict_mode' => [
             'yaml_compat' => true,
-            'twig_compat' => true
+            'twig_compat' => true,
+            'blueprint_compat' => true
         ]
     ]
 ];

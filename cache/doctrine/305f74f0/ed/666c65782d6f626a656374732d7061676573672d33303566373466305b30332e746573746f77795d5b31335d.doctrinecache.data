@@ -1,0 +1,3 @@
+1605694542
+C:39:"Grav\Common\Flex\Types\Pages\PageObject":467:{a:4:{s:4:"type";s:5:"pages";s:3:"key";s:7:"testowy";s:8:"elements";a:3:{s:4:"root";b:0;s:6:"header";a:1:{s:5:"title";s:7:"Testowy";}s:8:"markdown";s:44:"asd
+<button class="buy-button"> asd </button";}s:7:"storage";a:6:{s:3:"key";s:7:"testowy";s:11:"storage_key";s:10:"03.testowy";s:8:"template";s:8:"snipcart";s:17:"storage_timestamp";i:1605693941;s:8:"markdown";a:1:{s:0:"";a:1:{s:8:"snipcart";i:1605693941;}}s:8:"checksum";s:32:"22f9a23c416e978fa74cea0c522a67c3";}}}

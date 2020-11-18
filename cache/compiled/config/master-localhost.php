@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1605692535,
-    'checksum' => '02697577de6e652fae1e189163a58192',
+    'timestamp' => 1605693767,
+    'checksum' => '94af91e5c0b4bbe4d31c440f10189ad9',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -100,6 +100,10 @@ return [
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
                 'modified' => 1605691503
+            ],
+            'plugins/snipcart' => [
+                'file' => 'user/plugins/snipcart/snipcart.yaml',
+                'modified' => 1605693765
             ]
         ],
         'user/themes' => [
@@ -393,6 +397,11 @@ return [
             'problems' => [
                 'enabled' => true,
                 'built_in_css' => true
+            ],
+            'snipcart' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'api_key' => 'YOUR_API_KEY'
             ]
         ],
         'backups' => [

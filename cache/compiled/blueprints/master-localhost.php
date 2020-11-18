@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1605692406,
-    'checksum' => 'e8a91637abb8a7ed65a2841d931f86ed',
+    'timestamp' => 1605693768,
+    'checksum' => '52e6c25af8b372a04c792e695923bee3',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
@@ -76,6 +76,10 @@ return [
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/blueprints.yaml',
                 'modified' => 1605691503
+            ],
+            'plugins/snipcart' => [
+                'file' => 'user/plugins/snipcart/blueprints.yaml',
+                'modified' => 1605693765
             ]
         ],
         'user/themes' => [
@@ -4892,6 +4896,51 @@ return [
                 'name' => 'plugins.problems.built_in_css',
                 'validation' => 'strict'
             ],
+            'plugins.snipcart' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.snipcart.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Plugin status',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.snipcart.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.snipcart.built_in_css' => [
+                'type' => 'toggle',
+                'label' => 'Use built in CSS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.snipcart.built_in_css',
+                'validation' => 'strict'
+            ],
+            'plugins.snipcart.api_key' => [
+                'type' => 'text',
+                'size' => 'medium',
+                'label' => 'API Key',
+                'default' => 'YOUR_API_KEY',
+                'name' => 'plugins.snipcart.api_key',
+                'validation' => 'strict'
+            ],
             'themes.quark' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -5627,6 +5676,11 @@ return [
                 'problems' => [
                     'enabled' => 'plugins.problems.enabled',
                     'built_in_css' => 'plugins.problems.built_in_css'
+                ],
+                'snipcart' => [
+                    'enabled' => 'plugins.snipcart.enabled',
+                    'built_in_css' => 'plugins.snipcart.built_in_css',
+                    'api_key' => 'plugins.snipcart.api_key'
                 ]
             ],
             'themes' => [
