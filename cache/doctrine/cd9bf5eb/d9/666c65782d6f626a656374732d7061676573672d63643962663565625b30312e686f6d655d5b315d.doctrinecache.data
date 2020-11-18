@@ -1,4 +1,4 @@
-1605718909
+1605724702
 C:39:"Grav\Common\Flex\Types\Pages\PageObject":1150:{a:4:{s:4:"type";s:5:"pages";s:3:"key";s:4:"home";s:8:"elements";a:3:{s:4:"root";b:0;s:6:"header";a:2:{s:5:"title";s:15:"Strona główna";s:12:"body_classes";s:23:"title-center title-h1h2";}s:8:"markdown";s:678:"<html>
   <head>
     <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.25/default/snipcart.css" />

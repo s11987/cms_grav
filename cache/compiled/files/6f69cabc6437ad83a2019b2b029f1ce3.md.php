@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/pages/02.typography/default.md',
-    'modified' => 1605718221,
+    'modified' => 1605724393,
     'data' => [
         'header' => [
             'title' => 'Produkty'
@@ -18,48 +18,40 @@ return [
   <body>
 <div>
 
-<div style="float: left">
+<div style="float: left; width: 33%">
     <button class="snipcart-add-item"
   data-item-id="starry-night"
   data-item-price="9.99"
   data-item-url="/paintings/starry-night"
   data-item-description="Jakis opis pierwszego produtku"
-  data-item-image="/images/produkt2.jpg"
+  data-item-image="/user/pages/02.typography/butelka.jpg"
   data-item-name="Butelka wody">
   Dodaj do koszyka
 </div>
-<div style="float: left">
+
+<div style="float: left; width: 33%"">
     <button class="snipcart-add-item"
   data-item-id="starry"
   data-item-price="2.99"
   data-item-url="/paintings/starry-night"
   data-item-description="Jakis opis"
-  data-item-image="/images/produkt1.jpg"
+  data-item-image="/user/pages/02.typography/butelka.jpg"
   data-item-name="Butelka wody TIP">
   Dodaj do koszyka
 </div>
-<div style="float: left">
+
+
+<div style="float: left; width: 33%"">
     <button class="snipcart-add-item"
   data-item-id="starry"
   data-item-price="2.99"
   data-item-url="/paintings/starry-night"
   data-item-description="Jakis opis"
-  data-item-image="/images/produkt1.jpg"
-  data-item-name="Butelka wody TIP">
-  Dodaj do koszyka
-</div>
-<div style="float: left">
-    <button class="snipcart-add-item"
-  data-item-id="starry"
-  data-item-price="2.99"
-  data-item-url="/paintings/starry-night"
-  data-item-description="Jakis opis"
-  data-item-image="/images/produkt1.jpg"
+  data-item-image="/user/pages/02.typography/butelka.jpg"
   data-item-name="Butelka wody TIP">
   Dodaj do koszyka
 </div>
 <div style="clear: both"></div>
-
 </div>
 
 

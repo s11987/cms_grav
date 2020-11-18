@@ -1,0 +1,16 @@
+1605724792
+C:39:"Grav\Common\Flex\Types\Pages\PageObject":1150:{a:4:{s:4:"type";s:5:"pages";s:3:"key";s:4:"home";s:8:"elements";a:3:{s:4:"root";b:0;s:6:"header";a:2:{s:5:"title";s:15:"Strona główna";s:12:"body_classes";s:23:"title-center title-h1h2";}s:8:"markdown";s:678:"<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.25/default/snipcart.css" />
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.25/default/snipcart.css" />
+    <script async src="https://cdn.snipcart.com/themes/v3.0.25/default/snipcart.js"></script>
+
+  </head>
+  <body>
+  <h1><center>Witaj, wybierz produkt</center></h1>
+  <button class="snipcart-checkout">Zobacz swoj koszyk</button>
+    <script async src="https://cdn.snipcart.com/themes/v3.0.25/default/snipcart.js"></script>
+    <div id="snipcart" data-api-key="NmUwYWNjMmEtYzEyYi00NTU0LWI2ZTAtOTk0YzYxOWM0N2IxNjM3NDEyOTEzNzE0NDk5ODE1" hidden></div>
+  </body>
+</html>
+";}s:7:"storage";a:6:{s:3:"key";s:4:"home";s:11:"storage_key";s:7:"01.home";s:8:"template";s:7:"default";s:17:"storage_timestamp";i:1605724191;s:8:"markdown";a:1:{s:0:"";a:1:{s:7:"default";i:1605724191;}}s:8:"checksum";s:32:"7e1fe8fae93a16975794ee305b0ee897";}}}

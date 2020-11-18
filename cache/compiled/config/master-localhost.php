@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1605694904,
-    'checksum' => 'fc82cabb44d7c614d43148d1169a1840',
+    'timestamp' => 1605725630,
+    'checksum' => 'd0bc1d64737797576b1f2c0b12d16c39',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -31,7 +31,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1605692535
+                'modified' => 1605725628
             ]
         ],
         'system/config' => [
@@ -107,6 +107,10 @@ return [
             ]
         ],
         'user/themes' => [
+            'themes/antimatter' => [
+                'file' => 'user/themes/antimatter/antimatter.yaml',
+                'modified' => 1553214328
+            ],
             'themes/quark' => [
                 'file' => 'user/themes/quark/quark.yaml',
                 'modified' => 1605691503
@@ -115,6 +119,12 @@ return [
     ],
     'data' => [
         'themes' => [
+            'antimatter' => [
+                'enabled' => true,
+                'dropdown' => [
+                    'enabled' => false
+                ]
+            ],
             'quark' => [
                 'enabled' => true,
                 'production-mode' => true,
@@ -905,12 +915,12 @@ node_modules'
                 'override_locale' => false
             ],
             'home' => [
-                'alias' => '/home',
+                'alias' => '/shop',
                 'hide_in_urls' => false
             ],
             'pages' => [
                 'type' => 'regular',
-                'theme' => 'quark',
+                'theme' => 'antimatter',
                 'order' => [
                     'by' => 'default',
                     'dir' => 'asc'
@@ -985,7 +995,8 @@ node_modules'
                         0 => 'form',
                         1 => 'forms'
                     ]
-                ]
+                ],
+                'markdown_extra' => false
             ],
             'cache' => [
                 'enabled' => true,
@@ -1032,7 +1043,7 @@ node_modules'
                 ]
             ],
             'errors' => [
-                'display' => true,
+                'display' => 0,
                 'log' => true
             ],
             'log' => [
@@ -1055,7 +1066,7 @@ node_modules'
                 'cache_all' => false,
                 'cache_perms' => '0755',
                 'debug' => false,
-                'auto_fix_orientation' => false,
+                'auto_fix_orientation' => true,
                 'seofriendly' => false,
                 'defaults' => [
                     'loading' => 'auto'
@@ -1069,8 +1080,7 @@ node_modules'
                 'allowed_fallback_types' => [
                     
                 ],
-                'auto_metadata_exif' => false,
-                'upload_limit' => 41943040
+                'auto_metadata_exif' => false
             ],
             'session' => [
                 'enabled' => true,
@@ -1084,14 +1094,14 @@ node_modules'
                 'path' => NULL
             ],
             'gpm' => [
-                'releases' => 'stable',
+                'releases' => 'testing',
                 'proxy_url' => NULL,
                 'method' => 'auto',
                 'verify_peer' => true,
                 'official_gpm_only' => true
             ],
             'accounts' => [
-                'type' => 'data',
+                'type' => 'regular',
                 'storage' => 'file'
             ],
             'flex' => [

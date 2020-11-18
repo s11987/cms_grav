@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/pages/01.home/default.md',
-    'modified' => 1605718171,
+    'modified' => 1605724191,
     'data' => [
         'header' => [
             'title' => 'Strona główna',

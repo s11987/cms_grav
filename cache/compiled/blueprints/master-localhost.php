@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1605694905,
-    'checksum' => '52e6c25af8b372a04c792e695923bee3',
+    'timestamp' => 1605725636,
+    'checksum' => '8ef556efec7317e10cb1880c3e4748fd',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
@@ -83,6 +83,10 @@ return [
             ]
         ],
         'user/themes' => [
+            'themes/antimatter' => [
+                'file' => 'user/themes/antimatter/blueprints.yaml',
+                'modified' => 1553214328
+            ],
             'themes/quark' => [
                 'file' => 'user/themes/quark/blueprints.yaml',
                 'modified' => 1605691503
@@ -4941,7 +4945,7 @@ return [
                 'name' => 'plugins.snipcart.api_key',
                 'validation' => 'strict'
             ],
-            'themes.quark' => [
+            'themes.antimatter' => [
                 'type' => '_root',
                 'form_field' => false,
                 'form' => [
@@ -4952,6 +4956,33 @@ return [
                 'type' => '_parent',
                 'name' => 'themes',
                 'form_field' => false
+            ],
+            'themes.antimatter.dropdown' => [
+                'type' => '_parent',
+                'name' => 'themes.antimatter.dropdown',
+                'form_field' => false
+            ],
+            'themes.antimatter.dropdown.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Dropdown in navbar',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'themes.antimatter.dropdown.enabled',
+                'validation' => 'loose'
+            ],
+            'themes.quark' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'loose'
+                ]
             ],
             'themes.quark.production-mode' => [
                 'type' => 'toggle',
@@ -5684,6 +5715,11 @@ return [
                 ]
             ],
             'themes' => [
+                'antimatter' => [
+                    'dropdown' => [
+                        'enabled' => 'themes.antimatter.dropdown.enabled'
+                    ]
+                ],
                 'quark' => [
                     'production-mode' => 'themes.quark.production-mode',
                     'grid-size' => 'themes.quark.grid-size',
