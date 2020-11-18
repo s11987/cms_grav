@@ -2,6 +2,12 @@
 .sass-cache
 
 # Grav Specific
+data/*
+!data/.*
+plugins/*
+!plugins/.*
+themes/*
+!themes/.*
 
 # OS Generated
 .DS_Store*
