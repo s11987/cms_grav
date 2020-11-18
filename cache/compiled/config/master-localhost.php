@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1605693767,
-    'checksum' => '94af91e5c0b4bbe4d31c440f10189ad9',
+    'timestamp' => 1605694474,
+    'checksum' => '6219b1b6b104a8703636a2c0646a5fcf',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -23,7 +23,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1605691502
+                'modified' => 1605694474
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -823,7 +823,7 @@ node_modules'
             'salt' => 'peixj5QIkMJ4C8'
         ],
         'site' => [
-            'title' => 'Grav',
+            'title' => 'Cms',
             'default_lang' => 'en',
             'author' => [
                 'name' => 'Joe Bloggs',
