@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Console\Cli
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2020 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -11,7 +11,6 @@ namespace Grav\Console\Cli;
 
 use Grav\Common\Grav;
 use Grav\Common\Helpers\LogViewer;
-use Grav\Common\Utils;
 use Grav\Console\ConsoleCommand;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Style\SymfonyStyle;
@@ -40,9 +39,6 @@ class LogViewerCommand extends ConsoleCommand
 
     protected function serve()
     {
-        $grav = Grav::instance();
-        $grav->setup();
-
         $file = $this->input->getOption('file') ?? 'grav.log';
         $lines = $this->input->getOption('lines') ?? 20;
         $verbose = $this->input->getOption('verbose', false);
@@ -56,7 +52,8 @@ class LogViewerCommand extends ConsoleCommand
 
         $viewer = new LogViewer();
 
-        $logfile = $grav['locator']->findResource("log://" . $file);
+        $grav = Grav::instance();
+        $logfile = $grav['locator']->findResource('log://' . $file);
 
         if ($logfile) {
             $rows = $viewer->objectTail($logfile, $lines, true);
@@ -80,6 +77,5 @@ class LogViewerCommand extends ConsoleCommand
         } else {
             $io->error('cannot find the log file: logs/' . $file);
         }
-
     }
 }

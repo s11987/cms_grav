@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Framework\ContentBlock
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2020 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -16,10 +16,15 @@ namespace Grav\Framework\ContentBlock;
  */
 class HtmlBlock extends ContentBlock implements HtmlBlockInterface
 {
+    /** @var int */
     protected $version = 1;
+    /** @var array */
     protected $frameworks = [];
+    /** @var array */
     protected $styles = [];
+    /** @var array */
     protected $scripts = [];
+    /** @var array */
     protected $html = [];
 
     /**
@@ -98,6 +103,7 @@ class HtmlBlock extends ContentBlock implements HtmlBlockInterface
 
     /**
      * @param array $serialized
+     * @return void
      * @throws \RuntimeException
      */
     public function build(array $serialized)
@@ -357,6 +363,7 @@ class HtmlBlock extends ContentBlock implements HtmlBlockInterface
 
     /**
      * @param array $items
+     * @return void
      */
     protected function sortAssetsInLocation(array &$items)
     {
@@ -368,15 +375,15 @@ class HtmlBlock extends ContentBlock implements HtmlBlockInterface
 
         uasort(
             $items,
-            function ($a, $b) {
-                return ($a[':priority'] === $b[':priority'])
-                    ? $a[':order'] - $b[':order'] : $a[':priority'] - $b[':priority'];
+            static function ($a, $b) {
+                return $a[':priority'] <=> $b[':priority'] ?: $a[':order'] <=> $b[':order'];
             }
         );
     }
 
     /**
      * @param array $array
+     * @return void
      */
     protected function sortAssets(array &$array)
     {

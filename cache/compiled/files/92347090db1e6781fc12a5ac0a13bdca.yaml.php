@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/system/config/media.yaml',
-    'modified' => 1605691502,
+    'modified' => 1605692306,
     'data' => [
         'types' => [
             'defaults' => [
@@ -36,6 +36,11 @@ return [
                 'type' => 'image',
                 'thumb' => 'media/thumb-png.png',
                 'mime' => 'image/png'
+            ],
+            'webp' => [
+                'type' => 'image',
+                'thumb' => 'media/thumb-webp.png',
+                'mime' => 'image/webp'
             ],
             'gif' => [
                 'type' => 'animated',

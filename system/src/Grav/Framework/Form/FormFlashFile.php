@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Framework\Form
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2020 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -15,11 +15,21 @@ use Psr\Http\Message\UploadedFileInterface;
 
 class FormFlashFile implements UploadedFileInterface, \JsonSerializable
 {
+    /** @var string */
     private $field;
+    /** @var bool */
     private $moved = false;
+    /** @var array */
     private $upload;
+    /** @var FormFlash */
     private $flash;
 
+    /**
+     * FormFlashFile constructor.
+     * @param string $field
+     * @param array $upload
+     * @param FormFlash $flash
+     */
     public function __construct(string $field, array $upload, FormFlash $flash)
     {
         $this->field = $field;
@@ -43,11 +53,23 @@ class FormFlashFile implements UploadedFileInterface, \JsonSerializable
     {
         $this->validateActive();
 
-        $resource = \fopen($this->getTmpFile(), 'rb');
+        $tmpFile = $this->getTmpFile();
+        if (null === $tmpFile) {
+            throw new \RuntimeException('No temporary file');
+        }
+
+        $resource = \fopen($tmpFile, 'rb');
+        if (false === $resource) {
+            throw new \RuntimeException('No temporary file');
+        }
 
         return Stream::create($resource);
     }
 
+    /**
+     * @param string $targetPath
+     * @return void
+     */
     public function moveTo($targetPath)
     {
         $this->validateActive();
@@ -55,42 +77,67 @@ class FormFlashFile implements UploadedFileInterface, \JsonSerializable
         if (!\is_string($targetPath) || empty($targetPath)) {
             throw new \InvalidArgumentException('Invalid path provided for move operation; must be a non-empty string');
         }
+        $tmpFile = $this->getTmpFile();
+        if (null === $tmpFile) {
+            throw new \RuntimeException('No temporary file');
+        }
 
-        $this->moved = \copy($this->getTmpFile(), $targetPath);
+        $this->moved = \copy($tmpFile, $targetPath);
 
         if (false === $this->moved) {
             throw new \RuntimeException(\sprintf('Uploaded file could not be moved to %s', $targetPath));
         }
 
-        $this->flash->removeFile($this->getClientFilename(), $this->field);
+        $filename = $this->getClientFilename();
+        if ($filename) {
+            $this->flash->removeFile($filename, $this->field);
+        }
     }
 
+    /**
+     * @return int
+     */
     public function getSize()
     {
         return $this->upload['size'];
     }
 
+    /**
+     * @return int
+     */
     public function getError()
     {
         return $this->upload['error'] ?? \UPLOAD_ERR_OK;
     }
 
+    /**
+     * @return string
+     */
     public function getClientFilename()
     {
         return $this->upload['name'] ?? 'unknown';
     }
 
+    /**
+     * @return string
+     */
     public function getClientMediaType()
     {
         return $this->upload['type'] ?? 'application/octet-stream';
     }
 
-    public function isMoved() : bool
+    /**
+     * @return bool
+     */
+    public function isMoved(): bool
     {
         return $this->moved;
     }
 
-    public function getMetaData() : array
+    /**
+     * @return array
+     */
+    public function getMetaData(): array
     {
         if (isset($this->upload['crop'])) {
             return ['crop' => $this->upload['crop']];
@@ -99,17 +146,26 @@ class FormFlashFile implements UploadedFileInterface, \JsonSerializable
         return [];
     }
 
+    /**
+     * @return string
+     */
     public function getDestination()
     {
         return $this->upload['path'] ?? '';
     }
 
+    /**
+     * @return array
+     */
     public function jsonSerialize()
     {
         return $this->upload;
     }
 
-    public function getTmpFile() : ?string
+    /**
+     * @return string|null
+     */
+    public function getTmpFile(): ?string
     {
         $tmpName = $this->upload['tmp_name'] ?? null;
 
@@ -122,6 +178,9 @@ class FormFlashFile implements UploadedFileInterface, \JsonSerializable
         return file_exists($tmpFile) ? $tmpFile : null;
     }
 
+    /**
+     * @return array
+     */
     public function __debugInfo()
     {
         return [
@@ -132,6 +191,7 @@ class FormFlashFile implements UploadedFileInterface, \JsonSerializable
     }
 
     /**
+     * @return void
      * @throws \RuntimeException if is moved or not ok
      */
     private function validateActive(): void

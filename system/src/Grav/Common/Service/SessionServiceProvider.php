@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Common\Service
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2020 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -18,12 +18,20 @@ use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 use RocketTheme\Toolbox\Session\Message;
 
+/**
+ * Class SessionServiceProvider
+ * @package Grav\Common\Service
+ */
 class SessionServiceProvider implements ServiceProviderInterface
 {
+    /**
+     * @param Container $container
+     * @return void
+     */
     public function register(Container $container)
     {
         // Define session service.
-        $container['session'] = function ($c) {
+        $container['session'] = static function ($c) {
             /** @var Config $config */
             $config = $c['config'];
 

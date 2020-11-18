@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Console\Cli
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2020 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -17,7 +17,7 @@ class ComposerCommand extends ConsoleCommand
     protected function configure()
     {
         $this
-            ->setName("composer")
+            ->setName('composer')
             ->addOption(
                 'install',
                 'i',
@@ -30,7 +30,7 @@ class ComposerCommand extends ConsoleCommand
                 InputOption::VALUE_NONE,
                 'update the dependencies'
             )
-            ->setDescription("Updates the composer vendor dependencies needed by Grav.")
+            ->setDescription('Updates the composer vendor dependencies needed by Grav.')
             ->setHelp('The <info>composer</info> command updates the composer vendor dependencies needed by Grav');
     }
 
@@ -46,5 +46,4 @@ class ComposerCommand extends ConsoleCommand
         $this->output->writeln("\nInstalling vendor dependencies");
         $this->output->writeln($this->composerUpdate(GRAV_ROOT, $action));
     }
-
 }

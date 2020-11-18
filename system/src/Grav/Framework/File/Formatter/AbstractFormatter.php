@@ -5,7 +5,7 @@ declare(strict_types=1);
 /**
  * @package    Grav\Framework\File\Formatter
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2020 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -42,10 +42,21 @@ abstract class AbstractFormatter implements FileFormatterInterface
 
     /**
      * @param string $serialized
+     * @return void
      */
     public function unserialize($serialized): void
     {
         $this->doUnserialize(unserialize($serialized, ['allowed_classes' => false]));
+    }
+
+    /**
+     * @return string
+     */
+    public function getMimeType(): string
+    {
+        $mime = $this->getConfig('mime');
+
+        return \is_string($mime) ? $mime : 'application/octet-stream';
     }
 
     /**
@@ -57,7 +68,7 @@ abstract class AbstractFormatter implements FileFormatterInterface
         $extensions = $this->getSupportedFileExtensions();
 
         // Call fails on bad configuration.
-        return reset($extensions);
+        return reset($extensions) ?: '';
     }
 
     /**

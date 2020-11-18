@@ -3,17 +3,73 @@
 /**
  * @package    Grav\Common
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2020 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
 namespace Grav\Common;
 
+use enshrined\svgSanitize\Sanitizer;
+use Exception;
 use Grav\Common\Page\Pages;
+use function chr;
+use function count;
+use function is_array;
+use function is_string;
 
+/**
+ * Class Security
+ * @package Grav\Common
+ */
 class Security
 {
+    /**
+     * Sanitize SVG string for XSS code
+     *
+     * @param string $svg
+     * @return string
+     */
+    public static function sanitizeSvgString(string $svg): string
+    {
+        if (Grav::instance()['config']->get('security.sanitize_svg')) {
+            $sanitizer = new Sanitizer();
+            $sanitized = $sanitizer->sanitize($svg);
+            if (is_string($sanitized)) {
+                $svg = $sanitized;
+            }
+        }
 
+        return $svg;
+    }
+
+    /**
+     * Sanitize SVG for XSS code
+     *
+     * @param string $file
+     * @return void
+     */
+    public static function sanitizeSVG(string $file): void
+    {
+        if (file_exists($file) && Grav::instance()['config']->get('security.sanitize_svg')) {
+            $sanitizer = new Sanitizer();
+            $original_svg = file_get_contents($file);
+            $clean_svg = $sanitizer->sanitize($original_svg);
+
+            // TODO: what to do with bad SVG files which return false?
+            if ($clean_svg !== false && $clean_svg !== $original_svg) {
+                file_put_contents($file, $clean_svg);
+            }
+        }
+    }
+
+    /**
+     * Detect XSS code in Grav pages
+     *
+     * @param Pages $pages
+     * @param bool $route
+     * @param callable|null $status
+     * @return array
+     */
     public static function detectXssFromPages(Pages $pages, $route = true, callable $status = null)
     {
         $routes = $pages->routes();
@@ -30,7 +86,6 @@ class Security
         ]);
 
         foreach ($routes as $path) {
-
             $status && $status([
                 'type' => 'progress',
             ]);
@@ -51,10 +106,8 @@ class Security
                     } else {
                         $list[$page->filePathClean()] = $results;
                     }
-
                 }
-
-            } catch (\Exception $e) {
+            } catch (Exception $e) {
                 continue;
             }
         }
@@ -63,6 +116,8 @@ class Security
     }
 
     /**
+     * Detect XSS in an array or strings such as $_POST or $_GET
+     *
      * @param array $array      Array such as $_POST or $_GET
      * @param string $prefix    Prefix for returned values.
      * @return array            Returns flatten list of potentially dangerous input values, such as 'data.content'.
@@ -72,7 +127,7 @@ class Security
         $list = [];
 
         foreach ($array as $key => $value) {
-            if (\is_array($value)) {
+            if (is_array($value)) {
                 $list[] = static::detectXssFromArray($value, $prefix . $key . '.');
             }
             if ($result = static::detectXss($value)) {
@@ -89,10 +144,11 @@ class Security
 
     /**
      * Determine if string potentially has a XSS attack. This simple function does not catch all XSS and it is likely to
+     *
      * return false positives because of it tags all potentially dangerous HTML tags and attributes without looking into
      * their content.
      *
-     * @param string $string The string to run XSS detection logic on
+     * @param string|null $string The string to run XSS detection logic on
      * @return bool|string       Type of XSS vector if the given `$string` may contain XSS, false otherwise.
      *
      * Copies the code from: https://github.com/symphonycms/xssfilter/blob/master/extension.driver.php#L138
@@ -100,7 +156,7 @@ class Security
     public static function detectXss($string)
     {
         // Skip any null or non string values
-        if (null === $string || !\is_string($string) || empty($string)) {
+        if (null === $string || !is_string($string) || empty($string)) {
             return false;
         }
 
@@ -111,18 +167,18 @@ class Security
         $string = urldecode($string);
 
         // Convert Hexadecimals
-        $string = (string)preg_replace_callback('!(&#|\\\)[xX]([0-9a-fA-F]+);?!u', function($m) {
+        $string = (string)preg_replace_callback('!(&#|\\\)[xX]([0-9a-fA-F]+);?!u', function ($m) {
             return \chr(hexdec($m[2]));
         }, $string);
 
         // Clean up entities
-        $string = preg_replace('!(&#0+[0-9]+)!u','$1;', $string);
+        $string = preg_replace('!(&#0+[0-9]+)!u', '$1;', $string);
 
         // Decode entities
         $string = html_entity_decode($string, ENT_NOQUOTES, 'UTF-8');
 
         // Strip whitespace characters
-        $string = preg_replace('!\s!u','', $string);
+        $string = preg_replace('!\s!u', '', $string);
 
         $config = Grav::instance()['config'];
 
@@ -152,11 +208,9 @@ class Security
         // Iterate over rules and return label if fail
         foreach ((array) $patterns as $name => $regex) {
             if ($enabled_rules[$name] === true) {
-
                 if (preg_match($regex, $string) || preg_match($regex, $orig)) {
                     return $name;
                 }
-
             }
         }
 

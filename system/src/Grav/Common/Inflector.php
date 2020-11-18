@@ -3,33 +3,47 @@
 /**
  * @package    Grav\Common
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2020 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
 namespace Grav\Common;
 
+use DateInterval;
+use DateTime;
+use Grav\Common\Language\Language;
+use function in_array;
+use function strlen;
+
 /**
 * This file was originally part of the Akelos Framework
 */
-
 class Inflector
 {
+    /** @var array */
     protected static $plural;
+    /** @var array */
     protected static $singular;
+    /** @var array */
     protected static $uncountable;
+    /** @var array */
     protected static $irregular;
+    /** @var array */
     protected static $ordinals;
 
+    /**
+     * @return void
+     */
     public static function init()
     {
         if (empty(static::$plural)) {
+            /** @var Language $language */
             $language = Grav::instance()['language'];
-            static::$plural = $language->translate('GRAV.INFLECTOR_PLURALS', null, true) ?: [];
-            static::$singular = $language->translate('GRAV.INFLECTOR_SINGULAR', null, true) ?: [];
-            static::$uncountable = $language->translate('GRAV.INFLECTOR_UNCOUNTABLE', null, true) ?: [];
-            static::$irregular = $language->translate('GRAV.INFLECTOR_IRREGULAR', null, true) ?: [];
-            static::$ordinals = $language->translate('GRAV.INFLECTOR_ORDINALS', null, true) ?: [];
+            static::$plural = $language->translate('GRAV.INFLECTOR_PLURALS', null, true);
+            static::$singular = $language->translate('GRAV.INFLECTOR_SINGULAR', null, true);
+            static::$uncountable = $language->translate('GRAV.INFLECTOR_UNCOUNTABLE', null, true);
+            static::$irregular = $language->translate('GRAV.INFLECTOR_IRREGULAR', null, true);
+            static::$ordinals = $language->translate('GRAV.INFLECTOR_ORDINALS', null, true);
         }
     }
 
@@ -38,8 +52,7 @@ class Inflector
      *
      * @param string $word  English noun to pluralize
      * @param int    $count The count
-     *
-     * @return string Plural noun
+     * @return string|false Plural noun
      */
     public static function pluralize($word, $count = 2)
     {
@@ -70,7 +83,6 @@ class Inflector
         }
 
         return false;
-
     }
 
     /**
@@ -144,8 +156,7 @@ class Inflector
      *
      * @see variablize
      *
-     * @param    string $word Word to convert to camel case
-     *
+     * @param  string $word Word to convert to camel case
      * @return string UpperCamelCasedWord
      */
     public static function camelize($word)
@@ -161,8 +172,7 @@ class Inflector
      *
      * This can be really useful for creating friendly URLs.
      *
-     * @param    string $word Word to underscore
-     *
+     * @param  string $word Word to underscore
      * @return string Underscored word
      */
     public static function underscorize($word)
@@ -182,8 +192,7 @@ class Inflector
      *
      * This can be really useful for creating friendly URLs.
      *
-     * @param    string $word Word to hyphenate
-     *
+     * @param  string $word Word to hyphenate
      * @return string hyphenized word
      */
     public static function hyphenize($word)
@@ -230,8 +239,7 @@ class Inflector
      *
      * @see camelize
      *
-     * @param    string $word Word to lowerCamelCase
-     *
+     * @param  string $word Word to lowerCamelCase
      * @return string Returns a lowerCamelCasedWord
      */
     public static function variablize($word)
@@ -249,8 +257,7 @@ class Inflector
      *
      * @see classify
      *
-     * @param    string $class_name Class name for getting related table_name.
-     *
+     * @param  string $class_name Class name for getting related table_name.
      * @return string plural_table_name
      */
     public static function tableize($class_name)
@@ -266,8 +273,7 @@ class Inflector
      *
      * @see tableize
      *
-     * @param    string $table_name Table name for getting related ClassName.
-     *
+     * @param  string $table_name Table name for getting related ClassName.
      * @return string SingularClassName
      */
     public static function classify($table_name)
@@ -280,15 +286,14 @@ class Inflector
      *
      * This method converts 13 to 13th, 2 to 2nd ...
      *
-     * @param    int $number Number to get its ordinal value
-     *
+     * @param  int $number Number to get its ordinal value
      * @return string Ordinal representation of given string.
      */
     public static function ordinalize($number)
     {
         static::init();
 
-        if (\in_array($number % 100, range(11, 13), true)) {
+        if (in_array($number % 100, range(11, 13), true)) {
             return $number . static::$ordinals['default'];
         }
 
@@ -308,15 +313,14 @@ class Inflector
      * Converts a number of days to a number of months
      *
      * @param int $days
-     *
      * @return int
      */
     public static function monthize($days)
     {
-        $now = new \DateTime();
-        $end = new \DateTime();
+        $now = new DateTime();
+        $end = new DateTime();
 
-        $duration = new \DateInterval("P{$days}D");
+        $duration = new DateInterval("P{$days}D");
 
         $diff = $end->add($duration)->diff($now);
 

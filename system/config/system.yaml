@@ -20,8 +20,9 @@ languages:
   supported: []                                  # List of languages supported. eg: [en, fr, de]
   default_lang:                                  # Default is the first supported language. Must be one of the supported languages
   include_default_lang: true                     # Include the default lang prefix in all URLs
+  include_default_lang_file_extension: true      # If true, include language code for the default language in file extension: default.en.md
   pages_fallback_only: false                     # Only fallback to find page content through supported languages
-  translations: true                             # Enable translations by default
+  translations: true                             # If false, translation keys are used instead of translated strings
   translations_fallback: true                    # Fallback through supported translations if active lang doesn't exist
   session_store_active: false                    # Store active language in session
   http_accept_language: false                    # Attempt to set the language based on http_accept_language header in the browser
@@ -32,6 +33,7 @@ home:
   hide_in_urls: false                            # Hide the home route in URLs
 
 pages:
+  type: regular                                  # EXPERIMENTAL: Page type: regular or flex
   theme: quark                                   # Default theme (defaults to "quark" theme)
   order:
     by: default                                  # Order pages by "default", "alpha" or "date"
@@ -136,6 +138,8 @@ log:
 
 debugger:
   enabled: false                                 # Enable Grav debugger and following settings
+  provider: clockwork                            # Debugger provider: debugbar | clockwork
+  censored: false                                # Censor potentially sensitive information (POST parameters, cookies, files, configuration and most array/object data in log messages)
   shutdown:
     close_connection: true                       # Close the connection before calling onShutdown(). false for debugging
 
@@ -144,8 +148,10 @@ images:
   cache_all: false                               # Cache all image by default
   cache_perms: '0755'                            # MUST BE IN QUOTES!! Default cache folder perms. Usually '0755' or '0775'
   debug: false                                   # Show an overlay over images indicating the pixel depth of the image when working with retina for example
-  auto_fix_orientation: false                    # Automatically fix the image orientation based on the Exif data
+  auto_fix_orientation: true                     # Automatically fix the image orientation based on the Exif data
   seofriendly: false                             # SEO-friendly processed image names
+  defaults:
+    loading: auto                                # Let browser pick [auto|lazy|eager]
 
 media:
   enable_media_timestamp: false                  # Enable media timestamps
@@ -165,16 +171,29 @@ session:
   path:
 
 gpm:
-  releases: stable                               # Set to either 'stable' or 'testing'
+  releases: testing                              # Set to either 'stable' or 'testing'
   proxy_url:                                     # Configure a manual proxy URL for GPM (eg 127.0.0.1:3128)
   method: 'auto'                                 # Either 'curl', 'fopen' or 'auto'. 'auto' will try fopen first and if not available cURL
   verify_peer: true                              # Sometimes on some systems (Windows most commonly) GPM is unable to connect because the SSL certificate cannot be verified. Disabling this setting might help.
   official_gpm_only: true                        # By default GPM direct-install will only allow URLs via the official GPM proxy to ensure security
 
 accounts:
-  type: data                                     # Account type: data or flex
-  storage: file                                  # Flex storage type: file or folder
+  type: regular                                  # EXPERIMENTAL: Account type: regular or flex
+  storage: file                                  # EXPERIMENTAL: Flex storage type: file or folder
+
+flex:
+  cache:
+    index:
+      enabled: true                             # Set to true to enable Flex index caching. Is used to cache timestamps in files
+      lifetime: 60                              # Lifetime of cached index in seconds (0 = infinite)
+    object:
+      enabled: true                             # Set to true to enable Flex object caching. Is used to cache object data
+      lifetime: 600                             # Lifetime of cached objects in seconds (0 = infinite)
+    render:
+      enabled: true                             # Set to true to enable Flex render caching. Is used to cache rendered output
+      lifetime: 600                             # Lifetime of cached HTML in seconds (0 = infinite)
 
 strict_mode:
   yaml_compat: true                              # Grav 1.5+: Enables YAML backwards compatibility
   twig_compat: true                              # Grav 1.5+: Enables deprecated Twig autoescape setting (autoescape: false)
+  blueprint_compat: true                         # Grav 1.7+: Enables backward compatible strict support for blueprints

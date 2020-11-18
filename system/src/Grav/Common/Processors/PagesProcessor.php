@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Common\Processors
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2020 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -15,12 +15,23 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 
+/**
+ * Class PagesProcessor
+ * @package Grav\Common\Processors
+ */
 class PagesProcessor extends ProcessorBase
 {
+    /** @var string */
     public $id = 'pages';
+    /** @var string */
     public $title = 'Pages';
 
-    public function process(ServerRequestInterface $request, RequestHandlerInterface $handler) : ResponseInterface
+    /**
+     * @param ServerRequestInterface $request
+     * @param RequestHandlerInterface $handler
+     * @return ResponseInterface
+     */
+    public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
         $this->startTimer();
 
@@ -41,7 +52,7 @@ class PagesProcessor extends ProcessorBase
             $event = $this->container->fireEvent('onPageNotFound', $event);
 
             if (isset($event->page)) {
-                unset ($this->container['page']);
+                unset($this->container['page']);
                 $this->container['page'] = $page = $event->page;
             } else {
                 throw new \RuntimeException('Page Not Found', 404);

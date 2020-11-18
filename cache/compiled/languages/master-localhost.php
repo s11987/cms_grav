@@ -1,179 +1,187 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1605691546,
-    'checksum' => '015a8a01f6a4a521e23b1c9f406b91e1',
+    'timestamp' => 1605692403,
+    'checksum' => '71c6f27ce4af6a8160ef87cd793e6f65',
     'files' => [
         'system/languages' => [
             'ar' => [
                 'file' => 'system/languages/ar.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'bg' => [
                 'file' => 'system/languages/bg.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'ca' => [
                 'file' => 'system/languages/ca.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'cs' => [
                 'file' => 'system/languages/cs.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'da' => [
                 'file' => 'system/languages/da.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'de' => [
                 'file' => 'system/languages/de.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'el' => [
                 'file' => 'system/languages/el.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'en' => [
                 'file' => 'system/languages/en.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'es' => [
                 'file' => 'system/languages/es.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'et' => [
                 'file' => 'system/languages/et.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'eu' => [
                 'file' => 'system/languages/eu.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'fa' => [
                 'file' => 'system/languages/fa.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'fi' => [
                 'file' => 'system/languages/fi.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'fr' => [
                 'file' => 'system/languages/fr.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'he' => [
                 'file' => 'system/languages/he.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'hr' => [
                 'file' => 'system/languages/hr.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'hu' => [
                 'file' => 'system/languages/hu.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'id' => [
                 'file' => 'system/languages/id.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'is' => [
                 'file' => 'system/languages/is.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'it' => [
                 'file' => 'system/languages/it.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'ja' => [
                 'file' => 'system/languages/ja.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'ko' => [
                 'file' => 'system/languages/ko.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'lt' => [
                 'file' => 'system/languages/lt.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'nb' => [
                 'file' => 'system/languages/nb.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'nl' => [
                 'file' => 'system/languages/nl.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'no' => [
                 'file' => 'system/languages/no.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'pl' => [
                 'file' => 'system/languages/pl.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'pt' => [
                 'file' => 'system/languages/pt.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'ro' => [
                 'file' => 'system/languages/ro.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'ru' => [
                 'file' => 'system/languages/ru.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'sk' => [
                 'file' => 'system/languages/sk.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'sl' => [
                 'file' => 'system/languages/sl.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'sv' => [
                 'file' => 'system/languages/sv.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'th' => [
                 'file' => 'system/languages/th.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'tr' => [
                 'file' => 'system/languages/tr.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'uk' => [
                 'file' => 'system/languages/uk.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'vi' => [
                 'file' => 'system/languages/vi.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'zh' => [
                 'file' => 'system/languages/zh.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ],
             'zh-tw' => [
                 'file' => 'system/languages/zh-tw.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692306
             ]
         ],
         'user/plugins' => [
             'plugins/email' => [
                 'file' => 'user/plugins/email/languages.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692131
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/languages.yaml',
-                'modified' => 1605691503
+                'modified' => 1605692129
+            ],
+            'plugins/flex-objects' => [
+                'file' => 'user/plugins/flex-objects/languages.yaml',
+                'modified' => 1605692381
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/languages.yaml',
                 'modified' => 1605691503
+            ],
+            'plugins/language-selector' => [
+                'file' => 'user/plugins/language-selector/languages.yaml',
+                'modified' => 1605692222
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/languages.yaml',
@@ -187,167 +195,173 @@ return [
         'user/plugins/admin/languages' => [
             'ar' => [
                 'file' => 'user/plugins/admin/languages/ar.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692388
             ],
             'bg' => [
                 'file' => 'user/plugins/admin/languages/bg.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692388
             ],
             'br' => [
                 'file' => 'user/plugins/admin/languages/br.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692388
             ],
             'ca' => [
                 'file' => 'user/plugins/admin/languages/ca.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692388
             ],
             'cs' => [
                 'file' => 'user/plugins/admin/languages/cs.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692388
             ],
             'cy' => [
                 'file' => 'user/plugins/admin/languages/cy.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692388
             ],
             'da' => [
                 'file' => 'user/plugins/admin/languages/da.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692388
             ],
             'de' => [
                 'file' => 'user/plugins/admin/languages/de.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692388
             ],
             'el' => [
                 'file' => 'user/plugins/admin/languages/el.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692388
             ],
             'en' => [
                 'file' => 'user/plugins/admin/languages/en.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692388
             ],
             'es' => [
                 'file' => 'user/plugins/admin/languages/es.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692388
             ],
             'et' => [
                 'file' => 'user/plugins/admin/languages/et.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692388
             ],
             'eu' => [
                 'file' => 'user/plugins/admin/languages/eu.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692388
             ],
             'fa' => [
                 'file' => 'user/plugins/admin/languages/fa.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692388
             ],
             'fi' => [
                 'file' => 'user/plugins/admin/languages/fi.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692388
             ],
             'fr' => [
                 'file' => 'user/plugins/admin/languages/fr.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692388
             ],
             'he' => [
                 'file' => 'user/plugins/admin/languages/he.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692388
             ],
             'hr' => [
                 'file' => 'user/plugins/admin/languages/hr.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692388
             ],
             'hu' => [
                 'file' => 'user/plugins/admin/languages/hu.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692388
             ],
             'id' => [
                 'file' => 'user/plugins/admin/languages/id.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692388
             ],
             'it' => [
                 'file' => 'user/plugins/admin/languages/it.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692388
             ],
             'ja' => [
                 'file' => 'user/plugins/admin/languages/ja.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692389
             ],
             'ko' => [
                 'file' => 'user/plugins/admin/languages/ko.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692389
             ],
             'lt' => [
                 'file' => 'user/plugins/admin/languages/lt.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692389
             ],
             'nl' => [
                 'file' => 'user/plugins/admin/languages/nl.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692389
             ],
             'no' => [
                 'file' => 'user/plugins/admin/languages/no.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692389
             ],
             'pl' => [
                 'file' => 'user/plugins/admin/languages/pl.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692389
             ],
             'pt' => [
                 'file' => 'user/plugins/admin/languages/pt.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692389
             ],
             'ro' => [
                 'file' => 'user/plugins/admin/languages/ro.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692389
             ],
             'ru' => [
                 'file' => 'user/plugins/admin/languages/ru.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692389
             ],
             'sk' => [
                 'file' => 'user/plugins/admin/languages/sk.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692389
             ],
             'sl' => [
                 'file' => 'user/plugins/admin/languages/sl.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692389
             ],
             'sr' => [
                 'file' => 'user/plugins/admin/languages/sr.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692389
             ],
             'sv' => [
                 'file' => 'user/plugins/admin/languages/sv.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692389
             ],
             'th' => [
                 'file' => 'user/plugins/admin/languages/th.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692389
             ],
             'tlh' => [
                 'file' => 'user/plugins/admin/languages/tlh.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692389
             ],
             'tr' => [
                 'file' => 'user/plugins/admin/languages/tr.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692389
             ],
             'uk' => [
                 'file' => 'user/plugins/admin/languages/uk.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692389
             ],
             'vi' => [
                 'file' => 'user/plugins/admin/languages/vi.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692389
             ],
             'zh' => [
                 'file' => 'user/plugins/admin/languages/zh.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692389
             ],
             'zh-tw' => [
                 'file' => 'user/plugins/admin/languages/zh-tw.yaml',
-                'modified' => 1605691502
+                'modified' => 1605692389
+            ]
+        ],
+        'user/plugins/flex-objects/languages' => [
+            'en' => [
+                'file' => 'user/plugins/flex-objects/languages/en.yaml',
+                'modified' => 1605692381
             ]
         ],
         'user/plugins/login/languages' => [
@@ -1687,6 +1701,25 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'SESSION_USER_SYNC' => 'Sync User in Session',
                 'SESSION_USER_SYNC_HELP' => 'If Enabled, user in the session is kept in sync with the stored user file. WARNING: This feature may break some existing plugins which update user object in the session without saving it to the filesystem using `$user->save()` method.'
             ],
+            'PLUGIN_FLEX_OBJECTS' => [
+                'PLUGIN_NAME' => 'Flex Objects',
+                'PLUGIN_DESCRIPTION' => 'Flex Objects plugin allows you to manage Flex Objects in Grav Admin.',
+                'CREATED_SUCCESSFULLY' => 'Successfully created',
+                'UPDATED_SUCCESSFULLY' => 'Successfully updated',
+                'DELETED_SUCCESSFULLY' => 'Successfully deleted',
+                'BUTTON_UP' => 'Go Up',
+                'USE_BUILT_IN_CSS' => 'Use built in CSS',
+                'EXTRA_ADMIN_TWIG_PATH' => 'Extra Admin Twig Path',
+                'DIRECTORIES' => 'Directories',
+                'TITLE' => 'Flex Objects',
+                'TYPES_TITLE' => 'Directory Types',
+                'AFTER_SAVE' => 'After Save...',
+                'CREATE_NEW' => 'Create New Item',
+                'EDIT' => 'Edit Item',
+                'LIST' => 'List Items',
+                'LIST_INFO' => 'Displaying {from} to {to} out of {total} records',
+                'EMPTY_RESULT' => 'The requested query returns no result'
+            ],
             'PLUGIN_ADMIN' => [
                 'ADMIN_NOSCRIPT_MSG' => 'Please enable JavaScript in your browser.',
                 'ADMIN_BETA_MSG' => 'This is a Beta release! Use this in production at your own risk...',
@@ -1723,7 +1756,6 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'NEXT' => 'Next',
                 'PREVIOUS' => 'Previous',
                 'ADD_PAGE' => 'Add Page',
-                'ADD_MODULAR' => 'Add Modular',
                 'MOVE' => 'Move',
                 'DELETE' => 'Delete',
                 'UNSET' => 'Unset',
@@ -1992,11 +2024,9 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'FOLDER' => 'Folder',
                 'ASCENDING' => 'Ascending',
                 'DESCENDING' => 'Descending',
-                'ADD_MODULAR_CONTENT' => 'Add Modular Content',
                 'PAGE_TITLE' => 'Page Title',
                 'PAGE_TITLE_HELP' => 'The title of the page',
                 'PAGE' => 'Page',
-                'MODULAR_TEMPLATE' => 'Modular Template',
                 'FRONTMATTER' => 'Frontmatter',
                 'FILENAME' => 'Filename',
                 'PARENT_PAGE' => 'Parent Page',
@@ -2029,8 +2059,6 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'LANGUAGES' => 'Languages',
                 'SUPPORTED' => 'Supported',
                 'SUPPORTED_HELP' => 'Comma separated list of 2 letter language codes (for example \'en,fr,de\')',
-                'TRANSLATIONS_ENABLED' => 'Translations enabled',
-                'TRANSLATIONS_ENABLED_HELP' => 'Support translations in Grav, plugins and extensions',
                 'TRANSLATIONS_FALLBACK' => 'Translations fallback',
                 'TRANSLATIONS_FALLBACK_HELP' => 'Fallback through supported translations if active language doesn\'t exist',
                 'ACTIVE_LANGUAGE_IN_SESSION' => 'Active language in session',
@@ -2130,6 +2158,8 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'CACHE_ALL_HELP' => 'Run all images through Grav\'s cache system even if they have no media manipulations',
                 'IMAGES_DEBUG' => 'Image debug watermark',
                 'IMAGES_DEBUG_HELP' => 'Show an overlay over images indicating the pixel depth of the image when working with retina for example',
+                'IMAGES_LOADING' => 'Image loading behavior',
+                'IMAGES_LOADING_HELP' => 'The loading attribute allows a browser to defer loading offscreen images and iframes until users scroll near them. loading supports three values: auto, lazy, eager',
                 'IMAGES_SEOFRIENDLY' => 'SEO-Friendly Image names',
                 'IMAGES_SEOFRIENDLY_HELP' => 'When enabled, the image name is displayed first, then a smaller hash to reflect processed operations',
                 'UPLOAD_LIMIT' => 'File upload limit',
@@ -2192,6 +2222,8 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'PLUGIN_STATUS' => 'Plugin status',
                 'INCLUDE_DEFAULT_LANG' => 'Include default language',
                 'INCLUDE_DEFAULT_LANG_HELP' => 'This will prepend all URLs in the default language with the default language.  e.g. `/en/blog/my-post`',
+                'INCLUDE_DEFAULT_LANG_FILE_EXTENSION' => 'Include default language in file extension',
+                'INCLUDE_DEFAULT_LANG_HELP_FILE_EXTENSION' => 'If enabled, it will prepend the default language to the file extension (e.g. `.en.md`). Disable it to keep the default language using `.md` file extension.',
                 'PAGES_FALLBACK_ONLY' => 'Pages fallback only',
                 'PAGES_FALLBACK_ONLY_HELP' => 'Only \'fallback\' to find page content through supported languages, default behavior is to display any language found if active language is missing',
                 'ALLOW_URL_TAXONOMY_FILTERS' => 'URL Taxonomy Filters',
@@ -2304,10 +2336,7 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'EDITOR' => 'Editor',
                 'PREVIEW' => 'Preview',
                 'FULLSCREEN' => 'Fullscreen',
-                'MODULAR' => 'Modular',
-                'MODULAR_SETUP' => 'Modular Setup',
                 'NON_ROUTABLE' => 'Non-Routable',
-                'NON_MODULAR' => 'Non-Modular',
                 'NON_VISIBLE' => 'Non-Visible',
                 'NON_PUBLISHED' => 'Non-Published',
                 'CHARACTERS' => 'characters',
@@ -2457,11 +2486,11 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'SCHEDULER' => 'Scheduler',
                 'SCHEDULER_INSTALL_INSTRUCTIONS' => 'Install Instructions',
                 'SCHEDULER_INSTALLED_READY' => 'Installed and Ready',
-                'SCHEDULER_CRON_NA' => 'Cron Not Available',
-                'SCHEDULER_NOT_ENABLED' => 'Not Enabled',
+                'SCHEDULER_CRON_NA' => 'Cron Not Available for user: <b>%s</b>',
+                'SCHEDULER_NOT_ENABLED' => 'Not Enabled for user: <b>%s</b>',
                 'SCHEDULER_SETUP' => 'Scheduler Setup',
                 'SCHEDULER_INSTRUCTIONS' => 'The <b>Grav Scheduler</b> allows you to create and schedule custom jobs.  It also provides a method for Grav plugins to integrate programmatically and dynamically add jobs to be run periodically.',
-                'SCHEDULER_POST_INSTRUCTIONS' => 'To enable the Scheduler\'s functionality, you must add the <b>Grav Scheduler</b> to your system\'s crontab file.  Run the command above from the terminal to add it automatically. Once saved, refresh this page to see the status Ready.',
+                'SCHEDULER_POST_INSTRUCTIONS' => 'To enable the Scheduler\'s functionality, you must add the <b>Grav Scheduler</b> to your system\'s crontab file for the <b>%s</b> user.  Run the command above from the terminal to add it automatically. Once saved, refresh this page to see the status.',
                 'SCHEDULER_JOBS' => 'Custom Scheduler Jobs',
                 'SCHEDULER_STATUS' => 'Scheduler Status',
                 'SCHEDULER_RUNAT' => 'Run At',
@@ -2515,13 +2544,142 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'DEBUGGER_PROVIDER_HELP' => 'Default is PHP Debug Bar, but Clockwork browser extension provides for a less intrusive approach',
                 'DEBUGGER_DEBUGBAR' => 'PHP Debug Bar',
                 'DEBUGGER_CLOCKWORK' => 'Clockwork Browser Extension',
+                'PAGE_ROUTE_NOT_FOUND' => 'Page route not found',
+                'PAGE_ROUTE_FOUND' => 'Page route found',
+                'NO_ROUTE_PROVIDED' => 'No route provided',
+                'CONTENT_LANGUAGE_FALLBACKS' => 'Content Language Fallback',
+                'CONTENT_LANGUAGE_FALLBACKS_HELP' => 'By default if the content isn\'t translated, Grav will display content in the default language. Use this setting to override that behavior per language basis.',
+                'CONTENT_LANGUAGE_FALLBACK' => 'Fallback Languages',
+                'CONTENT_LANGUAGE_FALLBACK_HELP' => 'Please enter a list of language codes. Note that if you omit default language code, it will not be used.',
+                'CONTENT_FALLBACK_LANGUAGE_HELP' => 'Specify language code which you want to customize.',
+                'EXPERIMENTAL' => 'Experimental',
+                'PAGES_TYPE' => 'Frontend Page Type',
+                'PAGES_TYPE_HELP' => 'This option enables Flex Object pages on the front-end. Admin Flex Pages requires Flex Objects plugin',
+                'ACCOUNTS_TYPE' => 'Accounts Type',
+                'ACCOUNTS_TYPE_HELP' => 'Flex Object system to store user accounts',
+                'ACCOUNTS_STORAGE' => 'Account Storage',
+                'ACCOUNTS_STORAGE_HELP' => 'The storage mechanism to be used for Flex Object Account type.  Files is the traditional approach where account are stored in a YAML file in a single folder, while Folder creates a new folder for each account',
+                'FLEX' => 'Flex Object (EXPERIMENTAL)',
+                'REGULAR' => 'Regular',
+                'FILE' => 'File',
+                'SANITIZE_SVG' => 'Sanitize SVG',
+                'SANITIZE_SVG_HELP' => 'Removes any XSS code from SVG',
+                'ACCOUNTS' => 'Accounts',
+                'USER_ACCOUNTS' => 'User Accounts',
+                'USER_GROUPS' => 'User Groups',
+                'GROUP_NAME' => 'Group Name',
+                'DISPLAY_NAME' => 'Display Name',
+                'ICON' => 'Icon',
+                'ACCESS' => 'Access',
+                'NO_ACCESS' => 'No Access',
+                'SUPER_USER' => 'Super User',
+                'ALLOWED' => 'Allowed',
+                'DENIED' => 'Denied',
+                'MODULE' => 'Module',
+                'NON_MODULE' => 'Non-Module',
+                'ADD_MODULE' => 'Add Module',
+                'MODULE_SETUP' => 'Module Setup',
+                'MODULE_TEMPLATE' => 'Module Template',
+                'ADD_MODULE_CONTENT' => 'Add Module Content',
+                'CHANGELOG' => 'Changelog',
+                'PAGE_ACCESS' => 'Page Access',
+                'PAGE PERMISSIONS' => 'Page Permissions',
+                'PAGE_ACCESS_HELP' => 'User with following access permissions can access the page.',
+                'PAGE_VISIBILITY_REQUIRES_ACCESS' => 'Menu Visibility Requires Access',
+                'PAGE_VISIBILITY_REQUIRES_ACCESS_HELP' => 'Set to Yes if page should be shown in menus only if user can access them.',
+                'PAGE_INHERIT_PERMISSIONS' => 'Inherit Permissions',
+                'PAGE_INHERIT_PERMISSIONS_HELP' => 'Inherit ACL from parent page.',
+                'PAGE_AUTHORS' => 'Page Authors',
+                'PAGE_AUTHORS_HELP' => 'Members of Page Authors have owner level access to this page defined in special \'Authors\' page group.',
+                'PAGE_GROUPS' => 'Page Groups',
+                'PAGE_GROUPS_HELP' => 'Members of Page Groups have special access to this page.',
+                'READ' => 'Read',
+                'PUBLISH' => 'Publish',
+                'LIST' => 'List',
+                'ACCESS_SITE' => 'Site',
+                'ACCESS_SITE_LOGIN' => 'Login to Site',
+                'ACCESS_ADMIN' => 'Admin',
+                'ACCESS_ADMIN_LOGIN' => 'Login to Admin',
+                'ACCESS_ADMIN_SUPER' => 'Super User',
+                'ACCESS_ADMIN_CACHE' => 'Clear Cache',
+                'ACCESS_ADMIN_CONFIGURATION' => 'Configuration',
+                'ACCESS_ADMIN_CONFIGURATION_SYSTEM' => 'Manage System Configuration',
+                'ACCESS_ADMIN_CONFIGURATION_SITE' => 'Manage Site Configuration',
+                'ACCESS_ADMIN_CONFIGURATION_MEDIA' => 'Manage Media Configuration',
+                'ACCESS_ADMIN_CONFIGURATION_INFO' => 'See Server Information',
+                'ACCESS_ADMIN_SETTINGS' => 'Settings',
+                'ACCESS_ADMIN_PAGES' => 'Manage Pages',
+                'ACCESS_ADMIN_MAINTENANCE' => 'Site Maintenance',
+                'ACCESS_ADMIN_STATISTICS' => 'Site Statistics',
+                'ACCESS_ADMIN_PLUGINS' => 'Manage Plugins',
+                'ACCESS_ADMIN_THEMES' => 'Manage Themes',
+                'ACCESS_ADMIN_TOOLS' => 'Access to Tools',
+                'ACCESS_ADMIN_USERS' => 'Manage Users',
+                'USERS' => 'Users',
+                'ACL' => 'Access Control',
+                'FLEX_CACHING' => 'Flex Caching',
+                'FLEX_INDEX_CACHE_ENABLED' => 'Enable Index Caching',
+                'FLEX_INDEX_CACHE_LIFETIME' => 'Index Cache Lifetime (seconds)',
+                'FLEX_OBJECT_CACHE_ENABLED' => 'Enable Object Caching',
+                'FLEX_OBJECT_CACHE_LIFETIME' => 'Object Cache Lifetime (seconds)',
+                'FLEX_RENDER_CACHE_ENABLED' => 'Enable Render Caching',
+                'FLEX_RENDER_CACHE_LIFETIME' => 'Render Cache Lifetime (seconds)',
+                'DEBUGGER_CENSORED' => 'Censor Sensitive Data',
+                'DEBUGGER_CENSORED_HELP' => 'Clockwork Provider ONLY: If Yes, censor potentially sensitive information (POST parameters, cookies, files, configuration and most array/object data in log messages)',
+                'LANGUAGE_TRANSLATIONS' => 'Translations',
+                'LANGUAGE_TRANSLATIONS_HELP' => 'If false, translation keys are used instead of translated strings. This feature can be used to help to fix bad translations or to find hardcoded English strings.',
+                'STRICT_BLUEPRINT_COMPAT' => 'Blueprint Compatibility',
+                'STRICT_BLUEPRINT_COMPAT_HELP' => 'Enables backward compatible strict support for blueprints. If turned off, the new behavior makes the form validation to fail if there is extra data which is not defined in the blueprint.',
+                'RESET' => 'Reset',
+                'LOGOS' => 'Logos',
+                'CUSTOMIZATION' => 'Customization',
+                'PRESETS' => 'Presets',
+                'COLOR_SCHEME_LABEL' => 'Color Scheme',
+                'COLOR_SCHEME_HELP' => 'Choose a color scheme from a list of predefined combinations, or add your own style',
+                'COLOR_SCHEME_NAME' => 'Custom Color Scheme Name',
+                'COLOR_SCHEME_NAME_HELP' => 'Give a name to your custom theme for exporting and sharing',
+                'COLOR_SCHEME_NAME_PLACEHOLDER' => 'Shades of Blue',
+                'PRIMARY_ACCENT_LABEL' => 'Primary Accent',
+                'PRIMARY_ACCENT_HELP' => 'Select which color set the primary accent should use for it\'s color scheme',
+                'SECONDARY_ACCENT_LABEL' => 'Secondary Accent',
+                'SECONDARY_ACCENT_HELP' => 'Select which color set the secondary accent should use for it\'s color scheme',
+                'TERTIARY_ACCENT_LABEL' => 'Tertiary Accent',
+                'TERTIARY_ACCENT_HELP' => 'Select which color set the tertiary accent should use for it\'s color scheme',
+                'WEB_FONTS_LABEL' => 'Web Fonts',
+                'WEB_FONTS_HELP' => 'Use custom web fonts',
+                'HEADER_FONT_LABEL' => 'Header Font',
+                'HEADER_FONT_HELP' => 'Font used for headers, side nav and section titles',
+                'BODY_FONT_LABEL' => 'Body Font',
+                'BODY_FONT_HELP' => 'Primary font used throughout the body of the theme',
+                'CUSTOM_CSS_LABEL' => 'Custom CSS',
+                'CUSTOM_CSS_PLACEHOLDER' => 'This is some placeholder text',
+                'CUSTOM_CSS_HELP' => 'Custom CSS that will be added to every admin page',
+                'CUSTOM_FOOTER' => 'Custom Footer',
+                'CUSTOM_FOOTER_HELP' => 'You can use HTML and/or Markdown syntax here',
+                'LOGIN_SCREEN_CUSTOM_LOGO_LABEL' => 'Login Custom Logo',
+                'LOGIN_SCREEN_CUSTOM_LOGO_HELP' => '',
+                'TOP_LEFT_CUSTOM_LOGO_LABEL' => 'Primary Custom Logo',
+                'TOP_LEFT_CUSTOM_LOGO_HELP' => '',
+                'LOAD_PRESET' => 'Load Preset',
+                'RECOMPILE' => 'Recompile',
+                'EXPORT' => 'Export',
+                'QUICKTRAY_RECOMPILE' => 'QuickTray Recompile Icon',
+                'QUICKTRAY_RECOMPILE_HELP' => 'Will recompile the preset SCSS to pickup any changes or new plugins',
+                'CODEMIRROR' => 'CodeMirror Editor',
+                'CODEMIRROR_THEME' => 'Editor Theme',
+                'CODEMIRROR_THEME_DESC' => '**NOTE:** Use the [CodeMirror Themes Demo](https://codemirror.net/demo/theme.html?target=_blank) to see these in action. **_Paper_** is the default Grav theme.',
+                'CODEMIRROR_FONTSIZE' => 'Editor Font Size',
+                'CODEMIRROR_MD_FONT' => 'Markdown Editor Font',
+                'CUSTOM_PRESETS' => 'Custom Presets',
+                'CUSTOM_PRESETS_HELP' => 'Drag-n-drop a theme .yaml file here, or you can create an array of presets with text based keys',
+                'GENERAL' => 'General',
+                'CONTENT_EDITOR' => 'Content Editor',
+                'CONTENT_EDITOR_HELP' => 'Custom editors can be preferred for content editing',
+                'BAD_FILENAME' => 'Bad filename',
                 'SHOW_SENSITIVE' => 'Show Sensitive Data',
                 'SHOW_SENSITIVE_HELP' => 'Clockwork Provider ONLY: Censor potentially sensitive information (POST parameters, cookies, files, configuration and most array/object data in log messages)',
                 'VALID_LINK_ATTRIBUTES' => 'Valid Link Attributes',
-                'VALID_LINK_ATTRIBUTES_HELP' => 'Attributes that will be automatically added to the media HTML element',
-                'PAGE_ROUTE_NOT_FOUND' => 'Page route not found',
-                'PAGE_ROUTE_FOUND' => 'Page route found',
-                'NO_ROUTE_PROVIDED' => 'No route provided'
+                'VALID_LINK_ATTRIBUTES_HELP' => 'Attributes that will be automatically added to the media HTML element'
             ],
             'PLUGIN_EMAIL' => [
                 'MAIL_ENGINE' => 'Mail Engine',
@@ -2657,6 +2815,30 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'DESTINATION_NOT_SPECIFIED' => 'Destination not specified',
                 'INVALID_MIME_TYPE' => 'The MIME type %s for the file %s is not accepted.',
                 'INVALID_FILE_EXTENSION' => 'The File Extension for the file %s is not accepted.'
+            ],
+            'PLUGINS' => [
+                'LANGUAGE_SELECTOR' => [
+                    'PLUGIN_STATUS' => 'Plugin status',
+                    'BUILT_IN_CSS' => 'Use built in CSS',
+                    'UNTRANSLATED_PAGES' => [
+                        'LABEL' => 'Untranslated pages behavior',
+                        'HELP' => 'Determine what to do with a language link when the current page doesn\'t exist in that language or it exists but it\'s not published.',
+                        'OPT_NONE' => 'Show language (default)',
+                        'OPT_REDIR' => 'Show language, link to home route',
+                        'OPT_HIDE' => 'Hide language'
+                    ],
+                    'BUTTON_DISPLAY' => [
+                        'LABEL' => 'Button Display',
+                        'HELP' => 'Define how button of selected language will be displayed'
+                    ],
+                    'SELECT_DISPLAY' => [
+                        'LABEL' => 'Selector Display',
+                        'HELP' => 'Define how language selector will be displayed',
+                        'OPT_DEFAULT' => 'Flag + Language name',
+                        'OPT_FLAG' => 'Only the flag',
+                        'OPT_NAME' => 'Only the language name'
+                    ]
+                ]
             ],
             'PLUGIN_MARKDOWN_NOTICES' => [
                 'USE_BUILT_IN_CSS' => 'Use built-in CSS',
@@ -4888,6 +5070,30 @@ L\'**authentification à deux facteurs** est activée sur ce compte. Veuillez ut
                 'DESTINATION_NOT_SPECIFIED' => 'La destination n’est pas indiquée.',
                 'INVALID_MIME_TYPE' => 'Le type MIME %s pour le fichier %s n’est pas accepté.',
                 'INVALID_FILE_EXTENSION' => 'L’extension pour le fichier %s n’est pas acceptée.'
+            ],
+            'PLUGINS' => [
+                'LANGUAGE_SELECTOR' => [
+                    'PLUGIN_STATUS' => 'Statut du plugin',
+                    'BUILT_IN_CSS' => 'Utiliser CSS du plugin',
+                    'UNTRANSLATED_PAGES' => [
+                        'LABEL' => 'Comportement des pages non-traduites',
+                        'HELP' => 'Définit le comportement des liens lorsque la page n\'existe pas dans la langue courante, ou bien existe mais non publié',
+                        'OPT_NONE' => 'Affiche le langage (par défaut)',
+                        'OPT_REDIR' => 'Affiche le langage, lié à l\'URL de base',
+                        'OPT_HIDE' => 'Cache le langage'
+                    ],
+                    'BUTTON_DISPLAY' => [
+                        'LABEL' => 'Affichage du boutton',
+                        'HELP' => 'Définit l\'affichage du bouton de language sélectioné'
+                    ],
+                    'SELECT_DISPLAY' => [
+                        'LABEL' => 'Affichage du sélecteur',
+                        'HELP' => 'Définit l\'affichage du sélecteur de language',
+                        'OPT_DEFAULT' => 'Drapeau + Nom de la langue',
+                        'OPT_FLAG' => 'Seulement le drapeau',
+                        'OPT_NAME' => 'Seulement le nom de la langue'
+                    ]
+                ]
             ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---
@@ -20205,6 +20411,30 @@ La **2FA** è abilitata per questo account. Si prega di utilizzare la vostra app
                 'YES' => 'Si',
                 'NO' => 'No'
             ],
+            'PLUGINS' => [
+                'LANGUAGE_SELECTOR' => [
+                    'PLUGIN_STATUS' => 'Status del plugin',
+                    'BUILT_IN_CSS' => 'Utilizzare CSS del plugin',
+                    'UNTRANSLATED_PAGES' => [
+                        'LABEL' => 'Comportamento delle pagine non-tradotte',
+                        'HELP' => 'Determina il comportamento del link quando la pagina attuale non esiste in quella lingua, oppure esiste ma non è stata pubblicata.',
+                        'OPT_NONE' => 'Esibire lingua (default)',
+                        'OPT_REDIR' => 'Esibire lingua, linkare all\'URL di base',
+                        'OPT_HIDE' => 'Nascondere lingua'
+                    ],
+                    'BUTTON_DISPLAY' => [
+                        'LABEL' => 'Presentazione del tasto',
+                        'HELP' => 'Definisce la presentazione del tasto della lingua selezionata'
+                    ],
+                    'SELECT_DISPLAY' => [
+                        'LABEL' => 'Presentazione del selettore',
+                        'HELP' => 'Definisce la presentazione del selettore di lingua',
+                        'OPT_DEFAULT' => 'Bandiera + Nome della lingua',
+                        'OPT_FLAG' => 'Soltanto la bandiera',
+                        'OPT_NAME' => 'Soltanto il nome della lingua'
+                    ]
+                ]
+            ],
             'GRAV' => [
                 'FRONTMATTER_ERROR_PAGE' => '---Titolo: %1$s---# Errore: Frontmatter non valido: \'%2$s\' * *%3$s * * \' \'%4$s \' \'',
                 'INFLECTOR_UNCOUNTABLE' => [
@@ -30212,6 +30442,32 @@ title: %1$s
                     4 => '星期五',
                     5 => '星期六',
                     6 => '星期日'
+                ]
+            ]
+        ],
+        'pt-br' => [
+            'PLUGINS' => [
+                'LANGUAGE_SELECTOR' => [
+                    'PLUGIN_STATUS' => 'Status do plugin',
+                    'BUILT_IN_CSS' => 'Utilizar CSS do plugin',
+                    'UNTRANSLATED_PAGES' => [
+                        'LABEL' => 'Comportamento das páginas não-traduzidas',
+                        'HELP' => 'Determina o comportamento do link quando a página atual não existe naquela língua, ou existe mas não está publicada.',
+                        'OPT_NONE' => 'Mostrar língua (default)',
+                        'OPT_REDIR' => 'Mostrar língua, linkar para o URL de base',
+                        'OPT_HIDE' => 'Esconder língua'
+                    ],
+                    'BUTTON_DISPLAY' => [
+                        'LABEL' => 'Apresentação do botão',
+                        'HELP' => 'Define a apresentação do botão da língua selecionada'
+                    ],
+                    'SELECT_DISPLAY' => [
+                        'LABEL' => 'Apresentação do seletor',
+                        'HELP' => 'Define a apresentação do seletor de língua',
+                        'OPT_DEFAULT' => 'Bandeira + Nome da língua',
+                        'OPT_FLAG' => 'Apenas a bandeira',
+                        'OPT_NAME' => 'Apenas o nome da língua'
+                    ]
                 ]
             ]
         ],

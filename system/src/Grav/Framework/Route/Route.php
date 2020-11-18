@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Framework\Route
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2020 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -77,9 +77,36 @@ class Route
     /**
      * @return string
      */
+    public function getLanguage()
+    {
+        return $this->language;
+    }
+
+    /**
+     * @return string
+     */
     public function getLanguagePrefix()
     {
         return $this->language !== '' ? '/' . $this->language : '';
+    }
+
+    /**
+     * @param string|null $language
+     * @return string
+     */
+    public function getBase(string $language = null): string
+    {
+        $parts = [$this->root];
+
+        if (null === $language) {
+            $language = $this->language;
+        }
+
+        if ($language !== '') {
+            $parts[] = $language;
+        }
+
+        return implode('/', $parts);
     }
 
     /**
@@ -183,26 +210,40 @@ class Route
      * Allow the ability to set the route to something else
      *
      * @param string $route
-     * @return $this
+     * @return Route
      */
     public function withRoute($route)
     {
-        $this->route = $route;
+        $new = $this->copy();
+        $new->route = $route;
 
-        return $this;
+        return $new;
     }
 
     /**
      * Allow the ability to set the root to something else
      *
      * @param string $root
-     * @return $this
+     * @return Route
      */
     public function withRoot($root)
     {
-        $this->root = $root;
+        $new = $this->copy();
+        $new->root = $root;
 
-        return $this;
+        return $new;
+    }
+
+    /**
+     * @param string $language
+     * @return Route
+     */
+    public function withLanguage($language)
+    {
+        $new = $this->copy();
+        $new->language = $language ?? '';
+
+        return $new;
     }
 
     /**
@@ -211,9 +252,10 @@ class Route
      */
     public function withAddedPath($path)
     {
-        $this->route .= '/' . ltrim($path, '/');
+        $new = $this->copy();
+        $new->route .= '/' . ltrim($path, '/');
 
-        return $this;
+        return $new;
     }
 
     /**
@@ -222,9 +264,10 @@ class Route
      */
     public function withExtension($extension)
     {
-        $this->extension = $extension;
+        $new = $this->copy();
+        $new->extension = $extension;
 
-        return $this;
+        return $new;
     }
 
     /**
@@ -247,23 +290,34 @@ class Route
         return $this->withParam('queryParams', $param, $value);
     }
 
+    /**
+     * @return Route
+     */
     public function withoutParams()
     {
         return $this->withoutGravParams()->withoutQueryParams();
     }
 
+    /**
+     * @return Route
+     */
     public function withoutGravParams()
     {
-        $this->gravParams = [];
+        $new = $this->copy();
+        $new->gravParams = [];
 
-        return $this;
+        return $new;
     }
 
+    /**
+     * @return Route
+     */
     public function withoutQueryParams()
     {
-        $this->queryParams = [];
+        $new = $this->copy();
+        $new->queryParams = [];
 
-        return $this;
+        return $new;
     }
 
     /**
@@ -304,7 +358,7 @@ class Route
      * @param string $type
      * @param string $param
      * @param mixed $value
-     * @return static
+     * @return Route
      */
     protected function withParam($type, $param, $value)
     {
@@ -327,6 +381,9 @@ class Route
         return $new;
     }
 
+    /**
+     * @return Route
+     */
     protected function copy()
     {
         return clone $this;
@@ -364,6 +421,7 @@ class Route
 
     /**
      * @param array $parts
+     * @return void
      */
     protected function initParts(array $parts)
     {
@@ -373,9 +431,8 @@ class Route
             $this->language = $gravParts['language'];
             $this->route = $gravParts['route'];
             $this->extension = $gravParts['extension'] ?? '';
-            $this->gravParams = $gravParts['params'] ?: [];
-            $this->queryParams = $parts['query_params'] ?: [];
-
+            $this->gravParams = $gravParts['params'] ?? [];
+            $this->queryParams = $parts['query_params'] ?? [];
         } else {
             $this->root = RouteFactory::getRoot();
             $this->language = RouteFactory::getLanguage();

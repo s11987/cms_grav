@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Framework\ContentBlock
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2020 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -59,6 +59,7 @@ interface ContentBlockInterface extends \Serializable
 
     /**
      * @param array $serialized
+     * @return void
      */
     public function build(array $serialized);
 

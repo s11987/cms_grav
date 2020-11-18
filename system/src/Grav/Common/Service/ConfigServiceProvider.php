@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Common\Service
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2020 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -21,8 +21,16 @@ use Pimple\ServiceProviderInterface;
 use RocketTheme\Toolbox\File\YamlFile;
 use RocketTheme\Toolbox\ResourceLocator\UniformResourceLocator;
 
+/**
+ * Class ConfigServiceProvider
+ * @package Grav\Common\Service
+ */
 class ConfigServiceProvider implements ServiceProviderInterface
 {
+    /**
+     * @param Container $container
+     * @return void
+     */
     public function register(Container $container)
     {
         $container['setup'] = function ($c) {
@@ -56,6 +64,10 @@ class ConfigServiceProvider implements ServiceProviderInterface
         };
     }
 
+    /**
+     * @param Container $container
+     * @return mixed
+     */
     public static function blueprints(Container $container)
     {
         /** Setup $setup */
@@ -71,6 +83,8 @@ class ConfigServiceProvider implements ServiceProviderInterface
         $files += (new ConfigFileFinder)->locateFiles($paths);
         $paths = $locator->findResources('plugins://');
         $files += (new ConfigFileFinder)->setBase('plugins')->locateInFolders($paths, 'blueprints');
+        $paths = $locator->findResources('themes://');
+        $files += (new ConfigFileFinder)->setBase('themes')->locateInFolders($paths, 'blueprints');
 
         $blueprints = new CompiledBlueprints($cache, $files, GRAV_ROOT);
 
@@ -96,9 +110,11 @@ class ConfigServiceProvider implements ServiceProviderInterface
         $files += (new ConfigFileFinder)->locateFiles($paths);
         $paths = $locator->findResources('plugins://');
         $files += (new ConfigFileFinder)->setBase('plugins')->locateInFolders($paths);
+        $paths = $locator->findResources('themes://');
+        $files += (new ConfigFileFinder)->setBase('themes')->locateInFolders($paths);
 
         $compiled = new CompiledConfig($cache, $files, GRAV_ROOT);
-        $compiled->setBlueprints(function() use ($container) {
+        $compiled->setBlueprints(function () use ($container) {
             return $container['blueprints'];
         });
 
@@ -108,6 +124,10 @@ class ConfigServiceProvider implements ServiceProviderInterface
         return $config;
     }
 
+    /**
+     * @param Container $container
+     * @return mixed
+     */
     public static function languages(Container $container)
     {
         /** @var Setup $setup */
@@ -168,5 +188,4 @@ class ConfigServiceProvider implements ServiceProviderInterface
         }
         return $paths;
     }
-
 }

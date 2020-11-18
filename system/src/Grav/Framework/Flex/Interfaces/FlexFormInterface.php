@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Framework\Flex
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2020 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -20,14 +20,6 @@ use Grav\Framework\Route\Route;
  */
 interface FlexFormInterface extends \Serializable, FormInterface
 {
-    /**
-     * Get object associated to the form.
-     *
-     * @return FlexObjectInterface  Returns Flex Object associated to the form.
-     * @api
-     */
-    public function getObject();
-
     /**
      * Get media task route.
      *
@@ -47,7 +39,6 @@ interface FlexFormInterface extends \Serializable, FormInterface
      *
      * @param string $field     Field where the file is associated into.
      * @param string $filename  Filename for the file.
-     *
      * @return Route|null       Returns Route object or null if file uploads are not enabled.
      */
     public function getFileDeleteAjaxRoute($field, $filename);

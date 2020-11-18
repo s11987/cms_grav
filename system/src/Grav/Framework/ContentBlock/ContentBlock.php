@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Framework\ContentBlock
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2020 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -23,12 +23,19 @@ namespace Grav\Framework\ContentBlock;
  */
 class ContentBlock implements ContentBlockInterface
 {
+    /** @var int */
     protected $version = 1;
+    /** @var string */
     protected $id;
+    /** @var string */
     protected $tokenTemplate = '@@BLOCK-%s@@';
+    /** @var string */
     protected $content = '';
+    /** @var array */
     protected $blocks = [];
+    /** @var string */
     protected $checksum;
+    /** @var bool */
     protected $cached = true;
 
     /**
@@ -97,10 +104,7 @@ class ContentBlock implements ContentBlockInterface
     public function toArray()
     {
         $blocks = [];
-        /**
-         * @var string $id
-         * @var ContentBlockInterface $block
-         */
+        /** @var ContentBlockInterface $block */
         foreach ($this->blocks as $block) {
             $blocks[$block->getId()] = $block->toArray();
         }
@@ -160,6 +164,7 @@ class ContentBlock implements ContentBlockInterface
 
     /**
      * @param array $serialized
+     * @return void
      * @throws \RuntimeException
      */
     public function build(array $serialized)
@@ -259,6 +264,7 @@ class ContentBlock implements ContentBlockInterface
 
     /**
      * @param string $serialized
+     * @return void
      */
     public function unserialize($serialized)
     {
@@ -276,6 +282,7 @@ class ContentBlock implements ContentBlockInterface
 
     /**
      * @param array $serialized
+     * @return void
      * @throws \RuntimeException
      */
     protected function checkVersion(array $serialized)

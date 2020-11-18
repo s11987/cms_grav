@@ -3,14 +3,19 @@
 /**
  * @package    Grav\Common\Data
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2020 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
 namespace Grav\Common\Data;
 
+use Exception;
 use RocketTheme\Toolbox\File\FileInterface;
 
+/**
+ * Interface DataInterface
+ * @package Grav\Common\Data
+ */
 interface DataInterface
 {
     /**
@@ -41,7 +46,7 @@ interface DataInterface
     /**
      * Validate by blueprints.
      *
-     * @throws \Exception
+     * @throws Exception
      */
     public function validate();
 
@@ -63,7 +68,7 @@ interface DataInterface
     /**
      * Set or get the data storage.
      *
-     * @param FileInterface $storage Optionally enter a new storage.
+     * @param FileInterface|null $storage Optionally enter a new storage.
      * @return FileInterface
      */
     public function file(FileInterface $storage = null);

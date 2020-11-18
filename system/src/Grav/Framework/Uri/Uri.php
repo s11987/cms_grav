@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Framework\Uri
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2020 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -27,6 +27,7 @@ class Uri extends AbstractUri
      * You can use `UriFactory` functions to create new `Uri` objects.
      *
      * @param array $parts
+     * @return void
      * @throws \InvalidArgumentException
      */
     public function __construct(array $parts = [])

@@ -5,7 +5,7 @@ declare(strict_types=1);
 /**
  * @package    Grav\Framework\Flex
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2020 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -15,6 +15,7 @@ use Grav\Framework\Flex\Flex;
 use Grav\Framework\Object\Interfaces\NestedObjectInterface;
 use Grav\Framework\Object\Interfaces\ObjectCollectionInterface;
 use Grav\Framework\Flex\FlexDirectory;
+use InvalidArgumentException;
 
 /**
  * Defines a collection of Flex Objects.
@@ -31,8 +32,7 @@ interface FlexCollectionInterface extends FlexCommonInterface, ObjectCollectionI
      *
      * @param FlexObjectInterface[] $entries    Associated array of Flex Objects to be included in the collection.
      * @param FlexDirectory         $directory  Flex Directory where all the objects belong into.
-     * @param string                $keyField   Key field used to index the collection.
-     *
+     * @param string|null               $keyField   Key field used to index the collection.
      * @return static                           Returns a new Flex Collection.
      */
     public static function createFromArray(array $entries, FlexDirectory $directory, string $keyField = null);
@@ -43,9 +43,8 @@ interface FlexCollectionInterface extends FlexCommonInterface, ObjectCollectionI
      * @used-by FlexDirectory::createCollection()   Official method to create Flex Collection.
      *
      * @param FlexObjectInterface[] $entries    Associated array of Flex Objects to be included in the collection.
-     * @param FlexDirectory         $directory  Flex Directory where all the objects belong into.
-     *
-     * @throws \InvalidArgumentException
+     * @param FlexDirectory|null        $directory  Flex Directory where all the objects belong into.
+     * @throws InvalidArgumentException
      */
     public function __construct(array $entries = [], FlexDirectory $directory = null);
 
@@ -55,7 +54,6 @@ interface FlexCollectionInterface extends FlexCommonInterface, ObjectCollectionI
      * @param string                $search     Search string.
      * @param string|string[]|null  $properties Properties to search for, defaults to configured properties.
      * @param array|null            $options    Search options, defaults to configured options.
-     *
      * @return FlexCollectionInterface          Returns a Flex Collection with only matching objects.
      * @api
      */
@@ -109,7 +107,6 @@ interface FlexCollectionInterface extends FlexCommonInterface, ObjectCollectionI
      * Return new collection with a different key.
      *
      * @param string|null $keyField Switch key field of the collection.
-     *
      * @return FlexCollectionInterface  Returns a new Flex Collection with new key field.
      * @api
      */
@@ -121,4 +118,19 @@ interface FlexCollectionInterface extends FlexCommonInterface, ObjectCollectionI
      * @return FlexIndexInterface   Returns a Flex Index from the current collection.
      */
     public function getIndex();
+
+    /**
+     * Load all the objects into memory,
+     *
+     * @return FlexCollectionInterface
+     */
+    public function getCollection();
+
+    /**
+     * Get metadata associated to the object
+     *
+     * @param string $key Key.
+     * @return array
+     */
+    public function getMetaData(string $key): array;
 }

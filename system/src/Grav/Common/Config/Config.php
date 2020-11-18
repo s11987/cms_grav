@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Common\Config
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2020 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -15,8 +15,13 @@ use Grav\Common\Data\Data;
 use Grav\Common\Service\ConfigServiceProvider;
 use Grav\Common\Utils;
 
+/**
+ * Class Config
+ * @package Grav\Common\Config
+ */
 class Config extends Data
 {
+    /** @var string */
     public $environment;
 
     /** @var string */
@@ -28,6 +33,9 @@ class Config extends Data
     /** @var bool */
     protected $modified = false;
 
+    /**
+     * @return string
+     */
     public function key()
     {
         if (null === $this->key) {
@@ -37,6 +45,10 @@ class Config extends Data
         return $this->key;
     }
 
+    /**
+     * @param string|null $checksum
+     * @return string|null
+     */
     public function checksum($checksum = null)
     {
         if ($checksum !== null) {
@@ -46,6 +58,10 @@ class Config extends Data
         return $this->checksum;
     }
 
+    /**
+     * @param bool|null $modified
+     * @return bool
+     */
     public function modified($modified = null)
     {
         if ($modified !== null) {
@@ -55,6 +71,10 @@ class Config extends Data
         return $this->modified;
     }
 
+    /**
+     * @param int|null $timestamp
+     * @return int
+     */
     public function timestamp($timestamp = null)
     {
         if ($timestamp !== null) {
@@ -64,6 +84,9 @@ class Config extends Data
         return $this->timestamp;
     }
 
+    /**
+     * @return $this
+     */
     public function reload()
     {
         $grav = Grav::instance();
@@ -86,6 +109,9 @@ class Config extends Data
         return $this;
     }
 
+    /**
+     * @return void
+     */
     public function debug()
     {
         /** @var Debugger $debugger */
@@ -97,6 +123,9 @@ class Config extends Data
         }
     }
 
+    /**
+     * @return void
+     */
     public function init()
     {
         $setup = Grav::instance()['setup']->toArray();

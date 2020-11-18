@@ -3,14 +3,14 @@
 /**
  * @package    Grav\Common\Twig
  *
- * @copyright  Copyright (C) 2015 - 2019 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (C) 2015 - 2020 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
 namespace Grav\Common\Twig\TokenParser;
 
 use Grav\Common\Twig\Node\TwigNodeScript;
-use Twig\Node\Node;
+use Twig\Error\SyntaxError;
 use Twig\Token;
 use Twig\TokenParser\AbstractTokenParser;
 
@@ -29,16 +29,16 @@ class TwigTokenParserScript extends AbstractTokenParser
     /**
      * Parses a token and returns a node.
      *
-     * @param Token $token A Twig_Token instance
-     *
-     * @return Node A Twig_Node instance
+     * @param Token $token
+     * @return TwigNodeScript
+     * @throws SyntaxError
      */
     public function parse(Token $token)
     {
         $lineno = $token->getLine();
         $stream = $this->parser->getStream();
 
-        list($file, $group, $priority, $attributes) = $this->parseArguments($token);
+        [$file, $group, $priority, $attributes] = $this->parseArguments($token);
 
         $content = null;
         if ($file === null) {
