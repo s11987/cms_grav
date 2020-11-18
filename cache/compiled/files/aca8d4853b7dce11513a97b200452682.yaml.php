@@ -2,9 +2,9 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/data/feed/66d4aaa5ea177ac32c69946de3731ec0.yaml',
-    'modified' => 1605691794,
+    'modified' => 1605718314,
     'data' => [
-        'last_checked' => 1605691794,
+        'last_checked' => 1605718314,
         'data' => [
             0 => [
                 'title' => 'Raising PHP Requirements... Again',

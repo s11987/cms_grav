@@ -5,19 +5,11 @@ title: Testowy
   <head>
     <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.25/default/snipcart.css" />
     <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.25/default/snipcart.css" />
-<script async src="https://cdn.snipcart.com/themes/v3.0.25/default/snipcart.js"></script>
+    <script async src="https://cdn.snipcart.com/themes/v3.0.25/default/snipcart.js"></script>
 
   </head>
   <body>
-    <button class="snipcart-add-item"
-  data-item-id="starry-night"
-  data-item-price="79.99"
-  data-item-url="/paintings/starry-night"
-  data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
-  data-item-image="/assets/images/starry-night.jpg"
-  data-item-name="The Starry Night">
-  Dodaj do koszyka
-</button>
+
 
     <script async src="https://cdn.snipcart.com/themes/v3.0.25/default/snipcart.js"></script>
     <div id="snipcart" data-api-key="NmUwYWNjMmEtYzEyYi00NTU0LWI2ZTAtOTk0YzYxOWM0N2IxNjM3NDEyOTEzNzE0NDk5ODE1" hidden></div>

@@ -1,0 +1,15 @@
+1605718909
+C:39:"Grav\Common\Flex\Types\Pages\PageObject":988:{a:4:{s:4:"type";s:5:"pages";s:3:"key";s:7:"testowy";s:8:"elements";a:3:{s:4:"root";b:0;s:6:"header";a:1:{s:5:"title";s:7:"Testowy";}s:8:"markdown";s:564:"<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.25/default/snipcart.css" />
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.25/default/snipcart.css" />
+    <script async src="https://cdn.snipcart.com/themes/v3.0.25/default/snipcart.js"></script>
+
+  </head>
+  <body>
+
+
+    <script async src="https://cdn.snipcart.com/themes/v3.0.25/default/snipcart.js"></script>
+    <div id="snipcart" data-api-key="NmUwYWNjMmEtYzEyYi00NTU0LWI2ZTAtOTk0YzYxOWM0N2IxNjM3NDEyOTEzNzE0NDk5ODE1" hidden></div>
+  </body>
+</html>";}s:7:"storage";a:6:{s:3:"key";s:7:"testowy";s:11:"storage_key";s:10:"03.testowy";s:8:"template";s:8:"snipcart";s:17:"storage_timestamp";i:1605718186;s:8:"markdown";a:1:{s:0:"";a:1:{s:8:"snipcart";i:1605718186;}}s:8:"checksum";s:32:"332aed8e356698220d140d9ad29d7e8a";}}}
