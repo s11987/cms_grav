@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1606327070,
-    'checksum' => '2edeb7814d93da485c67df96d7c4cc52',
+    'timestamp' => 1606328175,
+    'checksum' => '8e4fe7f66d3588a88973ee261451f519',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -15,7 +15,7 @@ return [
             ],
             'plugins/snipcart' => [
                 'file' => 'user/config/plugins/snipcart.yaml',
-                'modified' => 1606325907
+                'modified' => 1606328175
             ],
             'scheduler' => [
                 'file' => 'user/config/scheduler.yaml',
@@ -396,7 +396,7 @@ return [
             'snipcart' => [
                 'enabled' => true,
                 'built_in_css' => true,
-                'api_key' => 'ST_NzQ0ZjJkNzUtMWUzOS00YTAxLTg3MDYtZDkxY2Y1ODMzOTFiNjM3NDE5MjI1OTM3MjcyODUx'
+                'api_key' => 'NmUwYWNjMmEtYzEyYi00NTU0LWI2ZTAtOTk0YzYxOWM0N2IxNjM3NDEyOTEzNzE0NDk5ODE1'
             ]
         ],
         'backups' => [

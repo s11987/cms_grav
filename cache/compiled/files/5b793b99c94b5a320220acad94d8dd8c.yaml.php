@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/config/site.yaml',
-    'modified' => 1606322662,
+    'modified' => 1606327070,
     'data' => [
-        'title' => 'Cms',
-        'default_lang' => 'en',
+        'title' => 'Świat kartek',
+        'default_lang' => 'pl',
         'author' => [
             'name' => 'Joe Bloggs',
             'email' => 'joe@example.com'
