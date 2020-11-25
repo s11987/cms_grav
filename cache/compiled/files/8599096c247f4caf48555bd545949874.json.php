@@ -2,11 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/data/flex/indexes/pages.json',
-    'modified' => 1606327320,
+    'modified' => 1606332574,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1606327320,
-        'count' => 14,
+        'timestamp' => 1606332574,
+        'count' => 15,
         'index' => [
             '' => [
                 'key' => '',
@@ -24,161 +24,176 @@ return [
                 'key' => 'shop',
                 'storage_key' => '01.shop',
                 'template' => 'snipcart',
-                'storage_timestamp' => 1606327319,
+                'storage_timestamp' => 1606330915,
                 'markdown' => [
                     '' => [
                         'snipcart' => 1606327005
                     ]
                 ],
                 'children' => [
-                    '01.t-shirts' => 1606327319,
-                    '02.geek-toys' => 1606326946
+                    '01.slubne' => 1606330639,
+                    '02.urodzinowe' => 1606330915,
+                    '03.uniwersalne' => 1606330580
                 ],
-                'checksum' => '35d31f4e7725e3fcc75cde20e692bae1'
+                'checksum' => '2769f98c97b193a40892dc4e92d63032'
             ],
-            '01.shop/01.t-shirts' => [
-                'key' => 'shop/t-shirts',
-                'storage_key' => '01.shop/01.t-shirts',
+            '01.shop/01.slubne' => [
+                'key' => 'shop/slubne',
+                'storage_key' => '01.shop/01.slubne',
                 'template' => 'snipcart_category',
-                'storage_timestamp' => 1606327319,
+                'storage_timestamp' => 1606331547,
                 'markdown' => [
                     '' => [
-                        'snipcart_category' => 1606326720
+                        'snipcart_category' => 1606330639
                     ]
                 ],
                 'children' => [
-                    'ts385-rocket-surgeon' => 1606322662,
-                    'ts393-it-crowd' => 1606322662,
-                    'ts872-no-place-like' => 1606322662,
-                    'ts982-reynholm-industries' => 1606322662
+                    'kartka-sluba-1' => 1606331547,
+                    'kartka-sluba-2' => 1606331045,
+                    'kartka-sluba-3' => 1606331053
                 ],
-                'checksum' => 'db5e94d744d755a6f967e427ee6b53d5'
+                'checksum' => 'ca3fd4b333e7f8d5dd9e5c9909fcbdc6'
             ],
-            '01.shop/01.t-shirts/ts385-rocket-surgeon' => [
-                'key' => 'shop/t-shirts/ts385-rocket-surgeon',
-                'storage_key' => '01.shop/01.t-shirts/ts385-rocket-surgeon',
+            '01.shop/01.slubne/kartka-sluba-1' => [
+                'key' => 'shop/slubne/kartka-sluba-1',
+                'storage_key' => '01.shop/01.slubne/kartka-sluba-1',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1606322662,
+                'storage_timestamp' => 1606331547,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1606322662
+                        'snipcart_detail' => 1606329476
                     ]
                 ],
-                'checksum' => '01e27ecb8ee01fcf616056a5dd3f097f'
+                'checksum' => '151dc66c1432a882a9fb09c22fad70f9'
             ],
-            '01.shop/01.t-shirts/ts393-it-crowd' => [
-                'key' => 'shop/t-shirts/ts393-it-crowd',
-                'storage_key' => '01.shop/01.t-shirts/ts393-it-crowd',
+            '01.shop/01.slubne/kartka-sluba-2' => [
+                'key' => 'shop/slubne/kartka-sluba-2',
+                'storage_key' => '01.shop/01.slubne/kartka-sluba-2',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1606322662,
+                'storage_timestamp' => 1606331045,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1606322662
+                        'snipcart_detail' => 1606329521
                     ]
                 ],
-                'checksum' => 'b75a9394b1190af36a4cd3f5f3d47ffe'
+                'checksum' => '21b33281b945bd5f2738ac1a01ee7ee7'
             ],
-            '01.shop/01.t-shirts/ts872-no-place-like' => [
-                'key' => 'shop/t-shirts/ts872-no-place-like',
-                'storage_key' => '01.shop/01.t-shirts/ts872-no-place-like',
+            '01.shop/01.slubne/kartka-sluba-3' => [
+                'key' => 'shop/slubne/kartka-sluba-3',
+                'storage_key' => '01.shop/01.slubne/kartka-sluba-3',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1606322662,
+                'storage_timestamp' => 1606331053,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1606322662
+                        'snipcart_detail' => 1606329546
                     ]
                 ],
-                'checksum' => '7d51faa03a9469638bcd2c6913a3bcb6'
+                'checksum' => '6b179100965385efa8f63c7ef2dbbf18'
             ],
-            '01.shop/01.t-shirts/ts982-reynholm-industries' => [
-                'key' => 'shop/t-shirts/ts982-reynholm-industries',
-                'storage_key' => '01.shop/01.t-shirts/ts982-reynholm-industries',
-                'template' => 'snipcart_detail',
-                'storage_timestamp' => 1606322662,
-                'markdown' => [
-                    '' => [
-                        'snipcart_detail' => 1606322662
-                    ]
-                ],
-                'checksum' => '8cae0d8d8165f368ee8e627e55c4ec9d'
-            ],
-            '01.shop/02.geek-toys' => [
-                'key' => 'shop/geek-toys',
-                'storage_key' => '01.shop/02.geek-toys',
+            '01.shop/02.urodzinowe' => [
+                'key' => 'shop/urodzinowe',
+                'storage_key' => '01.shop/02.urodzinowe',
                 'template' => 'snipcart_category',
-                'storage_timestamp' => 1606326946,
+                'storage_timestamp' => 1606331099,
                 'markdown' => [
                     '' => [
-                        'snipcart_category' => 1606326946
+                        'snipcart_category' => 1606330532
                     ]
                 ],
                 'children' => [
-                    'ax389-creepa-backpack' => 1606322662,
-                    'ia449-brick-mug' => 1606322662,
-                    'je292-rd2d-timer' => 1606322662,
-                    'pt221-stuffy-turret' => 1606322662
+                    'kartka-urodzinowa-1' => 1606331071,
+                    'kartka-urodzinowa-2' => 1606331083,
+                    'kartka-urodzinowa-3' => 1606331091,
+                    'kartka-urodzinowa-4' => 1606331099
                 ],
-                'checksum' => '9c93408450d522ab4d27893893324d3e'
+                'checksum' => 'ce6c9ff64bb3f199ff1bacd849b22c86'
             ],
-            '01.shop/02.geek-toys/ax389-creepa-backpack' => [
-                'key' => 'shop/geek-toys/ax389-creepa-backpack',
-                'storage_key' => '01.shop/02.geek-toys/ax389-creepa-backpack',
+            '01.shop/02.urodzinowe/kartka-urodzinowa-1' => [
+                'key' => 'shop/urodzinowe/kartka-urodzinowa-1',
+                'storage_key' => '01.shop/02.urodzinowe/kartka-urodzinowa-1',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1606322662,
+                'storage_timestamp' => 1606331318,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1606322662
+                        'snipcart_detail' => 1606330738
                     ]
                 ],
-                'checksum' => '4c33631dfa09db8017b8f48e43363998'
+                'checksum' => '0c71bb526711ba0de6561a79ee9bb088'
             ],
-            '01.shop/02.geek-toys/ia449-brick-mug' => [
-                'key' => 'shop/geek-toys/ia449-brick-mug',
-                'storage_key' => '01.shop/02.geek-toys/ia449-brick-mug',
+            '01.shop/02.urodzinowe/kartka-urodzinowa-2' => [
+                'key' => 'shop/urodzinowe/kartka-urodzinowa-2',
+                'storage_key' => '01.shop/02.urodzinowe/kartka-urodzinowa-2',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1606322662,
+                'storage_timestamp' => 1606331083,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1606322662
+                        'snipcart_detail' => 1606330865
                     ]
                 ],
-                'checksum' => '7f028081abf7d6e5eabe02b02587746b'
+                'checksum' => '39e61b2f936100839331f5e365a89c06'
             ],
-            '01.shop/02.geek-toys/je292-rd2d-timer' => [
-                'key' => 'shop/geek-toys/je292-rd2d-timer',
-                'storage_key' => '01.shop/02.geek-toys/je292-rd2d-timer',
+            '01.shop/02.urodzinowe/kartka-urodzinowa-3' => [
+                'key' => 'shop/urodzinowe/kartka-urodzinowa-3',
+                'storage_key' => '01.shop/02.urodzinowe/kartka-urodzinowa-3',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1606322662,
+                'storage_timestamp' => 1606331091,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1606322662
+                        'snipcart_detail' => 1606330777
                     ]
                 ],
-                'checksum' => '61a3ec4a8d6d37a95ed9b55f327a23fb'
+                'checksum' => '1a4b6cf4a10b3bf3e237370a7ff55756'
             ],
-            '01.shop/02.geek-toys/pt221-stuffy-turret' => [
-                'key' => 'shop/geek-toys/pt221-stuffy-turret',
-                'storage_key' => '01.shop/02.geek-toys/pt221-stuffy-turret',
+            '01.shop/02.urodzinowe/kartka-urodzinowa-4' => [
+                'key' => 'shop/urodzinowe/kartka-urodzinowa-4',
+                'storage_key' => '01.shop/02.urodzinowe/kartka-urodzinowa-4',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1606322662,
+                'storage_timestamp' => 1606331099,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1606322662
+                        'snipcart_detail' => 1606330896
                     ]
                 ],
-                'checksum' => '79e786a8303ca8f632119d59a59e9273'
+                'checksum' => '259f018ccef5b880d2a3e50ac942e8d4'
+            ],
+            '01.shop/03.uniwersalne' => [
+                'key' => 'shop/uniwersalne',
+                'storage_key' => '01.shop/03.uniwersalne',
+                'template' => 'snipcart_category',
+                'storage_timestamp' => 1606331714,
+                'markdown' => [
+                    '' => [
+                        'snipcart_category' => 1606330966
+                    ]
+                ],
+                'children' => [
+                    'kartka-uniwersalna-1' => 1606331714
+                ],
+                'checksum' => 'c90f189928eb5852e589afb044c4937f'
+            ],
+            '01.shop/03.uniwersalne/kartka-uniwersalna-1' => [
+                'key' => 'shop/uniwersalne/kartka-uniwersalna-1',
+                'storage_key' => '01.shop/03.uniwersalne/kartka-uniwersalna-1',
+                'template' => 'snipcart_detail',
+                'storage_timestamp' => 1606331976,
+                'markdown' => [
+                    '' => [
+                        'snipcart_detail' => 1606331976
+                    ]
+                ],
+                'checksum' => 'a5bfe426191eb031928f325218e3992e'
             ],
             '02.o-nas' => [
                 'key' => 'o-nas',
                 'storage_key' => '02.o-nas',
                 'template' => 'snipcart',
-                'storage_timestamp' => 1606326825,
+                'storage_timestamp' => 1606332044,
                 'markdown' => [
                     '' => [
-                        'snipcart' => 1606326825
+                        'snipcart' => 1606332044
                     ]
                 ],
-                'checksum' => '0be1247899f0e9ea3966cd5e56854fa3'
+                'checksum' => '074455fe269d907f0569d49d883ca14c'
             ],
             'slider' => [
                 'key' => 'slider',

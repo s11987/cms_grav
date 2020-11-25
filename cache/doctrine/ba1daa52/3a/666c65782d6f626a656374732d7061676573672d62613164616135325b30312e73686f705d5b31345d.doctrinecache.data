@@ -1,6 +1,0 @@
-1606327352
-C:39:"Grav\Common\Flex\Types\Pages\PageObject":862:{a:4:{s:4:"type";s:5:"pages";s:3:"key";s:4:"shop";s:8:"elements";a:3:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:5:"Sklep";s:12:"body_classes";s:9:"fullwidth";s:7:"content";a:2:{s:5:"items";s:14:"@self.children";s:5:"order";a:2:{s:2:"by";s:5:"title";s:3:"dir";s:3:"asc";}}}s:8:"markdown";s:233:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.
-";}s:7:"storage";a:7:{s:3:"key";s:4:"shop";s:11:"storage_key";s:7:"01.shop";s:8:"template";s:8:"snipcart";s:17:"storage_timestamp";i:1606325186;s:8:"markdown";a:1:{s:0:"";a:1:{s:8:"snipcart";i:1606325186;}}s:8:"children";a:2:{s:11:"01.t-shirts";b:0;s:12:"02.geek-toys";b:0;}s:8:"checksum";s:32:"48c4582a599535453dfde970359689a1";}}}
