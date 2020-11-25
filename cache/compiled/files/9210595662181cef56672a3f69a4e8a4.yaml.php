@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/plugins/snipcart/blueprints.yaml',
-    'modified' => 1605693765,
+    'modified' => 1606322663,
     'data' => [
         'name' => 'Snipcart',
         'version' => '1.7.1',

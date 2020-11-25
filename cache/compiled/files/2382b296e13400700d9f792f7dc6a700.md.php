@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/pages/slider/lightslider.md',
-    'modified' => 1441054790,
+    'modified' => 1606322662,
     'data' => [
         'header' => [
             'title' => 'Slider Content',

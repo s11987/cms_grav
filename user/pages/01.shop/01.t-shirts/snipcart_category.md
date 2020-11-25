@@ -1,12 +1,12 @@
 ---
-title: T-Shirts
+title: Ślubowe
 category: T-Shirts
 content:
-    items: @self.children
+    items: '@self.children'
     order:
         by: default
         dir: asc
+media_order: slub0.jpg
 ---
 
-# T-Shirts
-## We have both **cool** and **funny** t-shirts
+# Kartki ślubowe

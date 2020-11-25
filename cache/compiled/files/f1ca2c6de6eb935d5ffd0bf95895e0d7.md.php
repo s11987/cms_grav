@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/pages/01.shop/02.geek-toys/ia449-brick-mug/snipcart_detail.md',
-    'modified' => 1441054790,
+    'modified' => 1606322662,
     'data' => [
         'header' => [
             'title' => 'Brick Mug',

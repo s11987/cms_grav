@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/plugins/flex-objects/blueprints/flex-objects/pages.yaml',
-    'modified' => 1605692381,
+    'modified' => 1606322663,
     'data' => [
         'title' => 'Pages (Admin)',
         'description' => 'Manage your Grav Pages in the new Flex Pages admin. This allows you to use Flex Pages only in Admin plugin, while still using the old pages in the frontend.',

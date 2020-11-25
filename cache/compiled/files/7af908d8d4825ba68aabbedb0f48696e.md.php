@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/pages/01.shop/01.t-shirts/snipcart_category.md',
-    'modified' => 1441054790,
+    'modified' => 1606326720,
     'data' => [
         'header' => [
-            'title' => 'T-Shirts',
+            'title' => 'Ślubowe',
             'category' => 'T-Shirts',
             'content' => [
                 'items' => '@self.children',
@@ -13,17 +13,18 @@ return [
                     'by' => 'default',
                     'dir' => 'asc'
                 ]
-            ]
+            ],
+            'media_order' => 'slub0.jpg'
         ],
-        'frontmatter' => 'title: T-Shirts
+        'frontmatter' => 'title: Ślubowe
 category: T-Shirts
 content:
-    items: @self.children
+    items: \'@self.children\'
     order:
         by: default
-        dir: asc',
-        'markdown' => '# T-Shirts
-## We have both **cool** and **funny** t-shirts
+        dir: asc
+media_order: slub0.jpg',
+        'markdown' => '# Kartki ślubowe
 '
     ]
 ];

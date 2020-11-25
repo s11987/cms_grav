@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'plugins://snipcart/snipcart.yaml',
-    'modified' => 1605694687,
+    'modified' => 1606322663,
     'data' => [
         'enabled' => true,
         'built_in_css' => true,

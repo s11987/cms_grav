@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/plugins/language-selector/languages.yaml',
-    'modified' => 1605692222,
+    'modified' => 1606322663,
     'data' => [
         'en' => [
             'PLUGINS' => [

@@ -1,0 +1,10 @@
+1606327279
+C:39:"Grav\Common\Flex\Types\Pages\PageObject":995:{a:4:{s:4:"type";s:5:"pages";s:3:"key";s:6:"slider";s:8:"elements";a:3:{s:4:"root";b:0;s:6:"header";a:4:{s:5:"title";s:14:"Slider Content";s:8:"routable";b:0;s:7:"visible";b:0;s:11:"lightslider";a:10:{s:11:"slider_type";s:4:"text";s:26:"type_text_vertical_padding";s:5:"70px;";s:28:"type_text_horizontal_padding";s:5:"50px;";s:20:"type_text_brightness";i:-100;s:4:"mode";s:5:"slide";s:5:"pager";s:4:"true";s:8:"controls";s:4:"true";s:8:"keyPress";s:4:"true";s:5:"pause";i:2000;s:5:"speed";i:1000;}}s:8:"markdown";s:204:"# Shop Geek Stuff
+## We have all your **geek** needs covered..
+___
+# SnipCart Powered
+## **Grav** plus **SnipCart** equals easy shopping
+___
+# A Huge Variety
+## A great selection of **bits** and **bobs**
+";}s:7:"storage";a:6:{s:3:"key";s:6:"slider";s:11:"storage_key";s:6:"slider";s:8:"template";s:11:"lightslider";s:17:"storage_timestamp";i:1606322662;s:8:"markdown";a:1:{s:0:"";a:1:{s:11:"lightslider";i:1606322662;}}s:8:"checksum";s:32:"8f599715c3e6ed54efead1d113d14b36";}}}

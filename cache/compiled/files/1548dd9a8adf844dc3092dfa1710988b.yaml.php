@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/plugins/language-selector/blueprints.yaml',
-    'modified' => 1605692221,
+    'modified' => 1606322663,
     'data' => [
         'name' => 'Language Selector',
         'version' => '1.1.0',

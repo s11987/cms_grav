@@ -1,119 +1,119 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1605725630,
-    'checksum' => 'd0bc1d64737797576b1f2c0b12d16c39',
+    'timestamp' => 1606327070,
+    'checksum' => '2edeb7814d93da485c67df96d7c4cc52',
     'files' => [
         'user/config' => [
             'backups' => [
                 'file' => 'user/config/backups.yaml',
-                'modified' => 1605691544
+                'modified' => 1606322662
             ],
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1605691544
+                'modified' => 1606322662
+            ],
+            'plugins/snipcart' => [
+                'file' => 'user/config/plugins/snipcart.yaml',
+                'modified' => 1606325907
             ],
             'scheduler' => [
                 'file' => 'user/config/scheduler.yaml',
-                'modified' => 1605691544
+                'modified' => 1606322662
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1605691541
+                'modified' => 1606322662
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1605694474
+                'modified' => 1606327070
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
-                'modified' => 1605691544
+                'modified' => 1606322662
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1605725628
+                'modified' => 1606322662
             ]
         ],
         'system/config' => [
             'backups' => [
                 'file' => 'system/config/backups.yaml',
-                'modified' => 1605692306
+                'modified' => 1606322662
             ],
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1605692306
+                'modified' => 1606322662
             ],
             'permissions' => [
                 'file' => 'system/config/permissions.yaml',
-                'modified' => 1605692306
+                'modified' => 1606322662
             ],
             'security' => [
                 'file' => 'system/config/security.yaml',
-                'modified' => 1605692306
+                'modified' => 1606322662
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1605692306
+                'modified' => 1606322662
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1605692306
+                'modified' => 1606322662
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1605692306
+                'modified' => 1606322662
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1605692388
+                'modified' => 1606322662
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1605692131
+                'modified' => 1606322663
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1605692129
+                'modified' => 1606322663
             ],
             'plugins/flex-objects' => [
                 'file' => 'user/plugins/flex-objects/flex-objects.yaml',
-                'modified' => 1605692381
+                'modified' => 1606322663
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1605691503
+                'modified' => 1606322663
             ],
             'plugins/language-selector' => [
                 'file' => 'user/plugins/language-selector/language-selector.yaml',
-                'modified' => 1605692221
+                'modified' => 1606322663
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1605691503
+                'modified' => 1606322663
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
-                'modified' => 1605691503
+                'modified' => 1606322663
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1605691503
+                'modified' => 1606322663
             ],
             'plugins/snipcart' => [
                 'file' => 'user/plugins/snipcart/snipcart.yaml',
-                'modified' => 1605694687
+                'modified' => 1606322663
             ]
         ],
         'user/themes' => [
             'themes/antimatter' => [
                 'file' => 'user/themes/antimatter/antimatter.yaml',
-                'modified' => 1553214328
-            ],
-            'themes/quark' => [
-                'file' => 'user/themes/quark/quark.yaml',
-                'modified' => 1605691503
+                'modified' => 1606322663
             ]
         ]
     ],
@@ -123,21 +123,6 @@ return [
                 'enabled' => true,
                 'dropdown' => [
                     'enabled' => false
-                ]
-            ],
-            'quark' => [
-                'enabled' => true,
-                'production-mode' => true,
-                'grid-size' => 'grid-lg',
-                'header-fixed' => true,
-                'header-animated' => true,
-                'header-dark' => false,
-                'header-transparent' => false,
-                'sticky-footer' => true,
-                'blog-page' => '/blog',
-                'spectre' => [
-                    'exp' => false,
-                    'icons' => false
                 ]
             ]
         ],
@@ -411,7 +396,7 @@ return [
             'snipcart' => [
                 'enabled' => true,
                 'built_in_css' => true,
-                'api_key' => 'NmUwYWNjMmEtYzEyYi00NTU0LWI2ZTAtOTk0YzYxOWM0N2IxNjM3NDEyOTEzNzE0NDk5ODE1'
+                'api_key' => 'ST_NzQ0ZjJkNzUtMWUzOS00YTAxLTg3MDYtZDkxY2Y1ODMzOTFiNjM3NDE5MjI1OTM3MjcyODUx'
             ]
         ],
         'backups' => [
@@ -833,8 +818,8 @@ node_modules'
             'salt' => 'peixj5QIkMJ4C8'
         ],
         'site' => [
-            'title' => 'Cms',
-            'default_lang' => 'en',
+            'title' => 'Świat kartek',
+            'default_lang' => 'pl',
             'author' => [
                 'name' => 'Joe Bloggs',
                 'email' => 'joe@example.com'

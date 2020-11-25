@@ -2,10 +2,15 @@ state: enabled
 email: admin@o2.pl
 fullname: Admin
 title: Admin
+hashed_password: $2y$10$3zgWEk3R1cRpls5cHm2BzOf9112T3.7HkcMe3pVYcXX7mexsUUomG
+language: en
+content_editor: default
+twofa_enabled: false
+twofa_secret: HJRSASAPS35XORTFJWXL52WMPRWAUSTE
+avatar: {  }
 access:
+  site:
+    login: true
   admin:
     login: true
     super: true
-  site:
-    login: true
-hashed_password: $2y$10$RoBLUQC56istXu/PDltisOhrjo12GqlfdwYVAphwqWd.jImV.NgyG

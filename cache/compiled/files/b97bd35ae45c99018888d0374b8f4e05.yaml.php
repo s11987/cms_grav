@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/system/config/security.yaml',
-    'modified' => 1605692306,
+    'modified' => 1606322662,
     'data' => [
         'xss_whitelist' => [
             0 => 'admin.super'

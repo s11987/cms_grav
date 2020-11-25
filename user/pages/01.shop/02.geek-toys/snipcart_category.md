@@ -1,12 +1,12 @@
 ---
-title: Geek Toys
-category: Geek Toys
+title: Urodzinowe
+category: 'Geek Toys'
 content:
-    items: @self.children
+    items: '@self.children'
     order:
         by: title
         dir: asc
+media_order: happy_bday.jpg
 ---
 
-# Geek Toys
-## Anime, Gaming, Movies, Comics, we have **all your toys**
+# Urodzinowe

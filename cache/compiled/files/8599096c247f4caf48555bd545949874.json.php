@@ -2,182 +2,195 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/data/flex/indexes/pages.json',
-    'modified' => 1605725539,
+    'modified' => 1606327320,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1605725539,
-        'count' => 13,
+        'timestamp' => 1606327320,
+        'count' => 14,
         'index' => [
             '' => [
                 'key' => '',
                 'storage_key' => '',
                 'template' => NULL,
-                'storage_timestamp' => 1441054790,
+                'storage_timestamp' => 1606326810,
                 'children' => [
-                    '01.shop' => 1441054790,
-                    'slider' => 1441054790
+                    '01.shop' => 1606325186,
+                    '02.o-nas' => 1606326810,
+                    'slider' => 1606322662
                 ],
-                'checksum' => 'ededfa3ce47fff9eb2bee06b24aa2812'
+                'checksum' => '82b76829ec341a8436341fb2f19d01b2'
             ],
             '01.shop' => [
                 'key' => 'shop',
                 'storage_key' => '01.shop',
                 'template' => 'snipcart',
-                'storage_timestamp' => 1441054790,
+                'storage_timestamp' => 1606327319,
                 'markdown' => [
                     '' => [
-                        'snipcart' => 1441054790
+                        'snipcart' => 1606327005
                     ]
                 ],
                 'children' => [
-                    '01.t-shirts' => 1441054790,
-                    '02.geek-toys' => 1441054790
+                    '01.t-shirts' => 1606327319,
+                    '02.geek-toys' => 1606326946
                 ],
-                'checksum' => 'cedf1983b1ed6f500be456b13d76c422'
+                'checksum' => '35d31f4e7725e3fcc75cde20e692bae1'
             ],
             '01.shop/01.t-shirts' => [
                 'key' => 'shop/t-shirts',
                 'storage_key' => '01.shop/01.t-shirts',
                 'template' => 'snipcart_category',
-                'storage_timestamp' => 1441054790,
+                'storage_timestamp' => 1606327319,
                 'markdown' => [
                     '' => [
-                        'snipcart_category' => 1441054790
+                        'snipcart_category' => 1606326720
                     ]
                 ],
                 'children' => [
-                    'ts385-rocket-surgeon' => 1441054790,
-                    'ts393-it-crowd' => 1441054790,
-                    'ts872-no-place-like' => 1441054790,
-                    'ts982-reynholm-industries' => 1441054790
+                    'ts385-rocket-surgeon' => 1606322662,
+                    'ts393-it-crowd' => 1606322662,
+                    'ts872-no-place-like' => 1606322662,
+                    'ts982-reynholm-industries' => 1606322662
                 ],
-                'checksum' => '3087f75bff9da125e7fa5e9cfbc915e3'
+                'checksum' => 'db5e94d744d755a6f967e427ee6b53d5'
             ],
             '01.shop/01.t-shirts/ts385-rocket-surgeon' => [
                 'key' => 'shop/t-shirts/ts385-rocket-surgeon',
                 'storage_key' => '01.shop/01.t-shirts/ts385-rocket-surgeon',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1441054790,
+                'storage_timestamp' => 1606322662,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1441054790
+                        'snipcart_detail' => 1606322662
                     ]
                 ],
-                'checksum' => '9859365ad71984bff7b68aff77912282'
+                'checksum' => '01e27ecb8ee01fcf616056a5dd3f097f'
             ],
             '01.shop/01.t-shirts/ts393-it-crowd' => [
                 'key' => 'shop/t-shirts/ts393-it-crowd',
                 'storage_key' => '01.shop/01.t-shirts/ts393-it-crowd',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1441054790,
+                'storage_timestamp' => 1606322662,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1441054790
+                        'snipcart_detail' => 1606322662
                     ]
                 ],
-                'checksum' => 'dc05caab0cef02bc659a2e8cc0d4ded0'
+                'checksum' => 'b75a9394b1190af36a4cd3f5f3d47ffe'
             ],
             '01.shop/01.t-shirts/ts872-no-place-like' => [
                 'key' => 'shop/t-shirts/ts872-no-place-like',
                 'storage_key' => '01.shop/01.t-shirts/ts872-no-place-like',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1441054790,
+                'storage_timestamp' => 1606322662,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1441054790
+                        'snipcart_detail' => 1606322662
                     ]
                 ],
-                'checksum' => '578462c38d51c70b3cbf252c1afafc63'
+                'checksum' => '7d51faa03a9469638bcd2c6913a3bcb6'
             ],
             '01.shop/01.t-shirts/ts982-reynholm-industries' => [
                 'key' => 'shop/t-shirts/ts982-reynholm-industries',
                 'storage_key' => '01.shop/01.t-shirts/ts982-reynholm-industries',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1441054790,
+                'storage_timestamp' => 1606322662,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1441054790
+                        'snipcart_detail' => 1606322662
                     ]
                 ],
-                'checksum' => '8781c6537e863d438a32c9c9e24841da'
+                'checksum' => '8cae0d8d8165f368ee8e627e55c4ec9d'
             ],
             '01.shop/02.geek-toys' => [
                 'key' => 'shop/geek-toys',
                 'storage_key' => '01.shop/02.geek-toys',
                 'template' => 'snipcart_category',
-                'storage_timestamp' => 1441054790,
+                'storage_timestamp' => 1606326946,
                 'markdown' => [
                     '' => [
-                        'snipcart_category' => 1441054790
+                        'snipcart_category' => 1606326946
                     ]
                 ],
                 'children' => [
-                    'ax389-creepa-backpack' => 1441054790,
-                    'ia449-brick-mug' => 1441054790,
-                    'je292-rd2d-timer' => 1441054790,
-                    'pt221-stuffy-turret' => 1441054790
+                    'ax389-creepa-backpack' => 1606322662,
+                    'ia449-brick-mug' => 1606322662,
+                    'je292-rd2d-timer' => 1606322662,
+                    'pt221-stuffy-turret' => 1606322662
                 ],
-                'checksum' => 'c9caa4ec56f51976a480dfe67c3672b4'
+                'checksum' => '9c93408450d522ab4d27893893324d3e'
             ],
             '01.shop/02.geek-toys/ax389-creepa-backpack' => [
                 'key' => 'shop/geek-toys/ax389-creepa-backpack',
                 'storage_key' => '01.shop/02.geek-toys/ax389-creepa-backpack',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1441054790,
+                'storage_timestamp' => 1606322662,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1441054790
+                        'snipcart_detail' => 1606322662
                     ]
                 ],
-                'checksum' => '149aa446a9af32398b7ee41b9a5dc016'
+                'checksum' => '4c33631dfa09db8017b8f48e43363998'
             ],
             '01.shop/02.geek-toys/ia449-brick-mug' => [
                 'key' => 'shop/geek-toys/ia449-brick-mug',
                 'storage_key' => '01.shop/02.geek-toys/ia449-brick-mug',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1441054790,
+                'storage_timestamp' => 1606322662,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1441054790
+                        'snipcart_detail' => 1606322662
                     ]
                 ],
-                'checksum' => '3c629dcda266bd43779f06a3ad51c730'
+                'checksum' => '7f028081abf7d6e5eabe02b02587746b'
             ],
             '01.shop/02.geek-toys/je292-rd2d-timer' => [
                 'key' => 'shop/geek-toys/je292-rd2d-timer',
                 'storage_key' => '01.shop/02.geek-toys/je292-rd2d-timer',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1441054790,
+                'storage_timestamp' => 1606322662,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1441054790
+                        'snipcart_detail' => 1606322662
                     ]
                 ],
-                'checksum' => '0b464193351bb62ad7b777e01e6f4aa0'
+                'checksum' => '61a3ec4a8d6d37a95ed9b55f327a23fb'
             ],
             '01.shop/02.geek-toys/pt221-stuffy-turret' => [
                 'key' => 'shop/geek-toys/pt221-stuffy-turret',
                 'storage_key' => '01.shop/02.geek-toys/pt221-stuffy-turret',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1441054790,
+                'storage_timestamp' => 1606322662,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1441054790
+                        'snipcart_detail' => 1606322662
                     ]
                 ],
-                'checksum' => '363123534d12940e5ecfc3402ffb1edb'
+                'checksum' => '79e786a8303ca8f632119d59a59e9273'
+            ],
+            '02.o-nas' => [
+                'key' => 'o-nas',
+                'storage_key' => '02.o-nas',
+                'template' => 'snipcart',
+                'storage_timestamp' => 1606326825,
+                'markdown' => [
+                    '' => [
+                        'snipcart' => 1606326825
+                    ]
+                ],
+                'checksum' => '0be1247899f0e9ea3966cd5e56854fa3'
             ],
             'slider' => [
                 'key' => 'slider',
                 'storage_key' => 'slider',
                 'template' => 'lightslider',
-                'storage_timestamp' => 1441054790,
+                'storage_timestamp' => 1606322662,
                 'markdown' => [
                     '' => [
-                        'lightslider' => 1441054790
+                        'lightslider' => 1606322662
                     ]
                 ],
-                'checksum' => '287680d7f6069787472391efc6690836'
+                'checksum' => '8f599715c3e6ed54efead1d113d14b36'
             ]
         ]
     ]
