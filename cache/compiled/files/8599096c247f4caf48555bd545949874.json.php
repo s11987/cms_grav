@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/data/flex/indexes/pages.json',
-    'modified' => 1606586164,
+    'modified' => 1606586682,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1606586164,
+        'timestamp' => 1606586682,
         'count' => 15,
         'index' => [
             '' => [
@@ -187,13 +187,13 @@ return [
                 'key' => 'o-nas',
                 'storage_key' => '02.o-nas',
                 'template' => 'snipcart',
-                'storage_timestamp' => 1606586082,
+                'storage_timestamp' => 1606586438,
                 'markdown' => [
                     '' => [
-                        'snipcart' => 1606586082
+                        'snipcart' => 1606586438
                     ]
                 ],
-                'checksum' => 'ca1605396191d4c058d83c3d42dc278f'
+                'checksum' => 'f6c87371efe4a6c1ab73afbac4b8fdaa'
             ],
             'slider' => [
                 'key' => 'slider',

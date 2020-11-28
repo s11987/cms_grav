@@ -37,13 +37,15 @@
             </li>
         {% endfor %}
         <li class="{{ current_page }}">
-
-<div class="snipcart-summary">
     <a href="#" class="snipcart-user-email snipcart-user-profile">
         Zaloguj się
     </a>
-</div>
-        </li>
+            </li>
+                   <li class="{{ current_page }}">
+<a href="#" class="snipcart-user-logout">
+  Wyloguj się
+</a>
+</li>
 </a>
     {% endif %}
     {% for mitem in site.menu %}

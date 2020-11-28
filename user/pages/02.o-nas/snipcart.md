@@ -3,11 +3,6 @@ title: 'O nas'
 ---
 <center><h3>Witaj w Świecie Kartek! Znajdziesz u nas kartki okolicznościowe na każdą okazję. Posiadamy szeroką ofertę kartek urodzinowych, imieninowych, świątecznych i wielu innych! </h3?</center>
 <div style="margin-top: 100px">
-<div class="snipcart-summary">
-    <a href="#" class="snipcart-user-email snipcart-user-profile">
-        Zaloguj się
-    </a>
-</div>
 <div>
     Lots of content
 </div>
@@ -18,10 +13,14 @@ title: 'O nas'
 </div>
 
 
+<a href="#" class="snipcart-user-profile">
+  User profile
+</a>
 
-     Hey {{ order.billingAddress.fullName }},
-     {{ #has_any order.items }}
-  <span>Items contain some elements!</span>
-{{ else }}
-  <span>Nothing in this...</span>
-{{ /has_any }}
+<a href="#" class="snipcart-user-logout">
+  Logout
+</a>
+
+<div class="snipcart-summary">
+asdsadsad
+</div>
