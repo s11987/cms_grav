@@ -5,7 +5,7 @@ title: 'O nas'
 <div style="margin-top: 100px">
 <div class="snipcart-summary">
     <a href="#" class="snipcart-user-email snipcart-user-profile">
-        Customer dashboard
+        Zaloguj się
     </a>
 </div>
 <div>
@@ -16,3 +16,12 @@ title: 'O nas'
     Total price: <span class="snipcart-total-price"></span>
 </div>
 </div>
+
+
+
+     Hey {{ order.billingAddress.fullName }},
+     {{ #has_any order.items }}
+  <span>Items contain some elements!</span>
+{{ else }}
+  <span>Nothing in this...</span>
+{{ /has_any }}

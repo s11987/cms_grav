@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/pages/02.o-nas/snipcart.md',
-    'modified' => 1606584844,
+    'modified' => 1606586082,
     'data' => [
         'header' => [
             'title' => 'O nas'
@@ -12,7 +12,7 @@ return [
 <div style="margin-top: 100px">
 <div class="snipcart-summary">
     <a href="#" class="snipcart-user-email snipcart-user-profile">
-        Customer dashboard
+        Zaloguj się
     </a>
 </div>
 <div>
@@ -22,6 +22,15 @@ return [
     Number of items: <span class="snipcart-total-items"></span>
     Total price: <span class="snipcart-total-price"></span>
 </div>
-</div>'
+</div>
+
+
+
+     Hey {{ order.billingAddress.fullName }},
+     {{ #has_any order.items }}
+  <span>Items contain some elements!</span>
+{{ else }}
+  <span>Nothing in this...</span>
+{{ /has_any }}'
     ]
 ];
