@@ -1,0 +1,5 @@
+1606585490
+C:39:"Grav\Common\Flex\Types\Pages\PageObject":648:{a:4:{s:4:"type";s:5:"pages";s:3:"key";s:35:"shop/urodzinowe/kartka-urodzinowa-1";s:8:"elements";a:3:{s:4:"root";b:0;s:6:"header";a:4:{s:5:"title";s:19:"Kartka urodzinowa 1";s:5:"price";d:39.99;s:10:"product_id";s:5:"ax389";s:11:"media_order";s:14:"happy_bday.jpg";}s:8:"markdown";s:16:"#### Opis
+
+opis
+";}s:7:"storage";a:6:{s:3:"key";s:35:"shop/urodzinowe/kartka-urodzinowa-1";s:11:"storage_key";s:41:"01.shop/02.urodzinowe/kartka-urodzinowa-1";s:8:"template";s:15:"snipcart_detail";s:17:"storage_timestamp";i:1606331318;s:8:"markdown";a:1:{s:0:"";a:1:{s:15:"snipcart_detail";i:1606330738;}}s:8:"checksum";s:32:"0c71bb526711ba0de6561a79ee9bb088";}}}

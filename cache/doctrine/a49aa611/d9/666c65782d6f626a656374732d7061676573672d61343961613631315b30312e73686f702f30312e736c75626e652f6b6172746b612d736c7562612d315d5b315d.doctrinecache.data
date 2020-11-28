@@ -1,7 +1,0 @@
-1606333326
-C:39:"Grav\Common\Flex\Types\Pages\PageObject":612:{a:4:{s:4:"type";s:5:"pages";s:3:"key";s:26:"shop/slubne/kartka-sluba-1";s:8:"elements";a:3:{s:4:"root";b:0;s:6:"header";a:4:{s:5:"title";s:16:"Kartka ślubna 1";s:5:"price";d:14.99;s:10:"product_id";s:5:"ts385";s:11:"media_order";s:9:"slub1.jpg";}s:8:"markdown";s:16:"## Opis
-
-opis
-
-
-";}s:7:"storage";a:6:{s:3:"key";s:26:"shop/slubne/kartka-sluba-1";s:11:"storage_key";s:32:"01.shop/01.slubne/kartka-sluba-1";s:8:"template";s:15:"snipcart_detail";s:17:"storage_timestamp";i:1606331547;s:8:"markdown";a:1:{s:0:"";a:1:{s:15:"snipcart_detail";i:1606329476;}}s:8:"checksum";s:32:"151dc66c1432a882a9fb09c22fad70f9";}}}

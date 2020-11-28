@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/data/flex/indexes/pages.json',
-    'modified' => 1606332574,
+    'modified' => 1606584882,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1606332574,
+        'timestamp' => 1606584882,
         'count' => 15,
         'index' => [
             '' => [
@@ -24,18 +24,18 @@ return [
                 'key' => 'shop',
                 'storage_key' => '01.shop',
                 'template' => 'snipcart',
-                'storage_timestamp' => 1606330915,
+                'storage_timestamp' => 1606334470,
                 'markdown' => [
                     '' => [
-                        'snipcart' => 1606327005
+                        'snipcart' => 1606334470
                     ]
                 ],
                 'children' => [
-                    '01.slubne' => 1606330639,
-                    '02.urodzinowe' => 1606330915,
-                    '03.uniwersalne' => 1606330580
+                    '01.slubne' => 1606331547,
+                    '02.urodzinowe' => 1606331099,
+                    '03.uniwersalne' => 1606331714
                 ],
-                'checksum' => '2769f98c97b193a40892dc4e92d63032'
+                'checksum' => 'e0b632ccb882f56895896c260a34ba05'
             ],
             '01.shop/01.slubne' => [
                 'key' => 'shop/slubne',
@@ -58,13 +58,13 @@ return [
                 'key' => 'shop/slubne/kartka-sluba-1',
                 'storage_key' => '01.shop/01.slubne/kartka-sluba-1',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1606331547,
+                'storage_timestamp' => 1606583693,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1606329476
+                        'snipcart_detail' => 1606583693
                     ]
                 ],
-                'checksum' => '151dc66c1432a882a9fb09c22fad70f9'
+                'checksum' => '1638871a8cbd1d2dc150179401cd2012'
             ],
             '01.shop/01.slubne/kartka-sluba-2' => [
                 'key' => 'shop/slubne/kartka-sluba-2',
@@ -187,13 +187,13 @@ return [
                 'key' => 'o-nas',
                 'storage_key' => '02.o-nas',
                 'template' => 'snipcart',
-                'storage_timestamp' => 1606332044,
+                'storage_timestamp' => 1606584844,
                 'markdown' => [
                     '' => [
-                        'snipcart' => 1606332044
+                        'snipcart' => 1606584844
                     ]
                 ],
-                'checksum' => '074455fe269d907f0569d49d883ca14c'
+                'checksum' => '3711c78d64dc467aae32bb3fef96c81a'
             ],
             'slider' => [
                 'key' => 'slider',
