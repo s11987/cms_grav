@@ -1,0 +1,29 @@
+form: flex-pages
+unique_id: 714dc8afce534fc36616edacae4502e1
+url: '/pages/shop/imieninowe/kartka-imieninowa-1/:add'
+user:
+  username: admintest
+  email: admin@o2.pl
+timestamps:
+  created: 1606942723
+  updated: 1606942723
+data: null
+files: {  }
+object:
+  type: pages
+  key: shop/imieninowe/kartka-imieninowa-1
+  storage_key: ''
+  timestamp: 0
+  serialized:
+    __META: {  }
+    storage_key: ''
+    parent_key: 01.shop/04.imieninowe
+    order: false
+    folder: kartka-imieninowa-1
+    template: snipcart_detail
+    lang: ''
+    root: false
+    route: /shop/imieninowe
+    name: snipcart_detail
+    header:
+      title: 'Kartka imieninowa 2'
