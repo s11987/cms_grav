@@ -2,11 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/data/flex/indexes/pages.json',
-    'modified' => 1606943865,
+    'modified' => 1606945501,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1606943865,
-        'count' => 23,
+        'timestamp' => 1606945501,
+        'count' => 29,
         'index' => [
             '' => [
                 'key' => '',
@@ -73,13 +73,13 @@ return [
                 'key' => 'shop/slubne/kartka-sluba-2',
                 'storage_key' => '01.shop/01.slubne/kartka-sluba-2',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1606862446,
+                'storage_timestamp' => 1606944872,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1606862446
+                        'snipcart_detail' => 1606944872
                     ]
                 ],
-                'checksum' => '943ea56ae494296903607c7b778a77eb'
+                'checksum' => 'eb9766eaafb88153a85308f9e1019b19'
             ],
             '01.shop/01.slubne/kartka-sluba-3' => [
                 'key' => 'shop/slubne/kartka-sluba-3',
@@ -269,25 +269,107 @@ return [
                 'key' => 'shop/gratulacje',
                 'storage_key' => '01.shop/05.gratulacje',
                 'template' => 'snipcart_category',
-                'storage_timestamp' => 1606939789,
+                'storage_timestamp' => 1606945302,
                 'markdown' => [
                     '' => [
                         'snipcart_category' => 1606939789
                     ]
                 ],
-                'checksum' => '060b8e89de4fe39cf29882faea7ef1e1'
+                'children' => [
+                    'kartka-gratulacje-1' => 1606944783,
+                    'kartka-gratulacje-2' => 1606945175,
+                    'kartka-gratulacje-3' => 1606945302
+                ],
+                'checksum' => '196ad6f46e91025f2a784ec26d549f6b'
+            ],
+            '01.shop/05.gratulacje/kartka-gratulacje-1' => [
+                'key' => 'shop/gratulacje/kartka-gratulacje-1',
+                'storage_key' => '01.shop/05.gratulacje/kartka-gratulacje-1',
+                'template' => 'snipcart_detail',
+                'storage_timestamp' => 1606944783,
+                'markdown' => [
+                    '' => [
+                        'snipcart_detail' => 1606944783
+                    ]
+                ],
+                'checksum' => '41980487184e764ee1a7b37cab757816'
+            ],
+            '01.shop/05.gratulacje/kartka-gratulacje-2' => [
+                'key' => 'shop/gratulacje/kartka-gratulacje-2',
+                'storage_key' => '01.shop/05.gratulacje/kartka-gratulacje-2',
+                'template' => 'snipcart_detail',
+                'storage_timestamp' => 1606945175,
+                'markdown' => [
+                    '' => [
+                        'snipcart_detail' => 1606945175
+                    ]
+                ],
+                'checksum' => '02e33afc348b49f54d6d3060740f48f8'
+            ],
+            '01.shop/05.gratulacje/kartka-gratulacje-3' => [
+                'key' => 'shop/gratulacje/kartka-gratulacje-3',
+                'storage_key' => '01.shop/05.gratulacje/kartka-gratulacje-3',
+                'template' => 'snipcart_detail',
+                'storage_timestamp' => 1606945500,
+                'markdown' => [
+                    '' => [
+                        'snipcart_detail' => 1606945500
+                    ]
+                ],
+                'checksum' => '0c85f10d039a2757518357357e41d5a0'
             ],
             '01.shop/06.swiateczne' => [
                 'key' => 'shop/swiateczne',
                 'storage_key' => '01.shop/06.swiateczne',
                 'template' => 'snipcart_category',
-                'storage_timestamp' => 1606940178,
+                'storage_timestamp' => 1606944536,
                 'markdown' => [
                     '' => [
                         'snipcart_category' => 1606940178
                     ]
                 ],
-                'checksum' => '5aa5011c2956cc28de931e1254cbdac9'
+                'children' => [
+                    'kartka-swiateczna-1' => 1606944329,
+                    'kartka-swiateczna-2' => 1606944504,
+                    'kartka-swiateczna-3' => 1606944536
+                ],
+                'checksum' => '340c9f179e4ff738387ceedfb1231fb5'
+            ],
+            '01.shop/06.swiateczne/kartka-swiateczna-1' => [
+                'key' => 'shop/swiateczne/kartka-swiateczna-1',
+                'storage_key' => '01.shop/06.swiateczne/kartka-swiateczna-1',
+                'template' => 'snipcart_detail',
+                'storage_timestamp' => 1606944329,
+                'markdown' => [
+                    '' => [
+                        'snipcart_detail' => 1606944329
+                    ]
+                ],
+                'checksum' => 'cb6c76d0f87ae1b81c5d9a596fbf0041'
+            ],
+            '01.shop/06.swiateczne/kartka-swiateczna-2' => [
+                'key' => 'shop/swiateczne/kartka-swiateczna-2',
+                'storage_key' => '01.shop/06.swiateczne/kartka-swiateczna-2',
+                'template' => 'snipcart_detail',
+                'storage_timestamp' => 1606944504,
+                'markdown' => [
+                    '' => [
+                        'snipcart_detail' => 1606944504
+                    ]
+                ],
+                'checksum' => '736354faae4a5360748759eb8dee6c1b'
+            ],
+            '01.shop/06.swiateczne/kartka-swiateczna-3' => [
+                'key' => 'shop/swiateczne/kartka-swiateczna-3',
+                'storage_key' => '01.shop/06.swiateczne/kartka-swiateczna-3',
+                'template' => 'snipcart_detail',
+                'storage_timestamp' => 1606944592,
+                'markdown' => [
+                    '' => [
+                        'snipcart_detail' => 1606944592
+                    ]
+                ],
+                'checksum' => '3923eaec0470e0474500848bf3d613fa'
             ],
             '02.o-nas' => [
                 'key' => 'o-nas',
