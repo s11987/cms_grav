@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/pages/01.shop/01.slubne/kartka-sluba-1/snipcart_detail.md',
-    'modified' => 1606583693,
+    'modified' => 1606862446,
     'data' => [
         'header' => [
             'title' => 'Kartka ślubna 1',
