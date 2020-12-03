@@ -1,7 +1,0 @@
-1607004515
-C:39:"Grav\Common\Flex\Types\Pages\PageObject":624:{a:4:{s:4:"type";s:5:"pages";s:3:"key";s:26:"shop/slubne/kartka-sluba-2";s:8:"elements";a:3:{s:4:"root";b:0;s:6:"header";a:4:{s:5:"title";s:28:"Kartka W dniu waszego ślubu";s:5:"price";d:19.99;s:10:"product_id";s:5:"ts393";s:11:"media_order";s:9:"slub2.jpg";}s:8:"markdown";s:16:"## Opis
-
-opis
-
-
-";}s:7:"storage";a:6:{s:3:"key";s:26:"shop/slubne/kartka-sluba-2";s:11:"storage_key";s:32:"01.shop/01.slubne/kartka-sluba-2";s:8:"template";s:15:"snipcart_detail";s:17:"storage_timestamp";i:1607003302;s:8:"markdown";a:1:{s:0:"";a:1:{s:15:"snipcart_detail";i:1607003302;}}s:8:"checksum";s:32:"ee50b88214dfb210fba4e7a601c93387";}}}

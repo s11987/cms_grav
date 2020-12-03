@@ -4,8 +4,6 @@
 # Grav Specific
 data/*
 !data/.*
-plugins/*
-!plugins/.*
 themes/*
 !themes/.*
 
