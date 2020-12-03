@@ -1,6 +1,7 @@
 ---
 title: 'O nas'
 ---
+
 <center><h3>Witaj w Świecie Kartek! Znajdziesz u nas kartki okolicznościowe na każdą okazję. Posiadamy szeroką ofertę kartek urodzinowych, imieninowych, świątecznych i wielu innych! </h3?</center>
 <div style="margin-top: 100px">
 <div>

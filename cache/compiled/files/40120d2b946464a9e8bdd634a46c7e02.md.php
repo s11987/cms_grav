@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/pages/02.o-nas/snipcart.md',
-    'modified' => 1606586438,
+    'modified' => 1607030949,
     'data' => [
         'header' => [
             'title' => 'O nas'
