@@ -2,24 +2,25 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/data/flex/indexes/pages.json',
-    'modified' => 1607030966,
+    'modified' => 1607034431,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1607030966,
-        'count' => 30,
+        'timestamp' => 1607034431,
+        'count' => 31,
         'index' => [
             '' => [
                 'key' => '',
                 'storage_key' => '',
                 'template' => NULL,
-                'storage_timestamp' => 1607030949,
+                'storage_timestamp' => 1607034334,
                 'children' => [
                     '01.shop' => 1607030949,
                     '02.o-nas' => 1607030949,
-                    '03.aktualnosci' => 1607030949,
+                    '03.aktualnosci' => 1607030966,
+                    'images' => 1607034358,
                     'slider' => 1607029283
                 ],
-                'checksum' => 'd0e3a0e976a653960cec3b488933258e'
+                'checksum' => '80c23c5dc5e3ab6e22b5ca0d93d05b52'
             ],
             '01.shop' => [
                 'key' => 'shop',
@@ -388,13 +389,20 @@ return [
                 'key' => 'aktualnosci',
                 'storage_key' => '03.aktualnosci',
                 'template' => 'default',
-                'storage_timestamp' => 1607030966,
+                'storage_timestamp' => 1607034431,
                 'markdown' => [
                     '' => [
-                        'default' => 1607030966
+                        'default' => 1607034431
                     ]
                 ],
-                'checksum' => '1412208953aee091828e0f86ba937f20'
+                'checksum' => '2b8cd31995ef84ae2886b663d3d106c9'
+            ],
+            'images' => [
+                'key' => 'images',
+                'storage_key' => 'images',
+                'template' => NULL,
+                'storage_timestamp' => 1607034358,
+                'checksum' => '01cd19f83186f0e991deff86275e6014'
             ],
             'slider' => [
                 'key' => 'slider',
