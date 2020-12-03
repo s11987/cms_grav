@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/accounts/admintest.yaml',
-    'modified' => 1606862446,
+    'modified' => 1606325113,
     'data' => [
         'state' => 'enabled',
         'email' => 'admin@o2.pl',

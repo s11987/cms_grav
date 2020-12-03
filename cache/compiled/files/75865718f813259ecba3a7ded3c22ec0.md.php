@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/pages/01.shop/04.imieninowe/snipcart_category.md',
-    'modified' => 1606939809,
+    'modified' => 1607003302,
     'data' => [
         'header' => [
             'title' => 'Imieninowe',
