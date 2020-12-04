@@ -9,4 +9,4 @@ content:
 media_order: slub2.jpg
 ---
 
-# Kartki ślubowe
+# Kartki ślubne

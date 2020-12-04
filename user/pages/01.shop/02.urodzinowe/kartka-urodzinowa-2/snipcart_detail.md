@@ -5,6 +5,4 @@ product_id: je292
 media_order: uro4.jpg
 ---
 
-#### Opis
-
-opis
+Kartka z życzeniami urodzinowymi

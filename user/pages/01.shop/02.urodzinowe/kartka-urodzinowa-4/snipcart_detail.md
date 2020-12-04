@@ -5,6 +5,4 @@ product_id: pt221
 media_order: urodzin33.jpg
 ---
 
-#### Opis
-
-opis
+Kartka z życzeniami urodzinowymi

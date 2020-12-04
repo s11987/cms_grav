@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/pages/01.shop/01.slubne/snipcart_category.md',
-    'modified' => 1607029283,
+    'modified' => 1607100643,
     'data' => [
         'header' => [
             'title' => 'Ślubne',
@@ -24,7 +24,7 @@ content:
         by: default
         dir: asc
 media_order: slub2.jpg',
-        'markdown' => '# Kartki ślubowe
+        'markdown' => '# Kartki ślubne
 '
     ]
 ];

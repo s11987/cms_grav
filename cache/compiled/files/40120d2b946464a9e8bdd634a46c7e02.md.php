@@ -2,13 +2,13 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/pages/02.o-nas/snipcart.md',
-    'modified' => 1607030949,
+    'modified' => 1607100034,
     'data' => [
         'header' => [
             'title' => 'O nas'
         ],
         'frontmatter' => 'title: \'O nas\'',
-        'markdown' => '<center><h3>Witaj w Świecie Kartek! Znajdziesz u nas kartki okolicznościowe na każdą okazję. Posiadamy szeroką ofertę kartek urodzinowych, imieninowych, świątecznych i wielu innych! </h3?</center>
+        'markdown' => '<center><h3>Witaj w Świecie Kartek! Znajdziesz u nas kartki okolicznościowe na każdą okazję. Posiadamy szeroką ofertę kartek urodzinowych, imieninowych, świątecznych i wielu innych! </h3></center>
 <div style="margin-top: 100px">
 <div>
     Lots of content
@@ -29,7 +29,7 @@ return [
 </a>
 
 <div class="snipcart-summary">
-asdsadsad
+podsumowanie
 </div>'
     ]
 ];

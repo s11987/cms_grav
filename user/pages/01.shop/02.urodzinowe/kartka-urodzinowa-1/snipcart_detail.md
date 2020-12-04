@@ -5,6 +5,4 @@ product_id: ax389
 media_order: happy_bday.jpg
 ---
 
-#### Opis
-
-opis
+Kartka z życzeniami urodzinowymi

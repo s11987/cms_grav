@@ -5,8 +5,6 @@ product_id: ts393
 media_order: slub2.jpg
 ---
 
-## Opis
-
-opis
+Kartka z gratulacjami dla nowego małżeństwa w kwiaty
 
 
