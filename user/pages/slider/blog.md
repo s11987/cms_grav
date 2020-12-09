@@ -12,7 +12,7 @@ lightslider:
     controls: 'true'
     keyPress: 'true'
     pause: 2000
-    speed: 1000
+    speed: 5000
 content:
     items:
         - '@self.children'
@@ -24,11 +24,11 @@ content:
     url_taxonomy_filters: true
 ---
 
-# Shop Geek Stuff
-## We have all your **geek** needs covered..
+# Karteczki Świąteczne
+## Święty Mikołaj już czeka z prezentami..
 ___
-# SnipCart Powered
-## **Grav** plus **SnipCart** equals easy shopping
+# Karteczki Urodzinowe
+## Pamiętaj o urodzinach bliskich!
 ___
-# A Huge Variety
-## A great selection of **bits** and **bobs**
+# Karteczki Uniwersalne
+## Nie ważne jaka okazja, ważne że z karteczką!

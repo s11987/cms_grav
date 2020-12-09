@@ -7,5 +7,4 @@ content:
         by: title
         dir: asc
 ---
-
-## Kategorie
+<center><h1>Kategorie</h1></center>
