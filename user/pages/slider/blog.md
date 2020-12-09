@@ -11,8 +11,8 @@ lightslider:
     pager: 'true'
     controls: 'true'
     keyPress: 'true'
-    pause: 2000
-    speed: 5000
+    pause: 7000
+    speed: 3000
 content:
     items:
         - '@self.children'

@@ -12,7 +12,7 @@ lightslider:
     controls: 'true'
     keyPress: 'true'
     pause: 2000
-    speed: 1000
+    speed: 8000
 ---
 
 # Shop Geek Stuff

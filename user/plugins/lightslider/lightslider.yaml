@@ -14,7 +14,7 @@ controls: 'true'
 keyPress: 'true'
 auto: 'true'
 pause: 2000
-speed: 5000
+speed: 8000
 pager: 'true'
 gallery: 'false'
 gallery_thumb_width: 100
