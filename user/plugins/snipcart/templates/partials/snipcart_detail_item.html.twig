@@ -31,10 +31,37 @@
             </a>
         </p>
     </div>
+    
     <div class="snipcart-details block">
         <h1>{{ page.header.title }}</h1>
+       <p>{{ page.content|raw }}</p>
+    </div> 
+    
 
-        <p>{{ page.content|raw }}</p>
-
+ <div style="margin-top: 1em; margin: auto">
+     <div style="float: left; width: 40em">
+        <input type="text" class="textKartka">
+    </div>
+    <div style="float: left; width: 40em">
+        <div style="width: 40em; height: 50em; background-color: white; border-style: solid;">
+        <div style="margin: auto; text-align: center" class="showText"></div>
+       </div>
     </div>
 </div>
+</div>
+
+
+
+
+<script>
+
+$(document).ready(function() {
+    $("input").change(function(){
+        $('.showText').text(function( index ) {
+            return $('.textKartka').val();
+        });
+    }); 
+});
+
+</script>
+
