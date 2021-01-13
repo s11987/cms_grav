@@ -17,13 +17,14 @@
     <p>
         <a href="{{ page.url }}"
             class="button button-small">
-            <i class="fa fa-info-circle"></i> Szczegóły
+            <i class="fa fa-info-circle"></i>  {{ 'GRAV.DETAILS'|t|e}}
         </a>
         <a href="#"
             class="button button-small snipcart-add-item"
             data-item-id="{{ page.header.product_id }}"
             data-item-name="{{ page.header.title }}"
             data-item-price="{{ page.header.price }}"
+            data-item-description="Tutaj informacje co wyslal"
             data-item-url="{{ page.url }}"
                 {% spaceless %}
                     {% if snipcart_image %}
@@ -32,7 +33,7 @@
                 {% endspaceless %}
                 
         >
-            <i class="fa fa-shopping-cart"></i> Dodaj
+            <i class="fa fa-shopping-cart"></i>  {{ 'GRAV.ADD'|t|e}}
         </a>
     </p>
     </div>
