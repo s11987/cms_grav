@@ -42,11 +42,15 @@
         Zaloguj się
     </a>
             </li>
-                   <li class="{{ current_page }}">
+       <li class="{{ current_page }}">
 <a href="#" class="snipcart-user-logout">
   Wyloguj się
 </a>
 </li>
+<li class="{{ current_page }}">
+        {% include 'partials/language-selector.html.twig' %}
+</li>
+
 </a>
     {% endif %}
     {% for mitem in site.menu %}
@@ -56,6 +60,7 @@
                 {{ mitem.text }}
             </a>
         </li>
+
     {% endfor %}
     {% if config.plugins.login.enabled and grav.user.username %}
         <li><i class="fa fa-lock"></i> {% include 'partials/login-status.html.twig' %}</li>

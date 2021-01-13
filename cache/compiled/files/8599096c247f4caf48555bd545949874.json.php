@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/data/flex/indexes/pages.json',
-    'modified' => 1607530231,
+    'modified' => 1608194818,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1607530231,
+        'timestamp' => 1608194818,
         'count' => 31,
         'index' => [
             '' => [
@@ -389,13 +389,13 @@ return [
                 'key' => 'aktualnosci',
                 'storage_key' => '03.aktualnosci',
                 'template' => 'snipcart',
-                'storage_timestamp' => 1607530195,
+                'storage_timestamp' => 1607531082,
                 'markdown' => [
                     '' => [
-                        'snipcart' => 1607530195
+                        'snipcart' => 1607531082
                     ]
                 ],
-                'checksum' => '56214a6fae54e743a54af05e96c71f68'
+                'checksum' => 'e40e70ded2a701f43963db81f165286e'
             ],
             'images' => [
                 'key' => 'images',
@@ -408,14 +408,14 @@ return [
                 'key' => 'slider',
                 'storage_key' => 'slider',
                 'template' => 'blog',
-                'storage_timestamp' => 1607202585,
+                'storage_timestamp' => 1607535647,
                 'markdown' => [
                     '' => [
-                        'blog' => 1607202585,
-                        'lightslider' => 1606322662
+                        'blog' => 1607535647,
+                        'lightslider' => 1607535426
                     ]
                 ],
-                'checksum' => '6b6e69916dac871528ac9c2d03ef1b7c'
+                'checksum' => '49d04ee9f14d4fa168c6070da5a50caa'
             ]
         ]
     ]

@@ -24,8 +24,7 @@
                 {% if snipcart_image %}
                     data-item-image="{{ snipcart_image.cropResize(50,50).url }}"
                 {% endif %}
-                {% endspaceless %}
-                
+                {% endspaceless %}                
             >
                 <i class="fa fa-shopping-cart"></i> Dodaj do koszyka
             </a>
@@ -35,9 +34,7 @@
     <div class="snipcart-details block">
         <h1>{{ page.header.title }}</h1>
        <p>{{ page.content|raw }}</p>
-    </div> 
-    
-
+    </div>  
  <div style="margin-top: 1em; margin: auto">
      <div style="float: left; width: 40em">
         <input type="text" class="textKartka">
@@ -51,9 +48,8 @@
 </div>
 
 
-
-
 <script>
+
 
 $(document).ready(function() {
     $("input").change(function(){
@@ -62,6 +58,7 @@ $(document).ready(function() {
         });
     }); 
 });
+
 
 </script>
 

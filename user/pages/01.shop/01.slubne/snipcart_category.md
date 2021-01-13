@@ -1,6 +1,10 @@
 ---
 title: Ślubne
 category: Ślubne
+languages:
+  supported:
+    - pl
+    - en
 content:
     items: '@self.children'
     order:
