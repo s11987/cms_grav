@@ -1,7 +1,5 @@
 {% set snipcart_image = page.media.images|first %}
-
 <div id="snipcart-detail" class="block-group">
-
     {{ page.order|trim('.') }}
 
     <div class="snipcart-info block">
@@ -15,12 +13,15 @@
         </div>
         <p>
             <a href="#"
-                class="button snipcart-add-item"
+                class="button snipcart-add-item snipcartItemek"
                 data-item-id="{{ page.header.product_id }}"
                 data-item-name="{{ page.header.title }}"
                 data-item-price="{{ page.header.price }}"
-                data-item-description= $('.textKartka').val()
+                data-item-description= "brak informacji"
                 data-item-url="{{ page.url }}"
+                 data-item-custom1-name="Kolor"
+  data-item-custom1-options="Czarny|Brązowy|Złoty"
+  data-item-custom2-name="Informacja"
                 {% spaceless %}
                 {% if snipcart_image %}
                     data-item-image="{{ snipcart_image.cropResize(50,50).url }}"
@@ -36,30 +37,228 @@
         <h1>{{ page.header.title }}</h1>
        <p>{{ page.content|raw }}</p>
     </div>  
+
+
+
  <div style="margin-top: 1em; margin: auto">
+
+<input type="checkbox" class="simpleCheck">Prosta modyfikacja
+<input type="checkbox" class="memesCheck">Mem
+<div class="simple">
      <div style="float: left; width: 40em">
+     <div>
+     <div style="float:left; width: 90%">
         <input type="text" class="textKartka">
+        </div>
+    <div style="float:left;width: 10%">
+        <button>Dodaj</button>
+        </div>
+        <div style="clear:both"></div>
+     </div>
+        <input type="checkbox" class="centerText">Center
     </div>
-    <div style="float: left; width: 40em">
+    <div style="float: left; width: 40em" class="centerText">
         <div style="width: 40em; height: 50em; background-color: white; border-style: solid;">
         <div style="margin: auto; text-align: center" class="showText"></div>
        </div>
     </div>
+ </div>
+
+
+
 </div>
+
+
+
+</div>
+
+
+<div class="memes">
+     
+<div class="container">
+   <section class="inputs">
+    <div class="upload-wrap">
+      <label for="upload-image" class="instruction">Upload an image</label>
+      <input type="file" id="upload-image">
+    </div>
+    <span>Or choose from here:</span>
+    <ul class="image-options">
+      <li><img src="http://res.cloudinary.com/dlwnmz6lr/image/upload/v1525111950/voltage_emoji_icon_png_hwdaps.png"/></li>
+      <li><img src="http://res.cloudinary.com/dlwnmz6lr/image/upload/v1525111951/Tongue_Emoji_xhwdn2.png"/></li>
+      <li><img src="http://res.cloudinary.com/dlwnmz6lr/image/upload/v1525111944/Revolving_Pink_Hearts_Emoji_lehlnm.png"/></li>
+      <li><img src="http://res.cloudinary.com/dlwnmz6lr/image/upload/v1525111938/Poop_Emoji_oh3z37.png"/></li>
+      <li><img src="http://res.cloudinary.com/dlwnmz6lr/image/upload/v1525111940/Emoji_Snowflake_Download_large_hssgzt.png"/></li>
+      <li><img src="http://res.cloudinary.com/dlwnmz6lr/image/upload/v1525111952/Cherry_Blossom_Emoji_xqbzxa.png"/></li>  
+     </ul>
+  </section>
+  <section class="meme">
+    <canvas id="canvas" width="594" height="592">
+              Canvas requires a browser that supports HTML5.
+    </canvas>
+    <img id="salt-bae" src="https://media4.s-nbcnews.com/j/newscms/2017_05/1890591/170203-salt-bae-mn-1530_060e5898cdcf7b58f97126d3cfbfdf71.nbcnews-ux-2880-1000.jpg"/>
+  </section>
 </div>
 
 
 <script>
 
-
+var test = "asd";
 $(document).ready(function() {
     $("input").change(function(){
         $('.showText').text(function( index ) {
+            test = $('.textKartka').val();
             return $('.textKartka').val();
         });
     }); 
 });
+$(".centerText" ).change(function() {
+    if ($('.centerText').prop('checked')) {
+        $('.showText').css("text-align", "center");
+        $('.showText').css("line-height", "50em");
+    }else{
+        console.log("nie");
+        $('.showText').css("line-height", "2em");
+    }  
+});
 
+
+
+var descritpion = "brak informacji";
+$(".snipcartItemek").click(function() {
+  if ($('.memesCheck').prop('checked')) {
+          descritpion = "MEM";
+          console.log("niasn");
+  }else{
+      console.log("nie zan");
+          descritpion = "Treść: ";
+         descritpion += $('.textKartka').val();
+         descritpion += ";Wycentrować: ";
+      if ($('.centerText').prop('checked')) {
+
+            descritpion += "Tak";
+      }else{
+descritpion += "Nie";
+      }
+
+  }
+  $(".snipcartItemek").attr("data-item-description", descritpion);
+});
+
+
+
+
+
+
+$('.simpleCheck').prop('checked', true);
+$(".memes").hide();
+$(".memesCheck" ).change(function() {
+    if ($('.memesCheck').prop('checked')) {
+        $('.simpleCheck').prop('checked', false);
+        $(".simple").hide();
+        $(".memes").show();
+    }else{
+        $('.simpleCheck').prop('checked', true);
+        $(".simple").show();
+        $(".memes").hide();
+    }  
+});
+$(".simpleCheck" ).change(function() {
+    if ($('.simpleCheck').prop('checked')) {
+        $('.memesCheck').prop('checked', false);
+         $(".simple").show();
+        $(".memes").hide();
+    }else{
+        $('.memesCheck').prop('checked', true);
+         $(".simple").hide();
+        $(".memes").show();
+    }  
+});
+
+
+
+
+
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+}
+
+function drawBackgroundImage(canvas, ctx) {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  const img = document.getElementById('salt-bae');  
+  ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+}
+
+function getRandomImageSize(min, max, width, height) {
+  const ratio = width / height;  // Used for aspect ratio
+  width = getRandomInt(min, max);
+  height = width / ratio;  
+  return { width, height };
+}
+
+function drawSalt(src, canvas, ctx) {
+  // Create an image object. (Not part of the dom)
+  const image = new Image();
+  image.src = src;
+  
+  // After the image has loaded, draw it to the canvas
+   image.onload = function() {
+    for (let i = 0; i < 8; i++) {
+      const randomX = getRandomInt(10, canvas.width/2);
+      const randomY = getRandomInt(canvas.height-300, canvas.height);
+      const dimensions = getRandomImageSize(20, 100, image.width, image.height);
+      ctx.drawImage(image, randomX, randomY, dimensions.width, dimensions.height);
+    }
+  }
+ image.setAttribute('crossOrigin', 'anonymous'); 
+  return image;
+}
+
+function updateImage(file, img){
+  img.src = URL.createObjectURL(file);
+}
+
+function updateImageSrc(url, img){
+  img.src = url;
+}
+
+function addLink() {
+  var link = document.createElement('a');
+  link.innerHTML = 'Download!';
+  link.addEventListener('click', function(e) {
+    link.href = canvas.toDataURL();
+    link.download = "salt-bae.png";
+  }, false); 
+  link.className = "instruction";
+  document.querySelectorAll('section')[1].appendChild(link);
+}
+
+onload = function() {
+  const canvas = document.getElementById('canvas');
+  const ctx = canvas.getContext('2d');
+  drawBackgroundImage(canvas, ctx);
+  const saltImage = drawSalt('http://res.cloudinary.com/dlwnmz6lr/image/upload/v1526005050/chadwick-boseman-inspired-workout-program-wide_phczey.webp', canvas, ctx);
+const input = document.querySelector("input[type='file']");
+  /*
+   * Add event listener to the input to listen for changes to its selected
+   * value, i.e when files are selected 
+   */
+  input.addEventListener('change', function() {
+    drawBackgroundImage(canvas, ctx);
+    updateImage(this.files[0], saltImage);
+  });
+  
+  addLink();
+  
+  const imgs = document.querySelector('.image-options');
+  imgs.addEventListener('click', function(e) {
+    drawBackgroundImage(canvas, ctx);
+    let target = e.target;
+    updateImageSrc(target.src, saltImage);
+  });
+};
 
 </script>
 
