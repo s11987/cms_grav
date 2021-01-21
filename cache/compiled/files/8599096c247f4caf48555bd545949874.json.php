@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/data/flex/indexes/pages.json',
-    'modified' => 1610580830,
+    'modified' => 1611224530,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1610580830,
+        'timestamp' => 1611224530,
         'count' => 31,
         'index' => [
             '' => [
@@ -407,16 +407,16 @@ return [
                 'key' => 'aktualnosci',
                 'storage_key' => '03.aktualnosci',
                 'template' => 'snipcart',
-                'storage_timestamp' => 1610580830,
+                'storage_timestamp' => 1611224530,
                 'markdown' => [
                     '' => [
-                        'snipcart' => 1610580830
+                        'snipcart' => 1611224530
                     ],
                     'en' => [
                         'snipcart' => 1610578613
                     ]
                 ],
-                'checksum' => 'a6d633bb70e0cd86c23d42e1192c9af6'
+                'checksum' => '0ddbdbc52d17383c5dbeb3bbb6ab08aa'
             ],
             'images' => [
                 'key' => 'images',
