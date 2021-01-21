@@ -2,9 +2,9 @@
 title: Ślubne
 category: Ślubne
 languages:
-  supported:
-    - pl
-    - en
+    supported:
+        - pl
+        - en
 content:
     items: '@self.children'
     order:

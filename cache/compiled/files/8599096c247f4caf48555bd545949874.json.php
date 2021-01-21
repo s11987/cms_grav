@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/data/flex/indexes/pages.json',
-    'modified' => 1611224530,
+    'modified' => 1611232750,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1611224530,
+        'timestamp' => 1611232750,
         'count' => 31,
         'index' => [
             '' => [
@@ -49,10 +49,10 @@ return [
                 'key' => 'shop/slubne',
                 'storage_key' => '01.shop/01.slubne',
                 'template' => 'snipcart_category',
-                'storage_timestamp' => 1610578613,
+                'storage_timestamp' => 1611227127,
                 'markdown' => [
                     '' => [
-                        'snipcart_category' => 1610578613
+                        'snipcart_category' => 1611227127
                     ],
                     'en' => [
                         'snipcart_category' => 1610578613
@@ -63,7 +63,7 @@ return [
                     'kartka-sluba-2' => 1610578613,
                     'kartka-sluba-3' => 1610578613
                 ],
-                'checksum' => '1b80079789f1aa118fcf9ed2757c37a8'
+                'checksum' => '2cebf545053dda20d7434849517475f7'
             ],
             '01.shop/01.slubne/kartka-sluba-1' => [
                 'key' => 'shop/slubne/kartka-sluba-1',
@@ -114,76 +114,94 @@ return [
                 'key' => 'shop/urodzinowe',
                 'storage_key' => '01.shop/02.urodzinowe',
                 'template' => 'snipcart_category',
-                'storage_timestamp' => 1607100643,
+                'storage_timestamp' => 1611227154,
                 'markdown' => [
                     '' => [
                         'snipcart_category' => 1607100643
+                    ],
+                    'en' => [
+                        'snipcart_category' => 1611227154
                     ]
                 ],
                 'children' => [
-                    'kartka-urodzinowa-1' => 1607100965,
-                    'kartka-urodzinowa-2' => 1607100973,
-                    'kartka-urodzinowa-3' => 1607029283,
-                    'kartka-urodzinowa-4' => 1607100982
+                    'kartka-urodzinowa-1' => 1611226347,
+                    'kartka-urodzinowa-2' => 1611226337,
+                    'kartka-urodzinowa-3' => 1611226393,
+                    'kartka-urodzinowa-4' => 1611226947
                 ],
-                'checksum' => '334fa39cd40a24dd6341c2eb81b83f2b'
+                'checksum' => '94b59d225db8ca4b9a2dd2ffbfbbf1a4'
             ],
             '01.shop/02.urodzinowe/kartka-urodzinowa-1' => [
                 'key' => 'shop/urodzinowe/kartka-urodzinowa-1',
                 'storage_key' => '01.shop/02.urodzinowe/kartka-urodzinowa-1',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1607100965,
+                'storage_timestamp' => 1611226347,
                 'markdown' => [
                     '' => [
                         'snipcart_detail' => 1607100965
+                    ],
+                    'en' => [
+                        'snipcart_detail' => 1611226347
                     ]
                 ],
-                'checksum' => 'd86fbd87cc3b0be2317b733a2af4fe05'
+                'checksum' => 'e499894c32209202aa6a085f4f005788'
             ],
             '01.shop/02.urodzinowe/kartka-urodzinowa-2' => [
                 'key' => 'shop/urodzinowe/kartka-urodzinowa-2',
                 'storage_key' => '01.shop/02.urodzinowe/kartka-urodzinowa-2',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1607100973,
+                'storage_timestamp' => 1611226337,
                 'markdown' => [
                     '' => [
                         'snipcart_detail' => 1607100973
+                    ],
+                    'en' => [
+                        'snipcart_detail' => 1611226337
                     ]
                 ],
-                'checksum' => 'cbf5bc108437d8bf146167c4d5500a29'
+                'checksum' => 'a2d8f771e6e1b635da3e79c550c58eb6'
             ],
             '01.shop/02.urodzinowe/kartka-urodzinowa-3' => [
                 'key' => 'shop/urodzinowe/kartka-urodzinowa-3',
                 'storage_key' => '01.shop/02.urodzinowe/kartka-urodzinowa-3',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1607029283,
+                'storage_timestamp' => 1611226393,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1607029283
+                        'snipcart_detail' => 1611226372
+                    ],
+                    'en' => [
+                        'snipcart_detail' => 1611226393
                     ]
                 ],
-                'checksum' => '61993c0832c3fd6de16daea41ae5b7e0'
+                'checksum' => '2537d07f481b9755f29aec6823f50bb9'
             ],
             '01.shop/02.urodzinowe/kartka-urodzinowa-4' => [
                 'key' => 'shop/urodzinowe/kartka-urodzinowa-4',
                 'storage_key' => '01.shop/02.urodzinowe/kartka-urodzinowa-4',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1607100982,
+                'storage_timestamp' => 1611226947,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1607100982
+                        'snipcart_detail' => 1611226576
+                    ],
+                    'en' => [
+                        'snipcart_detail' => 1611226947
                     ]
                 ],
-                'checksum' => '682c430beedbca344eab7fad61e395b2'
+                'checksum' => '20fc91e743c136f22e9d88aaad6eb2b9'
             ],
             '01.shop/03.uniwersalne' => [
                 'key' => 'shop/uniwersalne',
                 'storage_key' => '01.shop/03.uniwersalne',
                 'template' => 'snipcart_category',
-                'storage_timestamp' => 1607101085,
+                'storage_timestamp' => 1611227391,
                 'markdown' => [
                     '' => [
-                        'snipcart_category' => 1607101085
+                        'snipcart_category' => 1611227391
+                    ],
+                    'en' => [
+                        'snipcart_category' => 1611227375
                     ]
                 ],
                 'children' => [
@@ -191,52 +209,64 @@ return [
                     'kartka-uniwersalna-2' => 1607029283,
                     'kartka-uniwersalna-3' => 1607029283
                 ],
-                'checksum' => 'd4453091faf99458cc663766d9b3a3c3'
+                'checksum' => 'ace0c16e417e4ef12a1ff931e8ca32ea'
             ],
             '01.shop/03.uniwersalne/kartka-uniwersalna-1' => [
                 'key' => 'shop/uniwersalne/kartka-uniwersalna-1',
                 'storage_key' => '01.shop/03.uniwersalne/kartka-uniwersalna-1',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1607029283,
+                'storage_timestamp' => 1611227980,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1607029283
+                        'snipcart_detail' => 1611227650
+                    ],
+                    'en' => [
+                        'snipcart_detail' => 1611227980
                     ]
                 ],
-                'checksum' => '277f513027ee5d395f839f55d9dc32cd'
+                'checksum' => 'b479839daccfc8d55a2f4870e1cdc351'
             ],
             '01.shop/03.uniwersalne/kartka-uniwersalna-2' => [
                 'key' => 'shop/uniwersalne/kartka-uniwersalna-2',
                 'storage_key' => '01.shop/03.uniwersalne/kartka-uniwersalna-2',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1607029283,
+                'storage_timestamp' => 1611229273,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1607029283
+                        'snipcart_detail' => 1611228050
+                    ],
+                    'en' => [
+                        'snipcart_detail' => 1611229273
                     ]
                 ],
-                'checksum' => 'c1bcca910aa814d6d02c36ba0496d89d'
+                'checksum' => '010d429f4669ec472178d54ac96a6290'
             ],
             '01.shop/03.uniwersalne/kartka-uniwersalna-3' => [
                 'key' => 'shop/uniwersalne/kartka-uniwersalna-3',
                 'storage_key' => '01.shop/03.uniwersalne/kartka-uniwersalna-3',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1607029283,
+                'storage_timestamp' => 1611230905,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1607029283
+                        'snipcart_detail' => 1611230893
+                    ],
+                    'en' => [
+                        'snipcart_detail' => 1611230905
                     ]
                 ],
-                'checksum' => '78b51788a91e1a92b89a2ac0e8b9860f'
+                'checksum' => 'b341db09f399eb8678dc7512263c5de7'
             ],
             '01.shop/04.imieninowe' => [
                 'key' => 'shop/imieninowe',
                 'storage_key' => '01.shop/04.imieninowe',
                 'template' => 'snipcart_category',
-                'storage_timestamp' => 1607100643,
+                'storage_timestamp' => 1611231003,
                 'markdown' => [
                     '' => [
                         'snipcart_category' => 1607100643
+                    ],
+                    'en' => [
+                        'snipcart_category' => 1611231003
                     ]
                 ],
                 'children' => [
@@ -244,52 +274,64 @@ return [
                     'kartka-imieninowa-2' => 1607029283,
                     'kartka-imieninowa-3' => 1607029283
                 ],
-                'checksum' => '671e51b717e545eece5ee7f82e410f6b'
+                'checksum' => 'f3aeded4fbc8a0061cb4a74259287f09'
             ],
             '01.shop/04.imieninowe/kartka-imieninowa-1' => [
                 'key' => 'shop/imieninowe/kartka-imieninowa-1',
                 'storage_key' => '01.shop/04.imieninowe/kartka-imieninowa-1',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1607029283,
+                'storage_timestamp' => 1611231076,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1607029283
+                        'snipcart_detail' => 1611231013
+                    ],
+                    'en' => [
+                        'snipcart_detail' => 1611231076
                     ]
                 ],
-                'checksum' => '75fd1f1e48eba7b8c079430f3d7d4b64'
+                'checksum' => '7291dd5e8d48ac444cc56fa590cf5347'
             ],
             '01.shop/04.imieninowe/kartka-imieninowa-2' => [
                 'key' => 'shop/imieninowe/kartka-imieninowa-2',
                 'storage_key' => '01.shop/04.imieninowe/kartka-imieninowa-2',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1607029283,
+                'storage_timestamp' => 1611231513,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1607029283
+                        'snipcart_detail' => 1611231083
+                    ],
+                    'en' => [
+                        'snipcart_detail' => 1611231513
                     ]
                 ],
-                'checksum' => '4f4bfc09610bb48576f499776f68a60b'
+                'checksum' => '3a8e47575f8d13f37458371a450d6904'
             ],
             '01.shop/04.imieninowe/kartka-imieninowa-3' => [
                 'key' => 'shop/imieninowe/kartka-imieninowa-3',
                 'storage_key' => '01.shop/04.imieninowe/kartka-imieninowa-3',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1607029283,
+                'storage_timestamp' => 1611231630,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1607029283
+                        'snipcart_detail' => 1611231606
+                    ],
+                    'en' => [
+                        'snipcart_detail' => 1611231630
                     ]
                 ],
-                'checksum' => '66dc1a61d264b9dc4069cbcd7c571374'
+                'checksum' => 'd311f3da6ff252c2813131d5d2b3b5c6'
             ],
             '01.shop/05.gratulacje' => [
                 'key' => 'shop/gratulacje',
                 'storage_key' => '01.shop/05.gratulacje',
                 'template' => 'snipcart_category',
-                'storage_timestamp' => 1607100643,
+                'storage_timestamp' => 1611231543,
                 'markdown' => [
                     '' => [
                         'snipcart_category' => 1607100643
+                    ],
+                    'en' => [
+                        'snipcart_category' => 1611231543
                     ]
                 ],
                 'children' => [
@@ -297,7 +339,7 @@ return [
                     'kartka-gratulacje-2' => 1607029283,
                     'kartka-gratulacje-3' => 1607029283
                 ],
-                'checksum' => '1fb51a44f0725bb35a1878fa47869cf9'
+                'checksum' => '9f49cf1d7cfc640082bf1f1ff17b3994'
             ],
             '01.shop/05.gratulacje/kartka-gratulacje-1' => [
                 'key' => 'shop/gratulacje/kartka-gratulacje-1',
@@ -339,10 +381,13 @@ return [
                 'key' => 'shop/swiateczne',
                 'storage_key' => '01.shop/06.swiateczne',
                 'template' => 'snipcart_category',
-                'storage_timestamp' => 1607100644,
+                'storage_timestamp' => 1611232064,
                 'markdown' => [
                     '' => [
                         'snipcart_category' => 1607100644
+                    ],
+                    'en' => [
+                        'snipcart_category' => 1611232064
                     ]
                 ],
                 'children' => [
@@ -350,43 +395,52 @@ return [
                     'kartka-swiateczna-2' => 1607029283,
                     'kartka-swiateczna-3' => 1607029283
                 ],
-                'checksum' => '6ef620f4734088d0be17056057821226'
+                'checksum' => 'b88dbbb14bff03c0b0cf3346cf29b687'
             ],
             '01.shop/06.swiateczne/kartka-swiateczna-1' => [
                 'key' => 'shop/swiateczne/kartka-swiateczna-1',
                 'storage_key' => '01.shop/06.swiateczne/kartka-swiateczna-1',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1607029283,
+                'storage_timestamp' => 1611232536,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1607029283
+                        'snipcart_detail' => 1611232125
+                    ],
+                    'en' => [
+                        'snipcart_detail' => 1611232536
                     ]
                 ],
-                'checksum' => '419e366bb7f745b38d9d406225aa0db6'
+                'checksum' => '41f01151bc85f7b237d49d893e716588'
             ],
             '01.shop/06.swiateczne/kartka-swiateczna-2' => [
                 'key' => 'shop/swiateczne/kartka-swiateczna-2',
                 'storage_key' => '01.shop/06.swiateczne/kartka-swiateczna-2',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1607029283,
+                'storage_timestamp' => 1611232636,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1607029283
+                        'snipcart_detail' => 1611232636
+                    ],
+                    'en' => [
+                        'snipcart_detail' => 1611232589
                     ]
                 ],
-                'checksum' => '124f1bdcfad1ab1ac2e6f54154d1ba49'
+                'checksum' => '88849905feda09dda8879b2c2825f5f0'
             ],
             '01.shop/06.swiateczne/kartka-swiateczna-3' => [
                 'key' => 'shop/swiateczne/kartka-swiateczna-3',
                 'storage_key' => '01.shop/06.swiateczne/kartka-swiateczna-3',
                 'template' => 'snipcart_detail',
-                'storage_timestamp' => 1607029283,
+                'storage_timestamp' => 1611232750,
                 'markdown' => [
                     '' => [
-                        'snipcart_detail' => 1607029283
+                        'snipcart_detail' => 1611232728
+                    ],
+                    'en' => [
+                        'snipcart_detail' => 1611232750
                     ]
                 ],
-                'checksum' => 'd1315d3db1f4ab5e7a6d1fa069dd558f'
+                'checksum' => '12cf845374e1f0b83d13eadd2dc50344'
             ],
             '02.about-us' => [
                 'key' => 'about-us',

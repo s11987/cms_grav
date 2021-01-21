@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/pages/01.shop/03.uniwersalne/kartka-uniwersalna-2/snipcart_detail.md',
-    'modified' => 1607029283,
+    'modified' => 1611228050,
     'data' => [
         'header' => [
             'title' => 'Kartka Najlepsze życzenia',

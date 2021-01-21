@@ -5,4 +5,4 @@ price: 4.39
 product_id: sa881
 ---
 
-Kartka z napisem Merry Christmas z choinką
+Kartka z napisem Merry Christmas i choinką

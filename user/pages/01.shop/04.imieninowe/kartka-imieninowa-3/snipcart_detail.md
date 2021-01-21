@@ -5,4 +5,4 @@ price: 4.29
 product_id: ki387
 ---
 
-Kartka imieninowa z motywem baloników
+Kartka imieninowa z motywem balonów

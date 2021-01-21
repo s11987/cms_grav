@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/pages/01.shop/01.slubne/snipcart_category.md',
-    'modified' => 1610578613,
+    'modified' => 1611227127,
     'data' => [
         'header' => [
             'title' => 'Ślubne',
@@ -25,9 +25,9 @@ return [
         'frontmatter' => 'title: Ślubne
 category: Ślubne
 languages:
-  supported:
-    - pl
-    - en
+    supported:
+        - pl
+        - en
 content:
     items: \'@self.children\'
     order:
