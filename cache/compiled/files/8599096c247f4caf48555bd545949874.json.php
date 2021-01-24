@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/data/flex/indexes/pages.json',
-    'modified' => 1611523591,
+    'modified' => 1611524160,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1611523591,
+        'timestamp' => 1611524160,
         'count' => 31,
         'index' => [
             '' => [
@@ -445,32 +445,32 @@ return [
             '02.about-us' => [
                 'key' => 'about-us',
                 'storage_key' => '02.about-us',
-                'template' => 'snipcard',
-                'storage_timestamp' => 1611523572,
+                'template' => 'blog',
+                'storage_timestamp' => 1611524159,
                 'markdown' => [
                     '' => [
-                        'snipcard' => 1611523168
+                        'blog' => 1611524159
                     ],
                     'en' => [
-                        'snipcart' => 1611523572
+                        'snipcart' => 1611523974
                     ]
                 ],
-                'checksum' => '31995467dd13657560a97d9d2863e4ac'
+                'checksum' => '4584d4b61ad0415fd26ec41752c83e1b'
             ],
             '03.aktualnosci' => [
                 'key' => 'aktualnosci',
                 'storage_key' => '03.aktualnosci',
                 'template' => 'snipcart',
-                'storage_timestamp' => 1611523572,
+                'storage_timestamp' => 1611523647,
                 'markdown' => [
                     '' => [
                         'snipcart' => 1611523461
                     ],
                     'en' => [
-                        'snipcart' => 1611523572
+                        'snipcart' => 1611523647
                     ]
                 ],
-                'checksum' => '7270cd08393e2f2735298cb15ffc41b8'
+                'checksum' => '37a9f6264eb2268e0e00afaa6e5005a2'
             ],
             'images' => [
                 'key' => 'images',
