@@ -5,5 +5,18 @@ simplesearch:
     process: false
 ---
 
-<center><h3>Here is the news</h3>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v9.0" nonce="ojLtYCZo"></script>
+
+<center>
+    <h3>Here you can find the news</h3>
+    <a href="https://www.facebook.com/%C5%9Awiat-Kartek-102055498539625"> <h3>Visit our Facebook fanpage!</h3></a>
+    <div class="fb-page" data-href="https://www.facebook.com/%C5%9Awiat-Kartek-102055498539625" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/%C5%9Awiat-Kartek-102055498539625" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/%C5%9Awiat-Kartek-102055498539625">Facebook</a></blockquote></div>
 </center>
+
+
+
+
+
+
+

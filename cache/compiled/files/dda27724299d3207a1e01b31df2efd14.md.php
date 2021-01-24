@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/pages/01.shop/01.slubne/kartka-sluba-2/snipcart_detail.md',
-    'modified' => 1607101231,
+    'modified' => 1611522811,
     'data' => [
         'header' => [
             'title' => 'Kartka W dniu waszego ślubu',
