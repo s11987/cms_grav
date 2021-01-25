@@ -11,6 +11,8 @@ pl:
     TEMPLATES : 'Szablony'
     CENTERTEXT : 'Środek'
     BOLD : 'Pogrubienie'
+    CONTACT : 'Kontakt'
+    CHOOSE : 'Wybiesz rodzaj kartki'
   PLUGINS:
     LANGUAGE_SELECTOR:
       PLUGIN_STATUS: 'Plugin status'
@@ -42,6 +44,8 @@ en:
     TEMPLATES : 'Templates'
     CENTERTEXT : 'Center'
     BOLD : 'Bold'
+    CONTACT : 'Contact'
+    CHOOSE : 'Choose the type of card'
   PLUGINS:
     LANGUAGE_SELECTOR:
       PLUGIN_STATUS: 'Plugin status'
