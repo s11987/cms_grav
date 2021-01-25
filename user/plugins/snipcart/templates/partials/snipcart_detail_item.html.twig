@@ -36,7 +36,7 @@
 			<div style="float: left; width: 40em">
 				<div>
 					<div style="float:left; width: 100%">
-						<input type="text" class="textKartka">
+						<input type="text" class="textKartka" placeholder="Text...">
             <button type="button" class="btn btn-primary" style="width: 100%">{{ 'GRAV.ADD'|t|e}}</button>
 					</div>
 					<div style="clear:both"></div>
@@ -67,8 +67,8 @@
 			<div style="float: left; width: 40em">
 				<div>
 					<div style="float:left; width: 100%">
-						<input type="text" class="textSzablon11" placeholder="Tekst 1">
-            <input type="text" class="textSzablon21" placeholder="Tekst 2">
+						<input type="text" class="textSzablon11" placeholder="Text 1">
+            <input type="text" class="textSzablon21" placeholder="Text 2">
             <button type="button" class="btn btn-primary" style="width: 100%">{{ 'GRAV.ADD'|t|e}}</button>
 					</div>
 					<div style="clear:both"></div>
@@ -91,9 +91,9 @@
 			<div style="float: left; width: 40em;">
 				<div>
 					<div style="float:left; width: 100%">
-						<input type="text" class="textSzablon12" placeholder="Tekst 1">
-            <input type="text" class="textSzablon22" placeholder="Tekst 2">
-            <input type="text" class="textSzablon32" placeholder="Tekst 3">
+						<input type="text" class="textSzablon12" placeholder="Text 1">
+            <input type="text" class="textSzablon22" placeholder="Text 2">
+            <input type="text" class="textSzablon32" placeholder="Text 3">
             <button type="button" class="btn btn-primary" style="width: 100%">{{ 'GRAV.ADD'|t|e}}</button>
 					</div>
 					<div style="clear:both"></div>
@@ -118,10 +118,7 @@
 			<div style="float: left; width: 40em">
 				<div>
 					<div style="float:left; width: 100%;">
-						<input type="text" class="textSzablon13" placeholder="Tekst 1">
-            <input type="text" class="textSzablon23" placeholder="Tekst 2">
-            <input type="text" class="textSzablon33" placeholder="Tekst 3">
-            <input type="text" class="textSzablon43" placeholder="Tekst 4">
+						<input type="text" class="textSzablon13" placeholder="Text 1">
             <button type="button" class="btn btn-primary" style="width: 100%">{{ 'GRAV.ADD'|t|e}}</button>
 					</div>
 					<div style="clear:both"></div>
@@ -129,10 +126,8 @@
 			</div>
 			<div style="float: left; width: 40em; height: 1000px">
 				<div style="width: 40em; height: 50em; background-color: white; border-style: solid;">
-					<div style="margin: auto; text-align: center" class="showTextMem13"></div>
-          <div style="margin: auto; text-align: center" class="showTextMem23"></div>
-          <div style="margin: auto; text-align: center" class="showTextMem33"></div>
-          <div style="margin: auto; text-align: center" class="showTextMem43"></div>
+					 <div style="margin: auto; text-align: center; position: absolute; font-size: 23px; font-weight: bold; max-width: 13m; width: 13em; height-max: 12em; height: 12em;text-align: center;vertical-align: middle;margin-left: 7em; margin-top: 11em" class="showTextMem13"></div>
+          <img src="/cms_grav/user/pages/images/szablon_3.jpg" alt="swiat_kartek" style="width: 100%; height: 100%">
 				</div>
 			</div>
 		</div>
@@ -303,12 +298,6 @@ if ($('.1').prop('checked')) {
     if ($('.3').prop('checked')) {
     descritpion = "SZABLON[3];Tresc[1]:";
     descritpion += $('.textSzablon13').val() + ";";
-    descritpion += "Tresc[2]:";
-    descritpion += $('.textSzablon23').val() + ";";
-    descritpion += "Tresc[3]:";
-    descritpion += $('.textSzablon33').val() + ";";
-        descritpion += "Tresc[4]:";
-    descritpion += $('.textSzablon43').val() + ";";
   }
 
   }
