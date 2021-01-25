@@ -48,7 +48,9 @@
 			</div>
 			<div style="float: left; width: 40em" class="centerText">
 				<div style="width: 40em; height: 50em; background-color: white; border-style: solid;">
-					<div style="margin: auto; text-align: center" class="showText"></div>
+          
+					<center><div style="margin: auto; text-align: center;" class="showText"></div></center>
+          
 				</div>
 			</div>
 		</div>
@@ -78,8 +80,9 @@
 			</div>
 			<div style="float: left; width: 40em">
 				<div style="width: 40em; height: 50em; background-color: white; border-style: solid;">
-					<div style="margin: auto; text-align: center" class="showTextMem11"></div>
-          <div style="margin: auto; text-align: center" class="showTextMem21"></div>
+					<div style="margin: auto; text-align: center; position: absolute; margin-left: 5em; font-size: 47px; font-weight: bold; max-width: 5em" class="showTextMem11"></div>
+          <div style="margin: auto; text-align: center; position: absolute; margin-top: 10em; max-width: 25em; margin-left: 8em" class="showTextMem21"></div>
+          <img src="/cms_grav/user/pages/images/szablon_1.png" alt="swiat_kartek" style="width: 100%; height: 100%">
 				</div>
 			</div>
 		</div>
@@ -143,6 +146,8 @@
 
 <script>
 
+
+
       $(".1Mem").hide();
       $(".2Mem").hide();
       $(".3Mem").hide();
@@ -166,7 +171,7 @@ $(document).on('click', '.3', function() {
 //1
 $(".textSzablon21").change(function () {
   $('.showTextMem21').text(function (index) {
-    $('.showTextMem21').css("line-height", "20em");
+   // $('.showTextMem21').css("line-height", "20em");
       return $('.textSzablon21').val();
     });
 });
@@ -256,9 +261,9 @@ $(".centerText").change(function () {
 
 $(".boldText").change(function () {
   if ($('.boldText').prop('checked')) {
-    $('.showText').css("font-weight:", "bolder");
+    $('.showText').css("font-weight", "bold");
   } else {
-    $('.showText').css("font-weight:", "normal");
+    $('.showText').css("font-weight", "normal");
   }
 });
 
