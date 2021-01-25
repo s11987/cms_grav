@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/pages/01.shop/01.slubne/kartka-sluba-3/snipcart_detail.md',
-    'modified' => 1611522811,
+    'modified' => 1607202585,
     'data' => [
         'header' => [
             'title' => 'Kartka ślubna z sercem',

@@ -1,177 +1,343 @@
 {% set snipcart_image = page.media.images|first %}
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 <div id="snipcart-detail" class="block-group">
-    {{ page.order|trim('.') }}
+	{{ page.order|trim('.') }}
 
-    <div class="snipcart-info block">
-        <div class="snipcart-thumb">
-            {% if snipcart_image %}
-                {{ snipcart_image.cropResize(400,400).html(page.header.title,'snipcart-thumb-image')|raw }}
-            {% endif %}
-            <span class="snipcart-price">
-            {{ page.header.price }}zł
-            </span>
-        </div>
-        <p>
-            <a href="#"
-                class="button snipcart-add-item snipcartItemek"
-                data-item-id="{{ page.header.product_id }}"
-                data-item-name="{{ page.header.title }}"
-                data-item-price="{{ page.header.price }}"
-                data-item-description= "brak informacji"
-                data-item-url="{{ page.url }}"
-                 data-item-custom1-name="Kolor"
-  data-item-custom1-options="Czarny|Brązowy|Złoty"
-  data-item-custom2-name="Informacja"
-                {% spaceless %}
-                {% if snipcart_image %}
-                    data-item-image="{{ snipcart_image.cropResize(50,50).url }}"
-                {% endif %}
-                {% endspaceless %}                
-            >
-                <i class="fa fa-shopping-cart"></i> Dodaj do koszyka
-            </a>
-        </p>
-    </div>
-    
-    <div class="snipcart-details block">
-        <h1>{{ page.header.title }}</h1>
-       <p>{{ page.content|raw }}</p>
-    </div>  
+	<div class="snipcart-info block">
+		<div class="snipcart-thumb">
+			{% if snipcart_image %}
+				{{ snipcart_image.cropResize(400,400).html(page.header.title,'snipcart-thumb-image')|raw }}
+			{% endif %}
+			<span class="snipcart-price">
+				{{ page.header.price }}zł
+			</span>
+		</div>
+		<p>
+			<a href="#" class="button snipcart-add-item snipcartItemek" data-item-id="{{ page.header.product_id }}" data-item-name="{{ page.header.title }}" data-item-price="{{ page.header.price }}" data-item-description="brak informacji" data-item-url="{{ page.url }}" data-item-custom1-name="Kolor" data-item-custom1-options="Czarny|Brązowy|Złoty" data-item-custom2-name="Informacja" {% spaceless %} {% if snipcart_image %} data-item-image="{{ snipcart_image.cropResize(50,50).url }}" {% endif %} {% endspaceless %}>
+				<i class="fa fa-shopping-cart"></i>
+				{{ 'GRAV.ADDTOCART'|t|e}}
+			</a>
+		</p>
+	</div>
+
+	<div class="snipcart-details block">
+		<h1>{{ page.header.title }}</h1>
+		<p>{{ page.content|raw }}</p>
+	</div>
 
 
+	<div style="margin-top: 1em; margin: auto">
 
- <div style="margin-top: 1em; margin: auto">
+		<input type="checkbox" class="checkGet simpleCheck" checked>{{ 'GRAV.SIMPLEMODI'|t|e}}
+		<input type="checkbox" class="checkGet szablonCheck">{{ 'GRAV.TEMPLATES'|t|e}}
+		<div class="simple">
+			<div style="float: left; width: 40em">
+				<div>
+					<div style="float:left; width: 90%">
+						<input type="text" class="textKartka">
+					</div>
+					<div style="float:left;width: 10%">
+						<button type="button" class="btn btn-primary">{{ 'GRAV.ADD'|t|e}}</button>
+					</div>
+					<div style="clear:both"></div>
+				</div>        
+				<input type="checkbox" class="centerText">{{ 'GRAV.CENTERTEXT'|t|e}}
+        <input type="checkbox" class="boldText">{{ 'GRAV.BOLD'|t|e}}
+			</div>
+			<div style="float: left; width: 40em" class="centerText">
+				<div style="width: 40em; height: 50em; background-color: white; border-style: solid;">
+					<div style="margin: auto; text-align: center" class="showText"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-<input type="checkbox" class="simpleCheck">Prosta modyfikacja
-<input type="checkbox" class="memesCheck">Mem
-<div class="simple">
-     <div style="float: left; width: 40em">
-     <div>
-     <div style="float:left; width: 90%">
-        <input type="text" class="textKartka">
-        </div>
-    <div style="float:left;width: 10%">
-        <button>Dodaj</button>
-        </div>
-        <div style="clear:both"></div>
-     </div>
-        <input type="checkbox" class="centerText">Center
-    </div>
-    <div style="float: left; width: 40em" class="centerText">
-        <div style="width: 40em; height: 50em; background-color: white; border-style: solid;">
-        <div style="margin: auto; text-align: center" class="showText"></div>
-       </div>
-    </div>
- </div>
+	<div class="szablony">
+  <div>
+      		<input type="checkbox" class="szablonGet 1">#1
+		     <input type="checkbox" class="szablonGet 2">#2
+	      	<input type="checkbox" class="szablonGet 3">#3
+          </div>
 
+
+
+  <div class="1Mem">
+			<div style="float: left; width: 40em">
+				<div>
+					<div style="float:left; width: 90%">
+						<input type="text" class="textSzablon11" placeholder="Tekst 1">
+            <input type="text" class="textSzablon21" placeholder="Tekst 2">
+					</div>
+					<div style="float:left;width: 10%">
+						<button type="button" class="btn btn-primary">Dodaj</button>
+					</div>
+					<div style="clear:both"></div>
+				</div>
+			</div>
+			<div style="float: left; width: 40em">
+				<div style="width: 40em; height: 50em; background-color: white; border-style: solid;">
+					<div style="margin: auto; text-align: center" class="showTextMem11"></div>
+          <div style="margin: auto; text-align: center" class="showTextMem21"></div>
+				</div>
+			</div>
+		</div>
+  </div>
+
+    <div class="2Mem">
+			<div style="float: left; width: 40em;">
+				<div>
+					<div style="float:left; width: 90%">
+						<input type="text" class="textSzablon12" placeholder="Tekst 1">
+            <input type="text" class="textSzablon22" placeholder="Tekst 2">
+            <input type="text" class="textSzablon32" placeholder="Tekst 3">
+					</div>
+					<div style="float:left;width: 10%">
+						<button type="button" class="btn btn-primary">Dodaj</button>
+					</div>
+					<div style="clear:both"></div>
+				</div>
+			</div>
+			<div style="float: left; width: 40em; margin-left: 50%">
+				<div style="width: 40em; height: 50em; background-color: white; border-style: solid;">
+					<div style="margin: auto; text-align: center" class="showTextMem12"></div>
+          <div style="margin: auto; text-align: center" class="showTextMem22"></div>
+          <div style="margin: auto; text-align: center" class="showTextMem32"></div>
+				</div>
+			</div>
+		</div>
+
+
+
+    <div class="3Mem">
+			<div style="float: left; width: 40em">
+				<div>
+					<div style="float:left; width: 90%">
+						<input type="text" class="textSzablon13" placeholder="Tekst 1">
+            <input type="text" class="textSzablon23" placeholder="Tekst 2">
+            <input type="text" class="textSzablon33" placeholder="Tekst 3">
+            <input type="text" class="textSzablon43" placeholder="Tekst 4">
+					</div>
+					<div style="float:left;width: 10%">
+						<button type="button" class="btn btn-primary">Dodaj</button>
+					</div>
+					<div style="clear:both"></div>
+				</div>
+			</div>
+			<div style="float: left; width: 40em; margin-left: 50%">
+				<div style="width: 40em; height: 50em; background-color: white; border-style: solid;">
+					<div style="margin: auto; text-align: center" class="showTextMem13"></div>
+          <div style="margin: auto; text-align: center" class="showTextMem23"></div>
+          <div style="margin: auto; text-align: center" class="showTextMem33"></div>
+          <div style="margin: auto; text-align: center" class="showTextMem43"></div>
+				</div>
+			</div>
+		</div>
+  </div>
 
 
 </div>
 
-
-
-</div>
-
-
-<div class="memes">
-     
-<div class="container">
-   <section class="inputs">
-    <div class="upload-wrap">
-      <label for="upload-image" class="instruction">Upload an image</label>
-      <input type="file" id="upload-image">
-    </div>
-    <span>Or choose from here:</span>
-    <ul class="image-options">
-      <li><img src="http://res.cloudinary.com/dlwnmz6lr/image/upload/v1525111950/voltage_emoji_icon_png_hwdaps.png"/></li>
-      <li><img src="http://res.cloudinary.com/dlwnmz6lr/image/upload/v1525111951/Tongue_Emoji_xhwdn2.png"/></li>
-      <li><img src="http://res.cloudinary.com/dlwnmz6lr/image/upload/v1525111944/Revolving_Pink_Hearts_Emoji_lehlnm.png"/></li>
-      <li><img src="http://res.cloudinary.com/dlwnmz6lr/image/upload/v1525111938/Poop_Emoji_oh3z37.png"/></li>
-      <li><img src="http://res.cloudinary.com/dlwnmz6lr/image/upload/v1525111940/Emoji_Snowflake_Download_large_hssgzt.png"/></li>
-      <li><img src="http://res.cloudinary.com/dlwnmz6lr/image/upload/v1525111952/Cherry_Blossom_Emoji_xqbzxa.png"/></li>  
-     </ul>
-  </section>
-  <section class="meme">
-    <canvas id="canvas" width="594" height="592">
-              Canvas requires a browser that supports HTML5.
-    </canvas>
-    <img id="salt-bae" src="https://media4.s-nbcnews.com/j/newscms/2017_05/1890591/170203-salt-bae-mn-1530_060e5898cdcf7b58f97126d3cfbfdf71.nbcnews-ux-2880-1000.jpg"/>
-  </section>
-</div>
 
 
 <script>
 
-var test = "asd";
-$(document).ready(function() {
-    $("input").change(function(){
-        $('.showText').text(function( index ) {
-            test = $('.textKartka').val();
-            return $('.textKartka').val();
-        });
-    }); 
+      $(".1Mem").hide();
+      $(".2Mem").hide();
+      $(".3Mem").hide();
+
+$(document).on('click', '.1', function() {      
+        $(".1Mem").show();
+      $(".2Mem").hide();
+      $(".3Mem").hide();
 });
-$(".centerText" ).change(function() {
-    if ($('.centerText').prop('checked')) {
-        $('.showText').css("text-align", "center");
-        $('.showText').css("line-height", "50em");
-    }else{
-        console.log("nie");
-        $('.showText').css("line-height", "2em");
-    }  
+$(document).on('click', '.2', function() {      
+        $(".1Mem").hide();
+      $(".2Mem").show();
+      $(".3Mem").hide();
+});
+$(document).on('click', '.3', function() {      
+        $(".1Mem").hide();
+      $(".2Mem").hide();
+      $(".3Mem").show();
+});
+
+//1
+$(".textSzablon21").change(function () {
+  $('.showTextMem21').text(function (index) {
+    $('.showTextMem21').css("line-height", "20em");
+      return $('.textSzablon21').val();
+    });
+});
+
+$(".textSzablon11").change(function () {
+  $('.showTextMem11').text(function (index) {
+      return $('.textSzablon11').val();
+    });
+});
+
+//2
+$(".textSzablon22").change(function () {
+  $('.showTextMem22').text(function (index) {
+    $('.showTextMem22').css("line-height", "10em");
+      return $('.textSzablon22').val();
+    });
+});
+
+$(".textSzablon12").change(function () {
+  $('.showTextMem12').text(function (index) {
+      return $('.textSzablon12').val();
+    });
+});
+
+$(".textSzablon32").change(function () {
+  $('.showTextMem32').text(function (index) {
+    $('.showTextMem32').css("line-height", "55em");
+      return $('.textSzablon32').val();
+    });
+});
+
+//3
+$(".textSzablon23").change(function () {
+  $('.showTextMem23').text(function (index) {
+    $('.showTextMem23').css("line-height", "10em");
+      return $('.textSzablon23').val();
+    });
+});
+
+$(".textSzablon13").change(function () {
+  $('.showTextMem13').text(function (index) {
+      return $('.textSzablon13').val();
+    });
+});
+
+$(".textSzablon33").change(function () {
+  $('.showTextMem33').text(function (index) {
+    $('.showTextMem33').css("line-height", "55em");
+      return $('.textSzablon33').val();
+    });
+});
+
+$(".textSzablon43").change(function () {
+  $('.showTextMem43').text(function (index) {
+    $('.showTextMem43').css("line-height", "16em");
+      return $('.textSzablon43').val();
+    });
 });
 
 
 
+
+
+
+
+
+
+$(document).ready(function () {
+    $("input").change(function () {
+      $('.showText').text(function (index) {
+      test = $('.textKartka').val();
+      return $('.textKartka').val();
+    });
+  });
+});
+
+$(".centerText").change(function () {
+  if ($('.centerText').prop('checked')) {
+    $('.showText').css("text-align", "center");
+    $('.showText').css("line-height", "50em");
+  } else {
+    console.log("nie");
+    $('.showText').css("line-height", "2em");
+  }
+});
+
+
+$(".boldText").change(function () {
+  if ($('.boldText').prop('checked')) {
+    $('.showText').css("font-weight:", "bolder");
+  } else {
+    $('.showText').css("font-weight:", "normal");
+  }
+});
+
+
+//zapisanie i wyslanie informacji
 var descritpion = "brak informacji";
-$(".snipcartItemek").click(function() {
+$(".snipcartItemek").click(function () {
   if ($('.memesCheck').prop('checked')) {
-          descritpion = "MEM";
-          console.log("niasn");
-  }else{
-      console.log("nie zan");
-          descritpion = "Treść: ";
-         descritpion += $('.textKartka').val();
-         descritpion += ";Wycentrować: ";
-      if ($('.centerText').prop('checked')) {
+    descritpion = "MEM";
+  } else {
+    descritpion = "Treść: ";
+    descritpion += $('.textKartka').val();
+    descritpion += ";Wycentrować: ";
+  if ($('.centerText').prop('checked')) {
+    descritpion += "Tak";
+  } else {
+    descritpion += "Nie";
+  }
+  //dla szablonow
 
-            descritpion += "Tak";
-      }else{
-descritpion += "Nie";
-      }
+  if ($('.szablonCheck').prop('checked')){
+
+if ($('.1').prop('checked')) {
+    descritpion = "SZABLON[1];Tresc[1]:";
+    descritpion += $('.textSzablon11').val() + ";";
+    descritpion += "Tresc[2]:";
+    descritpion += $('.textSzablon21').val() + ";";
 
   }
+    if ($('.2').prop('checked')) {
+    descritpion = "SZABLON[2];Tresc[1]:";
+    descritpion += $('.textSzablon12').val() + ";";
+    descritpion += "Tresc[2]:";
+    descritpion += $('.textSzablon22').val() + ";";
+    descritpion += "Tresc[3]:";
+    descritpion += $('.textSzablon32').val() + ";";
+  }
+    if ($('.3').prop('checked')) {
+    descritpion = "SZABLON[3];Tresc[1]:";
+    descritpion += $('.textSzablon13').val() + ";";
+    descritpion += "Tresc[2]:";
+    descritpion += $('.textSzablon23').val() + ";";
+    descritpion += "Tresc[3]:";
+    descritpion += $('.textSzablon33').val() + ";";
+        descritpion += "Tresc[4]:";
+    descritpion += $('.textSzablon43').val() + ";";
+  }
+
+  }
+
+
+  
+}
   $(".snipcartItemek").attr("data-item-description", descritpion);
 });
 
+$(".szablony").hide();
 
 
 
 
 
-$('.simpleCheck').prop('checked', true);
-$(".memes").hide();
-$(".memesCheck" ).change(function() {
-    if ($('.memesCheck').prop('checked')) {
-        $('.simpleCheck').prop('checked', false);
-        $(".simple").hide();
-        $(".memes").show();
-    }else{
-        $('.simpleCheck').prop('checked', true);
-        $(".simple").show();
-        $(".memes").hide();
-    }  
+
+$(document).on('click', '.checkGet', function() {      
+    $('.checkGet').not(this).prop('checked', false);  
 });
-$(".simpleCheck" ).change(function() {
-    if ($('.simpleCheck').prop('checked')) {
-        $('.memesCheck').prop('checked', false);
-         $(".simple").show();
-        $(".memes").hide();
-    }else{
-        $('.memesCheck').prop('checked', true);
-         $(".simple").hide();
-        $(".memes").show();
-    }  
+
+$(document).on('click', '.szablonGet', function() {      
+    $('.szablonGet').not(this).prop('checked', false);  
+});
+
+$(document).on('click', '.simpleCheck', function() {      
+      $(".szablony").hide();
+      $(".simple").show();
+});
+
+$(document).on('click', '.szablonCheck', function() {      
+       $(".szablony").show();
+      $(".simple").hide();
 });
 
 
@@ -179,86 +345,13 @@ $(".simpleCheck" ).change(function() {
 
 
 
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
-}
 
-function drawBackgroundImage(canvas, ctx) {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  const img = document.getElementById('salt-bae');  
-  ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-}
 
-function getRandomImageSize(min, max, width, height) {
-  const ratio = width / height;  // Used for aspect ratio
-  width = getRandomInt(min, max);
-  height = width / ratio;  
-  return { width, height };
-}
 
-function drawSalt(src, canvas, ctx) {
-  // Create an image object. (Not part of the dom)
-  const image = new Image();
-  image.src = src;
-  
-  // After the image has loaded, draw it to the canvas
-   image.onload = function() {
-    for (let i = 0; i < 8; i++) {
-      const randomX = getRandomInt(10, canvas.width/2);
-      const randomY = getRandomInt(canvas.height-300, canvas.height);
-      const dimensions = getRandomImageSize(20, 100, image.width, image.height);
-      ctx.drawImage(image, randomX, randomY, dimensions.width, dimensions.height);
-    }
-  }
- image.setAttribute('crossOrigin', 'anonymous'); 
-  return image;
-}
 
-function updateImage(file, img){
-  img.src = URL.createObjectURL(file);
-}
 
-function updateImageSrc(url, img){
-  img.src = url;
-}
 
-function addLink() {
-  var link = document.createElement('a');
-  link.innerHTML = 'Download!';
-  link.addEventListener('click', function(e) {
-    link.href = canvas.toDataURL();
-    link.download = "salt-bae.png";
-  }, false); 
-  link.className = "instruction";
-  document.querySelectorAll('section')[1].appendChild(link);
-}
 
-onload = function() {
-  const canvas = document.getElementById('canvas');
-  const ctx = canvas.getContext('2d');
-  drawBackgroundImage(canvas, ctx);
-  const saltImage = drawSalt('http://res.cloudinary.com/dlwnmz6lr/image/upload/v1526005050/chadwick-boseman-inspired-workout-program-wide_phczey.webp', canvas, ctx);
-const input = document.querySelector("input[type='file']");
-  /*
-   * Add event listener to the input to listen for changes to its selected
-   * value, i.e when files are selected 
-   */
-  input.addEventListener('change', function() {
-    drawBackgroundImage(canvas, ctx);
-    updateImage(this.files[0], saltImage);
-  });
-  
-  addLink();
-  
-  const imgs = document.querySelector('.image-options');
-  imgs.addEventListener('click', function(e) {
-    drawBackgroundImage(canvas, ctx);
-    let target = e.target;
-    updateImageSrc(target.src, saltImage);
-  });
-};
+
 
 </script>
-

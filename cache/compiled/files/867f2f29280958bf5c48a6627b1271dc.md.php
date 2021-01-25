@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/pages/01.shop/03.uniwersalne/snipcart_category.md',
-    'modified' => 1611522811,
+    'modified' => 1610557940,
     'data' => [
         'header' => [
             'title' => 'Uniwersalne',

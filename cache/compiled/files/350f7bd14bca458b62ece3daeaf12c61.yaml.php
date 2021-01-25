@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'user/plugins/admin/presets.yaml',
-    'modified' => 1611522811,
+    'modified' => 1606322662,
     'data' => [
         'default' => [
             'name' => 'Default',

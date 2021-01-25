@@ -7,6 +7,10 @@ pl:
     DETAILS: 'Szczegóły'
     ADD: 'Dodaj'
     ADDTOCART: 'Dodaj do koszyka' 
+    SIMPLEMODI : 'Prosta modyfikacja'
+    TEMPLATES : 'Szablony'
+    CENTERTEXT : 'Środek'
+    BOLD : 'Pogrubienie'
   PLUGINS:
     LANGUAGE_SELECTOR:
       PLUGIN_STATUS: 'Plugin status'
@@ -34,6 +38,10 @@ en:
     DETAILS: 'Details'
     ADD: 'Add'
     ADDTOCART: 'Add to cart' 
+    SIMPLEMODI : 'Simple modification'
+    TEMPLATES : 'Templates'
+    CENTERTEXT : 'Center'
+    BOLD : 'Bold'
   PLUGINS:
     LANGUAGE_SELECTOR:
       PLUGIN_STATUS: 'Plugin status'

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledMarkdownFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/pages/01.shop/02.urodzinowe/kartka-urodzinowa-3/snipcart_detail.md',
-    'modified' => 1611522811,
+    'modified' => 1606330777,
     'data' => [
         'header' => [
             'title' => 'Kartka urodzinowa 2',

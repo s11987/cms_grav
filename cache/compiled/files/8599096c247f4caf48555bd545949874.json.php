@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/xampp/htdocs/cms_grav/user/data/flex/indexes/pages.json',
-    'modified' => 1611524160,
+    'modified' => 1611582006,
     'data' => [
         'version' => '1.5',
         'timestamp' => 1611524160,
