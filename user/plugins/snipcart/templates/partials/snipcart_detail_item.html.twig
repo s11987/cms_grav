@@ -80,9 +80,9 @@
 			</div>
 			<div style="float: left; width: 40em">
 				<div style="width: 40em; height: 50em; background-color: white; border-style: solid;">
-					<div style="margin: auto; text-align: center; position: absolute; margin-left: 5em; font-size: 47px; font-weight: bold; max-width: 5em" class="showTextMem11"></div>
-          <div style="margin: auto; text-align: center; position: absolute; margin-top: 10em; max-width: 25em; margin-left: 8em" class="showTextMem21"></div>
-          <img src="/cms_grav/user/pages/images/szablon_1.png" alt="swiat_kartek" style="width: 100%; height: 100%">
+					<div style="margin: auto; text-align: center; position: absolute; font-size: 40px; font-weight: bold; max-width: 16m; width: 16em; height-max: 7em; height: 7em;text-align: center;vertical-align: middle;" class="showTextMem11"></div>
+					<div style="margin: auto; text-align: center; position: absolute; font-size: 23px; max-width: 27.5em; width: 27.5em; height-max: 23em; height: 23em;text-align: center;vertical-align: middle; margin-top: 10em" class="showTextMem21"></div>
+          <img src="/user/pages/images/szablon_1.png" alt="swiat_kartek" style="width: 100%; height: 100%">
 				</div>
 			</div>
 		</div>
@@ -104,9 +104,13 @@
 			</div>
 			<div style="float: left; width: 40em; margin-left: 50%">
 				<div style="width: 40em; height: 50em; background-color: white; border-style: solid;">
-					<div style="margin: auto; text-align: center" class="showTextMem12"></div>
-          <div style="margin: auto; text-align: center" class="showTextMem22"></div>
-          <div style="margin: auto; text-align: center" class="showTextMem32"></div>
+
+					<div style="margin: auto; text-align: center; position: absolute; font-size: 23px; font-weight: bold; max-width: 9m; width: 9em; height-max: 8em; height: 8em;text-align: center;vertical-align: middle;margin-left: 15em; margin-top: 4em" class="showTextMem12"></div>
+          <div style="margin: auto; text-align: center; position: absolute; font-size: 23px; font-weight: bold; max-width: 9m; width: 9em; height-max: 8em; height: 8em;text-align: center;vertical-align: middle;margin-left: 2em; margin-top: 19em" class="showTextMem22"></div>
+          <div style="margin: auto; text-align: center; position: absolute; font-size: 10px; font-weight: bold; max-width: 15m; width: 15em; height-max: 5em; height: 5em;text-align: center;vertical-align: middle;margin-left: 48em; margin-top: 74em" class="showTextMem32"></div>
+        
+          <img src="/user/pages/images/szablon_2.jpg" alt="swiat_kartek" style="width: 100%; height: 100%">
+
 				</div>
 			</div>
 		</div>
@@ -185,7 +189,7 @@ $(".textSzablon11").change(function () {
 //2
 $(".textSzablon22").change(function () {
   $('.showTextMem22').text(function (index) {
-    $('.showTextMem22').css("line-height", "10em");
+  //  $('.showTextMem22').css("line-height", "10em");
       return $('.textSzablon22').val();
     });
 });
@@ -198,7 +202,7 @@ $(".textSzablon12").change(function () {
 
 $(".textSzablon32").change(function () {
   $('.showTextMem32').text(function (index) {
-    $('.showTextMem32').css("line-height", "55em");
+  //  $('.showTextMem32').css("line-height", "55em");
       return $('.textSzablon32').val();
     });
 });
